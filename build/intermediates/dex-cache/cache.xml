@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/jorge/Curso/Asignaturas/Proyecto DAM/Aplicación/Proyecto/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="55846a686f90eb9d77b7a58b2aa1b5fb15f43752">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/Aplicación/Proyecto/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_04e19f813c23ef26e868d33a685f61dd381693b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jorge/Curso/Asignaturas/Proyecto DAM/Aplicación/Proyecto/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/Aplicación/Proyecto/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a2021238e56f205d2d3c931c0e0a249c0f52fa76/classes.dex" />
+    </item>
+
+</items>

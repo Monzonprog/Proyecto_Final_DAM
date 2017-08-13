@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gestión de gasto</string>
+
+    <!--Array SplashScreen-->
+    <string-array name="frases">
+        <item>Conduce con precaución</item>
+        <item>Revisa la presión de tus neumáticos</item>
+        <item>Revisa el nivel de aceite y otros liquidos</item>
+        <item>Comprueba las pastillas de freno</item>
+        <item>Atento a la fecha de la ITV</item>
+    </string-array>
+
+    <!--Botones menú principal-->
+    <string name="vehiculosButton">Vehículos</string>
+    <string name="respostajeButton">Repostaje</string>
+    <string name="mantenimientoButton">Mantenimiento</string>
+    <string name="impuestosButton">Impuestos/Gastos</string>
+    <string name="datosButton">Datos</string>
+    <string name="gasolinerasButton">Gasolineras</string>
+    <string name="salirButton">Salir</string>
+
+    <!--Botones menú vehículos-->
+
+
+    <!--Titulos de activities-->
+    <string name="vehiculosActivity">Vehículos</string>
+    <string name="repostajeActivity">Repostaje</string>
+    <string name="mantenimientoActivity">Mantenimiento</string>
+    <string name="impuestoActivity">Impuestos/Gastos</string>
+    <string name="gasolinerasActivity">Gasolineras</string>
+
+    <!--Nuevo vehículo fragment-->
+    <string name="instrucciones">Añade los datos de tu vehículo, si lo deseas también
+    puedes añadir una fotografía</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+    <string name="apodo">Apodo o matrícula</string>
+    <string name="tipoVehiculo">Tipo de vehículo</string>
+    <string name="añadirFotoVehiculo">Añade la foto de tu vehículo (Opcional)</string>
+    <string-array name="tipoVehiculoSpinner">
+        <item>Coche</item>
+        <item>Motocicleta</item>
+        <item>Autobus</item>
+        <item>Camión</item>
+    </string-array>
+    <string name="tipoCombustible">Tipo de combustible</string>
+    <string-array name="tipoCombustibleSpinner">
+        <item>Gasolina</item>
+        <item>Diesel</item>
+    </string-array>
+
+    <!--Strings Activity respostaje-->
+    <string name="vehiculoTV">Vehículo</string>
+    <string name="kmActualesTV">KM Actuales</string>
+    <string name="tipoLlenadoTV">Tipo de llenado</string>
+    <string name="totalTV">Total</string>
+    <string name="parcialTV">Parcial</string>
+    <string name="costeTV">Coste</string>
+    <string name="precioLTV">Precio por litro</string>
+    <string name="ticket">Subir una foto del ticket (Opcional)</string>
+    <string name="fotoHecha">Se ha realizado la fotografía</string>
+
+    <!--Strings Activity mantenimiento-->
+    <string name="operacionTV">Tipo de operación</string>
+    <string name="descripcionMantenimiento">Descripción de las acciones</string>
+    <string name="factura">Subir una foto de la factura (Opcional)</string>
+    <string-array name="tipoOperacionSpinner">
+        <item>Mantenimiento</item>
+        <item>Avería</item>
+    </string-array>
+
+    <!--Strings Activity impuestos/gastos-->
+    <string name="conceptoITV">Concepto del gasto</string>
+    <string name="cantidadITV">Coste</string>
+    <string name="descripcionImpuesto">Descripción del gasto</string>
+
+    <!--Fragment vehiculos-->
+    <string name="vehiculos">Vehículos</string>
+    <string name="nuevo_vehiculo">Nuevo Vehículo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_gasolineras">Map</string>
+
+
+</resources>
