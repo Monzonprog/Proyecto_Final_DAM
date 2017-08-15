@@ -1,9 +1,11 @@
 package com.example.jorge.gasolinator.Activities;
 
 import android.Manifest;
+import android.content.ContentValues;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
@@ -41,7 +43,10 @@ public class RepostajeActivity extends AppCompatActivity {
     private static final int REQUEST_READ_EXTERNAL_STORAGE = 2;
     private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 2;
     private String IMAGE_DIRECTORY = "/controlGasolina/";
+    private Uri imageUri;
+    private ImageView foto;
 
+    private ContentValues values;
 
 
 
@@ -53,6 +58,8 @@ public class RepostajeActivity extends AppCompatActivity {
         //Mostramos botón "Atrás" en la activity
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
+        foto = (ImageView)findViewById(R.id.fotoRepostaje);
+
     }
 
     //Funcionalidad para el botón "Atrás"
@@ -117,9 +124,18 @@ public class RepostajeActivity extends AppCompatActivity {
         if (checkSelfPermission(Manifest.permission.CAMERA)==PackageManager.PERMISSION_GRANTED){
 
             if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)==PackageManager.PERMISSION_GRANTED) {
-
-                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                values = new ContentValues();
+                values.put(MediaStore.Images.Media.TITLE, Calendar.getInstance()
+                        .getTimeInMillis());
+                values.put(MediaStore.Images.Media.DESCRIPTION, "From your Camera");
+                imageUri = getContentResolver().insert(
+                        MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
                 startActivityForResult(intent, CAMERA);
+
+                //Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                //startActivityForResult(intent, CAMERA);
             }
             else {
 
@@ -157,7 +173,6 @@ public class RepostajeActivity extends AppCompatActivity {
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        ImageView foto = (ImageView)findViewById(R.id.fotoRepostaje);
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == this.RESULT_CANCELED) {
             return;
@@ -177,11 +192,24 @@ public class RepostajeActivity extends AppCompatActivity {
             }
 
         } else if (requestCode == CAMERA) {
-            Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
-            foto.setImageBitmap(thumbnail);//Pintamos la foto que hemos realizado
-            saveImage(thumbnail);
-            Toast.makeText(this, "Hecho", Toast.LENGTH_SHORT).show();
+                if (resultCode == RESULT_OK) {
+                    try {
+                        Bitmap thumbnail = MediaStore.Images.Media.getBitmap(
+                                getContentResolver(), imageUri);
+                        foto.setImageBitmap(thumbnail);
+                        String imageurl = getRealPathFromURI(imageUri);
+                        Log.e("EH", "Url es: "+ imageurl);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+                }
         }
+            /**Bitmap thumbnail = (Bitmap) data.getExtras().get("data");
+            foto.setImageBitmap(thumbnail);//Pintamos la foto que hemos realizado
+            saveImage(thumbnail);*/
+            Toast.makeText(this, "Hecho", Toast.LENGTH_SHORT).show();
+
     }
 
     public String saveImage(Bitmap myBitmap) {
@@ -214,8 +242,13 @@ public class RepostajeActivity extends AppCompatActivity {
         return "";
         
     }
-
-
-
+    public String getRealPathFromURI(Uri contentUri) {
+        String[] proj = { MediaStore.Images.Media.DATA };
+        Cursor cursor = managedQuery(contentUri, proj, null, null, null);
+        int column_index = cursor
+                .getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+        cursor.moveToFirst();
+        return cursor.getString(column_index);
+    }
 }
 
