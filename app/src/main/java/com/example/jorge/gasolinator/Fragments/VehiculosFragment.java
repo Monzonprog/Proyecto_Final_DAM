@@ -101,7 +101,7 @@ public class VehiculosFragment extends Fragment  {
             @Override
             public void onClick(View v) {
 
-                Vehiculos vehiculo = new Vehiculos(null, "marca", "modelo", "apodo", "tipo", "combustible", uri);
+                Vehiculos vehiculo = new Vehiculos(null, "marca", "modelo", "apodo", "tipo", "combustible", "uri");
 
             }
         });
