@@ -173,7 +173,7 @@
 
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/salir"
+            android:id="@+id/crearVehiculo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="7dp"

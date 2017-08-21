@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/Aplicación/Proyecto/Proyecto.iml" filepath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/Aplicación/Proyecto/Proyecto.iml" />
-      <module fileurl="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/Aplicación/Proyecto/app/app.iml" filepath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/Aplicación/Proyecto/app/app.iml" />
+      <module fileurl="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/Proyecto_Final_DAM.iml" filepath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/Proyecto_Final_DAM.iml" />
+      <module fileurl="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/app.iml" filepath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/app.iml" />
+      <module fileurl="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/greendaogenerator/greendaogenerator.iml" filepath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/greendaogenerator/greendaogenerator.iml" />
     </modules>
   </component>
 </project>
