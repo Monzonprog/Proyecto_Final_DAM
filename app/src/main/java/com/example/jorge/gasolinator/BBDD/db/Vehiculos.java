@@ -30,8 +30,6 @@ public class Vehiculos {
 
     @NotNull
     private String combustible;
-
-    @NotNull
     private String foto_Uri;
 
     // KEEP FIELDS - put your custom fields here
@@ -114,13 +112,11 @@ public class Vehiculos {
         this.combustible = combustible;
     }
 
-    @NotNull
     public String getFoto_Uri() {
         return foto_Uri;
     }
 
-    /** Not-null value; ensure this value is available before it is saved to the database. */
-    public void setFoto_Uri(@NotNull String foto_Uri) {
+    public void setFoto_Uri(String foto_Uri) {
         this.foto_Uri = foto_Uri;
     }
 

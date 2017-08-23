@@ -22,8 +22,6 @@ public class Impuestos {
 
     @NotNull
     private String descripcion;
-
-    @NotNull
     private String foto_uri_impuesto;
 
     // KEEP FIELDS - put your custom fields here
@@ -80,13 +78,11 @@ public class Impuestos {
         this.descripcion = descripcion;
     }
 
-    @NotNull
     public String getFoto_uri_impuesto() {
         return foto_uri_impuesto;
     }
 
-    /** Not-null value; ensure this value is available before it is saved to the database. */
-    public void setFoto_uri_impuesto(@NotNull String foto_uri_impuesto) {
+    public void setFoto_uri_impuesto(String foto_uri_impuesto) {
         this.foto_uri_impuesto = foto_uri_impuesto;
     }
 

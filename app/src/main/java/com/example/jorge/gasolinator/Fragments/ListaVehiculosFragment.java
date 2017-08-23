@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.jorge.gasolinator.BBDD.db.DaoSession;
+import com.example.jorge.gasolinator.BBDD.db.Vehiculos;
 import com.example.jorge.gasolinator.R;
 
 import java.util.ArrayList;
@@ -24,8 +26,8 @@ public class ListaVehiculosFragment extends Fragment {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
+    DaoSession daoSession;
 
-    List vehiculos = new ArrayList();
 
     public ListaVehiculosFragment() {
         // Required empty public constructor
@@ -50,6 +52,10 @@ public class ListaVehiculosFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_lista_vehiculos, container, false);
+
+        /*daoSession = ((AppController) getApplication()).getDaoSession();
+
+        List<Vehiculos> vehiculos = new ArrayList<>();*/
     }
 
 }

@@ -46,7 +46,7 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
                 "\"TIPO_OPERACION\" TEXT NOT NULL ," + // 1: tipo_operacion
                 "\"COSTE\" TEXT NOT NULL ," + // 2: coste
                 "\"ACCIONES\" TEXT NOT NULL ," + // 3: acciones
-                "\"FOTO_URI_GASTO\" TEXT NOT NULL );"); // 4: foto_uri_gasto
+                "\"FOTO_URI_GASTO\" TEXT);"); // 4: foto_uri_gasto
     }
 
     /** Drops the underlying database table. */
@@ -66,7 +66,11 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
         stmt.bindString(2, entity.getTipo_operacion());
         stmt.bindString(3, entity.getCoste());
         stmt.bindString(4, entity.getAcciones());
-        stmt.bindString(5, entity.getFoto_uri_gasto());
+ 
+        String foto_uri_gasto = entity.getFoto_uri_gasto();
+        if (foto_uri_gasto != null) {
+            stmt.bindString(5, foto_uri_gasto);
+        }
     }
 
     @Override
@@ -80,7 +84,11 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
         stmt.bindString(2, entity.getTipo_operacion());
         stmt.bindString(3, entity.getCoste());
         stmt.bindString(4, entity.getAcciones());
-        stmt.bindString(5, entity.getFoto_uri_gasto());
+ 
+        String foto_uri_gasto = entity.getFoto_uri_gasto();
+        if (foto_uri_gasto != null) {
+            stmt.bindString(5, foto_uri_gasto);
+        }
     }
 
     @Override
@@ -95,7 +103,7 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
             cursor.getString(offset + 1), // tipo_operacion
             cursor.getString(offset + 2), // coste
             cursor.getString(offset + 3), // acciones
-            cursor.getString(offset + 4) // foto_uri_gasto
+            cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4) // foto_uri_gasto
         );
         return entity;
     }
@@ -106,7 +114,7 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
         entity.setTipo_operacion(cursor.getString(offset + 1));
         entity.setCoste(cursor.getString(offset + 2));
         entity.setAcciones(cursor.getString(offset + 3));
-        entity.setFoto_uri_gasto(cursor.getString(offset + 4));
+        entity.setFoto_uri_gasto(cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4));
      }
     
     @Override

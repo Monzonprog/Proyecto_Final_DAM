@@ -46,7 +46,7 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
                 "\"CONCEPTO\" TEXT NOT NULL ," + // 1: concepto
                 "\"COSTE\" TEXT NOT NULL ," + // 2: coste
                 "\"DESCRIPCION\" TEXT NOT NULL ," + // 3: descripcion
-                "\"FOTO_URI_IMPUESTO\" TEXT NOT NULL );"); // 4: foto_uri_impuesto
+                "\"FOTO_URI_IMPUESTO\" TEXT);"); // 4: foto_uri_impuesto
     }
 
     /** Drops the underlying database table. */
@@ -66,7 +66,11 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
         stmt.bindString(2, entity.getConcepto());
         stmt.bindString(3, entity.getCoste());
         stmt.bindString(4, entity.getDescripcion());
-        stmt.bindString(5, entity.getFoto_uri_impuesto());
+ 
+        String foto_uri_impuesto = entity.getFoto_uri_impuesto();
+        if (foto_uri_impuesto != null) {
+            stmt.bindString(5, foto_uri_impuesto);
+        }
     }
 
     @Override
@@ -80,7 +84,11 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
         stmt.bindString(2, entity.getConcepto());
         stmt.bindString(3, entity.getCoste());
         stmt.bindString(4, entity.getDescripcion());
-        stmt.bindString(5, entity.getFoto_uri_impuesto());
+ 
+        String foto_uri_impuesto = entity.getFoto_uri_impuesto();
+        if (foto_uri_impuesto != null) {
+            stmt.bindString(5, foto_uri_impuesto);
+        }
     }
 
     @Override
@@ -95,7 +103,7 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
             cursor.getString(offset + 1), // concepto
             cursor.getString(offset + 2), // coste
             cursor.getString(offset + 3), // descripcion
-            cursor.getString(offset + 4) // foto_uri_impuesto
+            cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4) // foto_uri_impuesto
         );
         return entity;
     }
@@ -106,7 +114,7 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
         entity.setConcepto(cursor.getString(offset + 1));
         entity.setCoste(cursor.getString(offset + 2));
         entity.setDescripcion(cursor.getString(offset + 3));
-        entity.setFoto_uri_impuesto(cursor.getString(offset + 4));
+        entity.setFoto_uri_impuesto(cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4));
      }
     
     @Override
