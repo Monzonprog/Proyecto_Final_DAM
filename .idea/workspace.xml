@@ -12,16 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="495c9701-76ca-4c59-ac89-74cd4b815f71" name="Default" comment="">
-      <change type="DELETED" beforePath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/vehiculos_listview.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/vehiculos_listview.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/.idea/misc.xml" afterPath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/.idea/workspace.xml" afterPath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/app.iml" afterPath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/tarjeta_vehiculo.xml" afterPath="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/tarjeta_vehiculo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/tarjeta_vehiculo.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tarjeta_vehiculo.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/greendaogenerator/build/tmp/jar/MANIFEST.MF" afterPath="$PROJECT_DIR$/greendaogenerator/build/tmp/jar/MANIFEST.MF" />
     </list>
     <list id="3cda1c7e-a261-4eac-a60b-8dd90a633b78" name="Failed commit: Default" comment="Implantación GreenDAO">
@@ -3075,7 +3067,8 @@
     <MESSAGE value="Implementación captura fotografía o galería con los correspondientes permisos" />
     <MESSAGE value="Empiezo a programar la BBDD" />
     <MESSAGE value="Implantación GreenDAO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implantación GreenDAO" />
+    <MESSAGE value="CardView vehiculos creada" />
+    <option name="LAST_COMMIT_MESSAGE" value="CardView vehiculos creada" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
