@@ -29,12 +29,13 @@ public class Impuestos {
     // KEEP FIELDS - put your custom fields here
     // KEEP FIELDS END
 
-    @Generated
+    @Generated(hash = 1225475835)
     public Impuestos() {
     }
 
-    @Generated
-    public Impuestos(String idVehiculo, String concepto, String coste, String descripcion, String foto_uri_impuesto) {
+    @Generated(hash = 1733668326)
+    public Impuestos(String idVehiculo, @NotNull String concepto, @NotNull String coste, @NotNull String descripcion,
+            @NotNull String foto_uri_impuesto) {
         this.idVehiculo = idVehiculo;
         this.concepto = concepto;
         this.coste = coste;

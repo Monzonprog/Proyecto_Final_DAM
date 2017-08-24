@@ -29,12 +29,13 @@ public class Gastos {
     // KEEP FIELDS - put your custom fields here
     // KEEP FIELDS END
 
-    @Generated
+    @Generated(hash = 315446416)
     public Gastos() {
     }
 
-    @Generated
-    public Gastos(String idVehiculo, String tipo_operacion, String coste, String acciones, String foto_uri_gasto) {
+    @Generated(hash = 207852931)
+    public Gastos(String idVehiculo, @NotNull String tipo_operacion, @NotNull String coste, @NotNull String acciones,
+            @NotNull String foto_uri_gasto) {
         this.idVehiculo = idVehiculo;
         this.tipo_operacion = tipo_operacion;
         this.coste = coste;

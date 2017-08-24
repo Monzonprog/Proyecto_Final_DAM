@@ -35,12 +35,13 @@ public class Repostaje {
     // KEEP FIELDS - put your custom fields here
     // KEEP FIELDS END
 
-    @Generated
+    @Generated(hash = 1404494208)
     public Repostaje() {
     }
 
-    @Generated
-    public Repostaje(String idVehiculo, String marca, String modelo, String apodo, String tipo, String combustible, String foto_Uri) {
+    @Generated(hash = 2143715741)
+    public Repostaje(String idVehiculo, @NotNull String marca, @NotNull String modelo, @NotNull String apodo, @NotNull String tipo,
+            @NotNull String combustible, @NotNull String foto_Uri) {
         this.idVehiculo = idVehiculo;
         this.marca = marca;
         this.modelo = modelo;

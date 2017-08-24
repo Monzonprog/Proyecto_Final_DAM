@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="cardview-v7-25.3.1">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/8daa4519f5ec2b0953b2941960fe2ae62f0bf663/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/8daa4519f5ec2b0953b2941960fe2ae62f0bf663/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/4f521a401f7513244c634a9866a57cebc4c3d300/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/4f521a401f7513244c634a9866a57cebc4c3d300/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.jorge.gasolinator.Data.Vehiculos;
+import com.example.jorge.gasolinator.BBDD.db.Vehiculos;
 import com.example.jorge.gasolinator.R;
 
 import java.util.List;
