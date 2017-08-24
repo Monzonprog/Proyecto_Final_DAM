@@ -14,7 +14,7 @@
         android:background="@color/white" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewAñadirDatos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/marcaVehiculo"
+            android:id="@+id/marcaVehiculoAñadirVehiculos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/marca" />
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/modeloVehiculo"
+            android:id="@+id/modeloVehiculoAñadirVehiculos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/modelo" />
@@ -54,7 +54,7 @@
     android:layout_height="wrap_content">
 
     <android.support.design.widget.TextInputEditText
-        android:id="@+id/apodoVehiculo"
+        android:id="@+id/apodoVehiculoAñadirVehiculos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/apodo" />
@@ -80,7 +80,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tipoVehiculoTV"
+                android:id="@+id/tipoVehiculoTVAñadirVehiculos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -89,7 +89,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/tipoVehiculo"
+                android:id="@+id/tipoVehiculoAñadirVehiculos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -103,7 +103,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tipoCombustibleTV"
+                android:id="@+id/tipoCombustibleTVAñadirVehiculos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -112,7 +112,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/combustibleVehiculo"
+                android:id="@+id/combustibleVehiculoAñadirVehiculos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -144,14 +144,14 @@
                 tools:ignore="UselessParent">
 
                 <ImageView
-                    android:id="@+id/añadirButton"
+                    android:id="@+id/fotoAñadidaAñadirVehiculos"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_margin="5dp"
-                    android:background="@drawable/siluetas_vehiculos" />
+                    android:src="@drawable/siluetas_vehiculos" />
 
                 <Button
-                    android:id="@+id/añadirFoto"
+                    android:id="@+id/añadirFotoAñadirVehiculos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
@@ -173,7 +173,7 @@
 
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/crearVehiculo"
+            android:id="@+id/crearVehiculoAñadirVehiculos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="7dp"

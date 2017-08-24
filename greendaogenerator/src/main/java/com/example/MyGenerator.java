@@ -35,7 +35,7 @@ public class MyGenerator {
         vehiculos.addStringProperty("apodo").notNull();
         vehiculos.addStringProperty("tipo").notNull();
         vehiculos.addStringProperty("combustible").notNull();
-        vehiculos.addStringProperty("foto_Uri").notNull();
+        vehiculos.addStringProperty("foto_Uri");
         return vehiculos;
     }
 
@@ -48,7 +48,7 @@ public class MyGenerator {
         repostaje.addStringProperty("apodo").notNull();
         repostaje.addStringProperty("tipo").notNull();
         repostaje.addStringProperty("combustible").notNull();
-        repostaje.addStringProperty("foto_Uri").notNull();
+        repostaje.addStringProperty("foto_Uri");
         return repostaje;
     }
 
@@ -59,7 +59,7 @@ public class MyGenerator {
         impuestos.addStringProperty("concepto").notNull();
         impuestos.addStringProperty("coste").notNull();
         impuestos.addStringProperty("descripcion").notNull();
-        impuestos.addStringProperty("foto_uri_impuesto").notNull();
+        impuestos.addStringProperty("foto_uri_impuesto");
         return impuestos;
     }
 
@@ -70,7 +70,7 @@ public class MyGenerator {
         gastos.addStringProperty("tipo_operacion").notNull();
         gastos.addStringProperty("coste").notNull();
         gastos.addStringProperty("acciones").notNull();
-        gastos.addStringProperty("foto_uri_gasto").notNull();
+        gastos.addStringProperty("foto_uri_gasto");
         return gastos;
     }
 

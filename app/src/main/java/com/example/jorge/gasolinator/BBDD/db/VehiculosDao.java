@@ -50,7 +50,7 @@ public class VehiculosDao extends AbstractDao<Vehiculos, Long> {
                 "\"APODO\" TEXT NOT NULL ," + // 3: apodo
                 "\"TIPO\" TEXT NOT NULL ," + // 4: tipo
                 "\"COMBUSTIBLE\" TEXT NOT NULL ," + // 5: combustible
-                "\"FOTO__URI\" TEXT NOT NULL );"); // 6: foto_Uri
+                "\"FOTO__URI\" TEXT);"); // 6: foto_Uri
     }
 
     /** Drops the underlying database table. */
@@ -72,7 +72,11 @@ public class VehiculosDao extends AbstractDao<Vehiculos, Long> {
         stmt.bindString(4, entity.getApodo());
         stmt.bindString(5, entity.getTipo());
         stmt.bindString(6, entity.getCombustible());
-        stmt.bindString(7, entity.getFoto_Uri());
+ 
+        String foto_Uri = entity.getFoto_Uri();
+        if (foto_Uri != null) {
+            stmt.bindString(7, foto_Uri);
+        }
     }
 
     @Override
@@ -88,7 +92,11 @@ public class VehiculosDao extends AbstractDao<Vehiculos, Long> {
         stmt.bindString(4, entity.getApodo());
         stmt.bindString(5, entity.getTipo());
         stmt.bindString(6, entity.getCombustible());
-        stmt.bindString(7, entity.getFoto_Uri());
+ 
+        String foto_Uri = entity.getFoto_Uri();
+        if (foto_Uri != null) {
+            stmt.bindString(7, foto_Uri);
+        }
     }
 
     @Override
@@ -105,7 +113,7 @@ public class VehiculosDao extends AbstractDao<Vehiculos, Long> {
             cursor.getString(offset + 3), // apodo
             cursor.getString(offset + 4), // tipo
             cursor.getString(offset + 5), // combustible
-            cursor.getString(offset + 6) // foto_Uri
+            cursor.isNull(offset + 6) ? null : cursor.getString(offset + 6) // foto_Uri
         );
         return entity;
     }
@@ -118,7 +126,7 @@ public class VehiculosDao extends AbstractDao<Vehiculos, Long> {
         entity.setApodo(cursor.getString(offset + 3));
         entity.setTipo(cursor.getString(offset + 4));
         entity.setCombustible(cursor.getString(offset + 5));
-        entity.setFoto_Uri(cursor.getString(offset + 6));
+        entity.setFoto_Uri(cursor.isNull(offset + 6) ? null : cursor.getString(offset + 6));
      }
     
     @Override

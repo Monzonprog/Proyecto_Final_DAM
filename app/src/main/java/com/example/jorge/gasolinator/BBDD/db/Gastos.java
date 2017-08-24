@@ -22,8 +22,6 @@ public class Gastos {
 
     @NotNull
     private String acciones;
-
-    @NotNull
     private String foto_uri_gasto;
 
     // KEEP FIELDS - put your custom fields here
@@ -81,13 +79,11 @@ public class Gastos {
         this.acciones = acciones;
     }
 
-    @NotNull
     public String getFoto_uri_gasto() {
         return foto_uri_gasto;
     }
 
-    /** Not-null value; ensure this value is available before it is saved to the database. */
-    public void setFoto_uri_gasto(@NotNull String foto_uri_gasto) {
+    public void setFoto_uri_gasto(String foto_uri_gasto) {
         this.foto_uri_gasto = foto_uri_gasto;
     }
 
