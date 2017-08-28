@@ -2,7 +2,6 @@ package com.example.jorge.gasolinator.Fragments;
 
 
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -10,17 +9,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 
 import com.example.jorge.gasolinator.Adapters.ListaVehiculosAdapter;
 import com.example.jorge.gasolinator.BBDD.db.DaoMaster;
 import com.example.jorge.gasolinator.BBDD.db.DaoSession;
 import com.example.jorge.gasolinator.BBDD.db.Vehiculos;
+import com.example.jorge.gasolinator.BBDD.db.VehiculosDao;
 import com.example.jorge.gasolinator.R;
 
-import org.greenrobot.greendao.database.Database;
-
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -44,6 +40,8 @@ public class ListaVehiculosFragment extends Fragment {
     private DaoMaster daoMaster;
     private DaoSession daoSession;
 
+    private VehiculosDao vehiculosDao;
+
 
     public ListaVehiculosFragment() {
         // Required empty public constructor
@@ -60,21 +58,26 @@ public class ListaVehiculosFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        pintarListaVehiculos();
-    }
+
+          }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lista_vehiculos, container, false);
 
-        /*daoSession = ((AppController) getApplication()).getDaoSession();
+        View view = inflater.inflate(R.layout.fragment_lista_vehiculos, container, false);
 
-        List<Vehiculos> vehiculos = new ArrayList<>();*/
-
+        return view;
 
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        pintarListaVehiculos();
+    }
+
 
     private void pintarListaVehiculos() {
 
@@ -83,6 +86,11 @@ public class ListaVehiculosFragment extends Fragment {
         daoMaster = new DaoMaster(db);
         daoSession = daoMaster.newSession();
         daoSession.getVehiculosDao();
+
+        vehiculosDao = daoSession.getVehiculosDao();
+        vehiculos = vehiculosDao.loadAll();
+
+
 
         recycler = (RecyclerView) getActivity().findViewById(R.id.recicladorFragmentListaVehiculos);
 

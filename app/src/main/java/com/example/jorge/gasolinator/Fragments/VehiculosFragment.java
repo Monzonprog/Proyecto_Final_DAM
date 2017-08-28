@@ -148,9 +148,9 @@ public class VehiculosFragment extends Fragment  {
 
 
                /* Vehiculos vehiculo = new Vehiculos(null, marcaUsuario, modeloUsuario,
-                        apodoUsuario, tipoUsuario, combustibleUsuario, uriUsuario);
+                        apodoUsuario, tipoUsuario, combustibleUsuario, uriUsuario);*/
 
-                Toast.makeText(getActivity(), "Hola", Toast.LENGTH_LONG).show();*/
+                Toast.makeText(getActivity(), "Hola", Toast.LENGTH_LONG).show();
             }
         });
 
