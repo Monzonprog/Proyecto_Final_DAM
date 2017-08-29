@@ -88,12 +88,10 @@ public class VehiculosFragment extends Fragment  {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view;
 
-        view = inflater.inflate(R.layout.nuevo_vehiculo_fragment, container, false);
+        View view = inflater.inflate(R.layout.nuevo_vehiculo_fragment, container, false);
 
         return view;
-
 
     }
 
@@ -122,8 +120,7 @@ public class VehiculosFragment extends Fragment  {
                 String combustibleUsuario = combustible.getSelectedItem().toString();
                 String uriUsuario = yourUri.toString();
 
-                //Toast.makeText(getActivity(), marcaUsuario + modeloUsuario + apodoUsuario + tipoUsuario + combustibleUsuario+ uriUsuario, Toast.LENGTH_LONG).show();
-
+                //TODO: Verificar que no haya campos vacios
 
                 DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(getActivity(),"Vehiculos-db"); //The users-db here is the name of our database.
                 Database db = helper.getWritableDb();
@@ -138,19 +135,9 @@ public class VehiculosFragment extends Fragment  {
                 vehiculo.setCombustible(combustibleUsuario);
                 vehiculo.setFoto_Uri(uriUsuario);
 
-
                 daoSession.insert(vehiculo);
 
-
-
-
-
-
-
-               /* Vehiculos vehiculo = new Vehiculos(null, marcaUsuario, modeloUsuario,
-                        apodoUsuario, tipoUsuario, combustibleUsuario, uriUsuario);*/
-
-                Toast.makeText(getActivity(), "Hola", Toast.LENGTH_LONG).show();
+                Toast.makeText(getActivity(), R.string.creacionVehiculoOk, Toast.LENGTH_LONG).show();
             }
         });
 
@@ -162,13 +149,6 @@ public class VehiculosFragment extends Fragment  {
         });
 
     }
-
-
-
-    public DaoSession getDaoSession() {
-        return daoSession;
-    }
-
 
     public void camaraGaleria(View view){
 
@@ -193,9 +173,6 @@ public class VehiculosFragment extends Fragment  {
                 });
         pictureDialog.show();
     }
-
-
-
 
     public void choosePhotoFromGallary() {
         if (getActivity().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {

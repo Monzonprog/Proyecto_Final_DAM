@@ -73,11 +73,11 @@ public class ListaVehiculosFragment extends Fragment {
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
+    public void onActivityCreated(Bundle state) {
+        super.onActivityCreated(state);
+
         pintarListaVehiculos();
     }
-
 
     private void pintarListaVehiculos() {
 
@@ -100,7 +100,7 @@ public class ListaVehiculosFragment extends Fragment {
 
         // Crear un nuevo adaptador
         adapter = new ListaVehiculosAdapter(vehiculos);
-        //adapter.setListener(getActivity());
+        //adapter.setListener(getActivity()); //TODO: Funcionalidad borrado y editar
         recycler.setAdapter(adapter);
 
     }
