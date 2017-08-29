@@ -79,11 +79,21 @@
     <!--Fragment vehiculos-->
     <string name="vehiculos">Vehículos</string>
     <string name="nuevo_vehiculo">Nuevo Vehículo</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_gasolineras">Map</string>
     <string name="creacionVehiculoOk">El vehículo se ha guardado correctamente</string>
+
+
+    <string name="title_activity_gasolineras">Map</string>
+
+
+    <!--Dialogs-->
+    <string name="borrarVehiculo">Borrar vehículo</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="borrarVehiculoButton">Borrar</string>
+
+    <string name="editarVehiculo">Editar vehículo</string>
+    <string name="editarVehiculoButton">Editar</string>
+    <string name="borrarVehiculoOk">El vehículo se ha borrado correctamente</string>
+    <string name="editarVehiculoOk">El vehículo se ha editado correctamente</string>
 
 
 </resources>

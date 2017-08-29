@@ -1,6 +1,7 @@
 package com.example.jorge.gasolinator.Fragments;
 
 
+import android.app.Dialog;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,12 +10,16 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.jorge.gasolinator.Adapters.ListaVehiculosAdapter;
 import com.example.jorge.gasolinator.BBDD.db.DaoMaster;
 import com.example.jorge.gasolinator.BBDD.db.DaoSession;
 import com.example.jorge.gasolinator.BBDD.db.Vehiculos;
 import com.example.jorge.gasolinator.BBDD.db.VehiculosDao;
+import com.example.jorge.gasolinator.Interfaces.OpcionesTarjetaVehiculos;
 import com.example.jorge.gasolinator.R;
 
 import java.util.List;
@@ -25,22 +30,18 @@ import java.util.List;
  * Use the {@link ListaVehiculosFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ListaVehiculosFragment extends Fragment {
+public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaVehiculos {
 
     private RecyclerView recycler;
     private RecyclerView.LayoutManager lManager;
-
-
     private ListaVehiculosAdapter adapter;
     private List<Vehiculos> vehiculos;
-
     private SQLiteDatabase db;
-
-
     private DaoMaster daoMaster;
     private DaoSession daoSession;
-
     private VehiculosDao vehiculosDao;
+    private Button cancelarEditar, cancelarBorrar, borrar, editar;
+    private EditText marcaUsuario, modeloUsuario, apodoUsuario;
 
 
     public ListaVehiculosFragment() {
@@ -66,9 +67,7 @@ public class ListaVehiculosFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View view = inflater.inflate(R.layout.fragment_lista_vehiculos, container, false);
-
-        return view;
+        return View view = inflater.inflate(R.layout.fragment_lista_vehiculos, container, false);
 
     }
 
@@ -100,8 +99,99 @@ public class ListaVehiculosFragment extends Fragment {
 
         // Crear un nuevo adaptador
         adapter = new ListaVehiculosAdapter(vehiculos);
-        //adapter.setListener(getActivity()); //TODO: Funcionalidad borrado y editar
+        adapter.setListener(ListaVehiculosFragment.this);
         recycler.setAdapter(adapter);
+
+    }
+
+    @Override
+    public void modificarVehiculo(final String id) {
+
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.setContentView(R.layout.dialog_editar);
+        final Long lg = Long.parseLong(id);
+
+        cancelarEditar = (Button)dialog.findViewById(R.id.buttonCancelarDialogEditar);
+        editar = (Button)dialog.findViewById(R.id.buttonEditarDialogEditar);
+
+        marcaUsuario = (EditText)dialog.findViewById(R.id.marcaEditTextDialog);
+        modeloUsuario = (EditText)dialog.findViewById(R.id.modeloEditTextDialog);
+        apodoUsuario = (EditText)dialog.findViewById(R.id.apodoEditTextDialog);
+
+        marcaUsuario.setText(vehiculos.get(0).getMarca());
+        modeloUsuario.setText(vehiculos.get(0).getModelo());
+        apodoUsuario.setText(vehiculos.get(0).getApodo());
+
+
+        dialog.show();
+
+        editar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                VehiculosDao vehiculosDao = daoSession.getVehiculosDao();
+                Vehiculos vehiculo = new Vehiculos();
+                vehiculo.setId(lg);
+                vehiculo.setMarca(marcaUsuario.getText().toString());
+                vehiculo.setModelo(modeloUsuario.getText().toString());
+                vehiculo.setApodo(apodoUsuario.getText().toString());
+                vehiculo.setCombustible(vehiculos.get(0).getCombustible());
+                vehiculo.setTipo(vehiculos.get(0).getTipo());
+                vehiculo.setFoto_Uri(vehiculos.get(0).getFoto_Uri());
+                vehiculosDao.saveInTx(vehiculo);
+
+                Toast.makeText(getActivity(),getString(R.string.editarVehiculoOk), Toast.LENGTH_LONG).show();
+
+                dialog.cancel();
+
+                pintarListaVehiculos();
+
+
+            }
+        });
+
+
+
+        cancelarEditar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.cancel();
+            }
+        });
+
+    }
+
+    @Override
+    public void eliminarVehiculo(final String id) {
+
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.setContentView(R.layout.dialog_borrar);
+        cancelarBorrar = (Button)dialog.findViewById(R.id.buttonCancelarDialogBorrar);
+        borrar = (Button)dialog.findViewById(R.id.buttonBorrarrDialogBorrar);
+        final Long lg = Long.parseLong(id);
+
+        dialog.show();
+
+        borrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                VehiculosDao vehiculosDao = daoSession.getVehiculosDao();
+
+                vehiculosDao.deleteByKey(lg);
+
+                Toast.makeText(getActivity(),getString(R.string.borrarVehiculoOk), Toast.LENGTH_LONG).show();
+
+                dialog.cancel();
+
+                pintarListaVehiculos();
+            }
+        });
+
+        cancelarBorrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.cancel();
+            }
+        });
 
     }
 }

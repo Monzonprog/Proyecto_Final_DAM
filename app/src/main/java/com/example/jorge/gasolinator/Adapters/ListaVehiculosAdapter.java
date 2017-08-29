@@ -9,10 +9,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.jorge.gasolinator.BBDD.db.Vehiculos;
+import com.example.jorge.gasolinator.Interfaces.OpcionesTarjetaVehiculos;
 import com.example.jorge.gasolinator.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
+
+import jp.wasabeef.picasso.transformations.CropCircleTransformation;
 
 import static android.support.constraint.R.id.parent;
 
@@ -23,8 +26,9 @@ import static android.support.constraint.R.id.parent;
 
 public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAdapter.VehiculosViewHolder> {
 
-private List<Vehiculos> items;
+    private List<Vehiculos> items;
     public Context context;
+    private OpcionesTarjetaVehiculos listener;
 
 
     public static class VehiculosViewHolder extends RecyclerView.ViewHolder {
@@ -76,32 +80,43 @@ private List<Vehiculos> items;
     @Override
     public void onBindViewHolder(VehiculosViewHolder viewholder, final int i) {
 
-        Picasso.with(context).load(items.get(i).getFoto_Uri()).into( viewholder.imagenTarjetaVehiculo);
+        Picasso.with(context).load(items.get(i).getFoto_Uri()).transform(new CropCircleTransformation())
+                .into( viewholder.imagenTarjetaVehiculo);
         viewholder.textViewMarcaTarjetaVehiculo.setText(items.get(i).getMarca());
         viewholder.textViewModeloTarjetaVehiculo.setText(items.get(i).getModelo());
         viewholder.textViewApodoTarjetaVehiculo.setText(items.get(i).getApodo());
 
 
-       /* viewholder.EditarUser.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
-        viewholder.BorrarUser.setOnClickListener(new View.OnClickListener() {
+        viewholder.borrarTarjetaVehiculo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.borrarUser(convertirValor(i));
+                listener.eliminarVehiculo(convertirValor(i));
             }
         });
 
-        viewholder.EditarUser.setOnClickListener(new View.OnClickListener() {
+        viewholder.editarTarjetaVehiculo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.modificaUser(convertirValor(i));
+                listener.modificarVehiculo(convertirValor(i));
 
             }
         });
-*/
+
     }
+
+    private String convertirValor(int i){
+
+        return String ID = String.valueOf(items.get(i).getId());
+
+    }
+
+    public void setListener (OpcionesTarjetaVehiculos listener){
+
+        this.listener = listener;
+    }
+
+
 }
+
+

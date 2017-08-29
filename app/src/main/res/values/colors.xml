@@ -11,5 +11,6 @@
     <color name="yellow">#c3ca01</color>
     <color name="android_red">#ca0101</color>
     <color name="background_color">#40b4c9</color>
+    <color name="grey">#616161</color>
 </resources>
 
