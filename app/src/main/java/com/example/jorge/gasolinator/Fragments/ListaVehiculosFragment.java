@@ -67,7 +67,9 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        return View view = inflater.inflate(R.layout.fragment_lista_vehiculos, container, false);
+        View view = inflater.inflate(R.layout.fragment_lista_vehiculos, container, false);
+
+        return view;
 
     }
 
@@ -78,7 +80,9 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
         pintarListaVehiculos();
     }
 
-    private void pintarListaVehiculos() {
+    private void pintarListaVehiculos() { //Metodo para mostrar en pantalla los vehiculos de la BBDD
+
+        //Recuperamos datos de la BBDD
 
         DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(getActivity(),"Vehiculos-db");
         db = helper.getWritableDatabase();
@@ -89,28 +93,27 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
         vehiculosDao = daoSession.getVehiculosDao();
         vehiculos = vehiculosDao.loadAll();
 
-
+        //Llamamos al RecyclerView y al adapter para mostrar los datos
 
         recycler = (RecyclerView) getActivity().findViewById(R.id.recicladorFragmentListaVehiculos);
 
-        // Usar un administrador para LinearLayout
+
         lManager = new LinearLayoutManager(getActivity());
         recycler.setLayoutManager(lManager);
-
-        // Crear un nuevo adaptador
         adapter = new ListaVehiculosAdapter(vehiculos);
-        adapter.setListener(ListaVehiculosFragment.this);
+        adapter.setListener(ListaVehiculosFragment.this); //Listener para el botón de borrar y editar
         recycler.setAdapter(adapter);
 
     }
 
     @Override
-    public void modificarVehiculo(final String id) {
+    public void modificarVehiculo(final String id) { //Editamos datos y guardamos
 
         final Dialog dialog = new Dialog(getActivity());
         dialog.setContentView(R.layout.dialog_editar);
         final Long lg = Long.parseLong(id);
-
+        int prueba2 = Integer.parseInt(id) ;
+        int prueba = prueba2 -1;
         cancelarEditar = (Button)dialog.findViewById(R.id.buttonCancelarDialogEditar);
         editar = (Button)dialog.findViewById(R.id.buttonEditarDialogEditar);
 
@@ -118,9 +121,9 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
         modeloUsuario = (EditText)dialog.findViewById(R.id.modeloEditTextDialog);
         apodoUsuario = (EditText)dialog.findViewById(R.id.apodoEditTextDialog);
 
-        marcaUsuario.setText(vehiculos.get(0).getMarca());
-        modeloUsuario.setText(vehiculos.get(0).getModelo());
-        apodoUsuario.setText(vehiculos.get(0).getApodo());
+       marcaUsuario.setText(vehiculos.get(prueba).getMarca());
+        modeloUsuario.setText(vehiculos.get(prueba).getModelo());
+        apodoUsuario.setText(vehiculos.get(prueba).getApodo());
 
 
         dialog.show();
@@ -161,7 +164,7 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
     }
 
     @Override
-    public void eliminarVehiculo(final String id) {
+    public void eliminarVehiculo(final String id) { //Eliminamos el registro
 
         final Dialog dialog = new Dialog(getActivity());
         dialog.setContentView(R.layout.dialog_borrar);

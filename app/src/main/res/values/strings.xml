@@ -94,6 +94,7 @@
     <string name="editarVehiculoButton">Editar</string>
     <string name="borrarVehiculoOk">El vehículo se ha borrado correctamente</string>
     <string name="editarVehiculoOk">El vehículo se ha editado correctamente</string>
+    <string name="datosIncompletos">Faltan datos por rellenar</string>
 
 
 </resources>

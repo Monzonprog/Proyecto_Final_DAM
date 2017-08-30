@@ -107,7 +107,9 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
 
     private String convertirValor(int i){
 
-        return String ID = String.valueOf(items.get(i).getId());
+        String ID = String.valueOf(items.get(i).getId());
+
+        return ID;
 
     }
 

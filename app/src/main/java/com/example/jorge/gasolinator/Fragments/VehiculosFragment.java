@@ -9,13 +9,16 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -38,9 +41,13 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 import static android.media.MediaRecorder.VideoSource.CAMERA;
+import static com.example.jorge.gasolinator.R.id.view;
 
 /**
  * Created by jorge on 10/04/17.
@@ -57,10 +64,10 @@ public class VehiculosFragment extends Fragment  {
     private Button añadirFoto;
     private ImageView fotoAñadida;
 
+    private static final int PERMISSION_REQUEST_CODE = 200;
+    private static final int permsRequestCode = 200;
+
     private static final int GALLERY = 2;
-    private static final int REQUEST_CAMERA = 2;
-    private static final int REQUEST_READ_EXTERNAL_STORAGE = 2;
-    private static final int REQUEST_WRITE_EXTERNAL_STORAGE = 2;
     private String IMAGE_DIRECTORY = "/controlGasolina/";
     private Uri imageUri;
     private Uri yourUri;
@@ -135,9 +142,16 @@ public class VehiculosFragment extends Fragment  {
                 vehiculo.setCombustible(combustibleUsuario);
                 vehiculo.setFoto_Uri(uriUsuario);
 
+                if(verificarDatos()){
+
                 daoSession.insert(vehiculo);
 
                 Toast.makeText(getActivity(), R.string.creacionVehiculoOk, Toast.LENGTH_LONG).show();
+
+                }else{
+
+                    Toast.makeText(getActivity(), R.string.datosIncompletos, Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -148,6 +162,22 @@ public class VehiculosFragment extends Fragment  {
             }
         });
 
+    }
+
+    private boolean verificarDatos() { //Verificamos si los campos están rellenos
+
+        boolean verificacion;
+
+        if(marca.getText().toString().isEmpty() || (modelo.getText().toString().isEmpty())||
+                (apodo.getText().toString().isEmpty())){
+            verificacion = false;
+
+        }else{
+
+            verificacion = true;
+        }
+
+        return verificacion;
     }
 
     public void camaraGaleria(View view){
@@ -175,68 +205,40 @@ public class VehiculosFragment extends Fragment  {
     }
 
     public void choosePhotoFromGallary() {
-        if (getActivity().checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+
+        int storagePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        List<String> listPermissionsNeeded = new ArrayList<>();
+
+        if (storagePermission != PackageManager.PERMISSION_GRANTED) {
+            listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        }
 
             Intent galleryIntent = new Intent(Intent.ACTION_PICK,
                     android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             startActivityForResult(galleryIntent, GALLERY);
-        }
-        else {
 
-            ActivityCompat.requestPermissions(getActivity(),
-                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                    REQUEST_READ_EXTERNAL_STORAGE);
 
-        }
+
+
     }
 
     private void takePhotoFromCamera() {
 
-        if (getActivity().checkSelfPermission(Manifest.permission.CAMERA)==PackageManager.PERMISSION_GRANTED){
+        if(checkPermission()){
 
-            if (getActivity().checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)==PackageManager.PERMISSION_GRANTED) {
-                values = new ContentValues();
-                values.put(MediaStore.Images.Media.TITLE, Calendar.getInstance()
-                        .getTimeInMillis());
-                //values.put(MediaStore.Images.Media.DESCRIPTION, "From your Camera");
-                imageUri = getActivity().getContentResolver().insert(
-                        MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
-                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
-                startActivityForResult(intent, CAMERA);
-            }
-            else {
+            values = new ContentValues();
+            values.put(MediaStore.Images.Media.TITLE, Calendar.getInstance()
+                    .getTimeInMillis());
+            imageUri = getActivity().getContentResolver().insert(
+                    MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+            startActivityForResult(intent, CAMERA);
 
-                ActivityCompat.requestPermissions(getActivity(),
-                        new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                        REQUEST_WRITE_EXTERNAL_STORAGE);
-
-            }
 
         }
-        else {
 
-            ActivityCompat.requestPermissions(getActivity(),
-                    new String[]{Manifest.permission.CAMERA},
-                    REQUEST_CAMERA);
 
-        }
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case REQUEST_CAMERA: {
-                // If request is cancelled, the result arrays are empty.
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                    takePhotoFromCamera();
-
-                }
-            }
-        }
     }
 
     @Override
@@ -315,4 +317,56 @@ public class VehiculosFragment extends Fragment  {
         cursor.moveToFirst();
         return cursor.getString(column_index);
     }
+
+
+    private boolean checkPermission() {
+        int permissionSendMessage = ContextCompat.checkSelfPermission(getActivity(),Manifest.permission.CAMERA);
+        int storagePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        List<String> listPermissionsNeeded = new ArrayList<>();
+
+        if (permissionSendMessage != PackageManager.PERMISSION_GRANTED) {
+            listPermissionsNeeded.add(Manifest.permission.CAMERA);
+        }
+        if (storagePermission != PackageManager.PERMISSION_GRANTED) {
+            listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        }
+        if (!listPermissionsNeeded.isEmpty()) {
+
+
+            ActivityCompat.requestPermissions(getActivity(), listPermissionsNeeded.
+                    toArray(new String[listPermissionsNeeded.size()]),permsRequestCode);
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case PERMISSION_REQUEST_CODE:
+                if (grantResults.length > 0) {
+
+                    boolean storageAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
+                    boolean cameraAccepted = grantResults[1] == PackageManager.PERMISSION_GRANTED;
+
+
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                            if (shouldShowRequestPermissionRationale(WRITE_EXTERNAL_STORAGE)) {
+
+                        }
+
+                    }
+                }
+
+
+                break;
+        }
+    }
+
+
+
+
+
 }
+
+
