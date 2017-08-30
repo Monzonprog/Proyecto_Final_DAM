@@ -70,7 +70,7 @@ public class VehiculosFragment extends Fragment  {
     private static final int GALLERY = 2;
     private String IMAGE_DIRECTORY = "/controlGasolina/";
     private Uri imageUri;
-    private Uri yourUri;
+    private Uri yourUri = null;
 
     private ContentValues values;
 
@@ -125,9 +125,8 @@ public class VehiculosFragment extends Fragment  {
                 String apodoUsuario = apodo.getText().toString();
                 String tipoUsuario = tipo.getSelectedItem().toString();
                 String combustibleUsuario = combustible.getSelectedItem().toString();
-                String uriUsuario = yourUri.toString();
+                String uriUsuario = verficarUri();
 
-                //TODO: Verificar que no haya campos vacios
 
                 DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(getActivity(),"Vehiculos-db"); //The users-db here is the name of our database.
                 Database db = helper.getWritableDb();
@@ -162,6 +161,17 @@ public class VehiculosFragment extends Fragment  {
             }
         });
 
+    }
+
+    private String verficarUri() {
+
+        if(yourUri.toString() == null){
+
+            return " ";
+        }else{
+
+            return yourUri.toString();
+        }
     }
 
     private boolean verificarDatos() { //Verificamos si los campos están rellenos

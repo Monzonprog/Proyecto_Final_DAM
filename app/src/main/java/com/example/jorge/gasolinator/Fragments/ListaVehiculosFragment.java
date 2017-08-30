@@ -112,18 +112,12 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
         final Dialog dialog = new Dialog(getActivity());
         dialog.setContentView(R.layout.dialog_editar);
         final Long lg = Long.parseLong(id);
-        int prueba2 = Integer.parseInt(id) ;
-        int prueba = prueba2 -1;
         cancelarEditar = (Button)dialog.findViewById(R.id.buttonCancelarDialogEditar);
         editar = (Button)dialog.findViewById(R.id.buttonEditarDialogEditar);
 
         marcaUsuario = (EditText)dialog.findViewById(R.id.marcaEditTextDialog);
         modeloUsuario = (EditText)dialog.findViewById(R.id.modeloEditTextDialog);
         apodoUsuario = (EditText)dialog.findViewById(R.id.apodoEditTextDialog);
-
-       marcaUsuario.setText(vehiculos.get(prueba).getMarca());
-        modeloUsuario.setText(vehiculos.get(prueba).getModelo());
-        apodoUsuario.setText(vehiculos.get(prueba).getApodo());
 
 
         dialog.show();

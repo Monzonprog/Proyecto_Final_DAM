@@ -19,12 +19,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaVehiculosAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaVehiculosAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/ListaVehiculosFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/ListaVehiculosFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <list id="3cda1c7e-a261-4eac-a60b-8dd90a633b78" name="Failed commit: Default" comment="Implantación GreenDAO" />
     <ignored path="My Application.iws" />
@@ -57,23 +53,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VehiculosFragment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VehiculosFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="174" column="14" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
+            <state relative-caret-position="211">
+              <caret line="72" column="30" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="30" />
               <folding>
-                <element signature="e#5486#5511#0" expanded="true" />
+                <element signature="e#5428#5453#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListaVehiculosFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListaVehiculosFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Fragments/ListaVehiculosFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
+            <state relative-caret-position="167">
+              <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -82,7 +78,7 @@
       <file leaf-file-name="ListaVehiculosAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaVehiculosAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
+            <state relative-caret-position="635">
               <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
               <folding />
             </state>
@@ -3508,8 +3504,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/ListaVehiculosFragment.java" />
         <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaVehiculosAdapter.java" />
         <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml" />
-        <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java" />
         <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Fragments/ListaVehiculosFragment.java" />
+        <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java" />
       </list>
     </option>
   </component>
@@ -3724,7 +3720,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="DEBUGGABLE_DEVICE" value="huawei-kiw_l21-W6HDU16112005236" />
+    <property name="DEBUGGABLE_DEVICE" value="emulator-5554" />
     <property name="DEBUGGABLE_PROCESS" value="com.example.jorge.myapplication" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Auto" />
@@ -4207,7 +4203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504040029270</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Correción de bugs">
+      <created>1504125548922</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1504125548922</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -4275,11 +4278,12 @@
     <MESSAGE value="Implementando adapter" />
     <MESSAGE value="RecyclerView funcionando" />
     <MESSAGE value="Editar y borrar vehículo funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="Editar y borrar vehículo funcionando" />
+    <MESSAGE value="Correción de bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correción de bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -4366,6 +4370,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="797">
           <caret line="176" column="39" selection-start-line="176" selection-start-column="39" selection-end-line="176" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4436,6 +4441,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4443,6 +4449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -4475,9 +4482,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Fragments/ListaVehiculosFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="113" column="43" selection-start-line="113" selection-start-column="43" selection-end-line="113" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaVehiculosAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
+        <state relative-caret-position="635">
           <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="4" />
           <folding />
         </state>
@@ -4485,19 +4500,11 @@
     </entry>
     <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="174" column="14" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
+        <state relative-caret-position="211">
+          <caret line="72" column="30" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="30" />
           <folding>
-            <element signature="e#5486#5511#0" expanded="true" />
+            <element signature="e#5428#5453#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Fragments/ListaVehiculosFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
