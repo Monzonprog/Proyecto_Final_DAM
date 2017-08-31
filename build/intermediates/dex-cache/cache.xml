@@ -2,13 +2,13 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/jorge/.android/build-cache/f25e0355c9e250ba7d848aa3e9029aa7d5883232/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="392ef84fb7decc949bf8eafefa06bd668c93738d">
-        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_884121b1f53932c39fa3c8cdae703525f0cd560d/classes.dex" />
+        sha1="d5d22a873f93271b4a339840ff29b3786258aac8">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/pre-dexed/debug/classes_dd618ec3a0d11b9096c3d53aeb4c39fdaa872633.jar" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +18,51 @@
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7b93b0a1a14c63d067ccf4bad95a4b2a6246939d/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jorge/.gradle/caches/modules-2/files-2.1/org.greenrobot/greendao-api/3.2.2/e9bbf7a184b0b4914a10d8179c993cc9aa9b1b33/greendao-api-3.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9bbf7a184b0b4914a10d8179c993cc9aa9b1b33">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/pre-dexed/debug/greendao-api-3.2.2_a46e31ff3508fc0d492bf9f832b11127c7b7c4c9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="392ef84fb7decc949bf8eafefa06bd668c93738d">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_884121b1f53932c39fa3c8cdae703525f0cd560d/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jorge/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_659d2e93632bc6d3e4175f72883e1098d5da3d91.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jorge/.gradle/caches/modules-2/files-2.1/org.greenrobot/greendao/3.2.2/f8c7ebdc29310be23d076e5512bafe6bad3ce2f0/greendao-3.2.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f8c7ebdc29310be23d076e5512bafe6bad3ce2f0">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/pre-dexed/debug/greendao-3.2.2_d7241098e92859be6b1269d99ffcb742401b33b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jorge/.android/build-cache/8daa4519f5ec2b0953b2941960fe2ae62f0bf663/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/pre-dexed/debug/classes_ca1027643b5561c3f69993b27df3b3a5de671c22.jar" />
     </item>
 
 </items>

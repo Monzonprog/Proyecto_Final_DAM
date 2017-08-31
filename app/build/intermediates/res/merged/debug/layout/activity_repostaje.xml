@@ -19,7 +19,7 @@
             android:layout_marginTop="10dp"/>
 
         <TextView
-            android:id="@+id/vehiculoTV"
+            android:id="@+id/vehiculoTVRepostaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/vehiculoTV"
@@ -28,7 +28,7 @@
             android:textStyle="bold" />
 
         <Spinner
-            android:id="@+id/vehiculoSpinner"
+            android:id="@+id/vehiculoSpinnerRepostaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -54,10 +54,11 @@
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/kmActualesET"
+            android:id="@+id/kmActualesETRepostaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/kmActualesTV"
@@ -74,7 +75,7 @@
             android:layout_weight="1" />
 
         <TextView
-            android:id="@+id/tipoLlenadoTV"
+            android:id="@+id/tipoLlenadoTVRepostaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tipoLlenadoTV"
@@ -97,7 +98,7 @@
 
 
             <RadioButton
-                android:id="@+id/totalRB"
+                android:id="@+id/totalRBRepostaje"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -105,7 +106,7 @@
                 android:checked="true"/>
 
                 <RadioButton
-                    android:id="@+id/parcialRB"
+                    android:id="@+id/parcialRBRepostaje"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -118,7 +119,7 @@
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/costeET"
+                android:id="@+id/costeETRepostaje"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/costeTV"
@@ -139,7 +140,7 @@
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputEditText
-                android:id="@+id/precioLET"
+                android:id="@+id/precioLETRepostaje"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/precioLTV"
@@ -169,7 +170,7 @@
                 android:src="@drawable/foto" />
 
             <Button
-                android:id="@+id/añadirFoto"
+                android:id="@+id/añadirFotoRepostaje"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -191,7 +192,7 @@
         android:orientation="vertical">
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/guardar"
+            android:id="@+id/guardarRepostaje"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="right"
