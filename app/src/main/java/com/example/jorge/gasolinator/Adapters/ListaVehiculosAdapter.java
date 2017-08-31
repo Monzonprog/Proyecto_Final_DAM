@@ -80,8 +80,11 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
     @Override
     public void onBindViewHolder(VehiculosViewHolder viewholder, final int i) {
 
-        Picasso.with(context).load(items.get(i).getFoto_Uri()).transform(new CropCircleTransformation())
-                .into( viewholder.imagenTarjetaVehiculo);
+        if(items.get(i).getFoto_Uri().toString().equals("")){
+            Picasso.with(context).load(R.drawable.siluetas_vehiculos)
+                    .into( viewholder.imagenTarjetaVehiculo);
+        }else{Picasso.with(context).load(items.get(i).getFoto_Uri()).transform(new CropCircleTransformation())
+                .into( viewholder.imagenTarjetaVehiculo);}
         viewholder.textViewMarcaTarjetaVehiculo.setText(items.get(i).getMarca());
         viewholder.textViewModeloTarjetaVehiculo.setText(items.get(i).getModelo());
         viewholder.textViewApodoTarjetaVehiculo.setText(items.get(i).getApodo());

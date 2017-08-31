@@ -70,7 +70,7 @@ public class VehiculosFragment extends Fragment  {
     private static final int GALLERY = 2;
     private String IMAGE_DIRECTORY = "/controlGasolina/";
     private Uri imageUri;
-    private Uri yourUri = null;
+    private Uri yourUri = Uri.parse("");
 
     private ContentValues values;
 
@@ -165,9 +165,9 @@ public class VehiculosFragment extends Fragment  {
 
     private String verficarUri() {
 
-        if(yourUri.toString() == null){
+        if(yourUri.equals("")){
 
-            return " ";
+            return "";
         }else{
 
             return yourUri.toString();
