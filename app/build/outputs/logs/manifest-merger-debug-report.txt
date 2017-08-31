@@ -1,0 +1,183 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:2:1-78:12
+	package
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:3:5-44
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.CAMERA
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:8:22-62
+uses-feature#android.hardware.camera
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:10:5-60
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:10:19-57
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:13:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:14:22-77
+protected-broadcast
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:16:5-79
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:16:26-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:23:22-76
+application
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:25:5-76:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jorge/.android/build-cache/f197b1c0f1d02d44c728b35bdecfce585eae33b7/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jorge/.android/build-cache/d7ef0aedaef373115cb6e5cf07e5175ac5a9cb80/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/jorge/.android/build-cache/e96086bace7c346bc87c9f0891db04dec34d8ddb/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/jorge/.android/build-cache/18de21292f3cf716fa04368aa97fd18e6f7428a5/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /home/jorge/.android/build-cache/ea6068b557b9e3cfc81af6e67457af97e9d8c2c0/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/jorge/.android/build-cache/7dba13e17faecfe8a3c8ee9252b38f83f7063bd1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/jorge/.android/build-cache/5fa2f4d0bc104705610cead915e09dcde2d1d94a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/jorge/.android/build-cache/2171e8718bc3eb7ed358e649d2cacd2288cffb15/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/jorge/.android/build-cache/4ac8762749dff918b89183b012618d676fcf3070/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/jorge/.android/build-cache/731a28c4bc89a3376241e77be622dd5f819afd30/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/jorge/.android/build-cache/8daa4519f5ec2b0953b2941960fe2ae62f0bf663/output/AndroidManifest.xml:26:5-20
+	android:label
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:28:9-41
+	android:supportsRtl
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:30:9-35
+	android:roundIcon
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:29:9-44
+	android:allowBackup
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:26:9-35
+	android:icon
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:27:9-39
+	android:theme
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:31:9-40
+activity#com.example.jorge.gasolinator.Activities.SplashScreenActivity
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:32:9-43:20
+	android:screenOrientation
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:35:13-49
+	android:label
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:34:13-45
+	android:theme
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:36:13-71
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:33:13-60
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:38:13-42:29
+action#android.intent.action.MAIN
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:39:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:41:17-77
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:41:27-74
+activity#com.example.jorge.gasolinator.Activities.MainActivity
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:44:9-47:52
+	android:screenOrientation
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:47:13-49
+	android:label
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:46:13-45
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:45:13-52
+activity#com.example.jorge.gasolinator.Activities.VehiculosActivity
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:48:9-51:52
+	android:screenOrientation
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:51:13-49
+	android:label
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:50:13-54
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:49:13-57
+activity#com.example.jorge.gasolinator.Activities.RepostajeActivity
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:52:9-55:52
+	android:screenOrientation
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:55:13-49
+	android:label
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:54:13-54
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:53:13-57
+activity#com.example.jorge.gasolinator.Activities.MantenimientoActivity
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:56:9-59:52
+	android:screenOrientation
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:59:13-49
+	android:label
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:58:13-58
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:57:13-61
+activity#com.example.jorge.gasolinator.Activities.ImpuestosActivity
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:60:9-63:52
+	android:screenOrientation
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:63:13-49
+	android:label
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:62:13-53
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:61:13-57
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:72:9-74:55
+	android:value
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:74:13-52
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:73:13-58
+uses-sdk
+INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jorge/.android/build-cache/f197b1c0f1d02d44c728b35bdecfce585eae33b7/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jorge/.android/build-cache/d7ef0aedaef373115cb6e5cf07e5175ac5a9cb80/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/jorge/.android/build-cache/e96086bace7c346bc87c9f0891db04dec34d8ddb/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] /home/jorge/.android/build-cache/18de21292f3cf716fa04368aa97fd18e6f7428a5/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] /home/jorge/.android/build-cache/ea6068b557b9e3cfc81af6e67457af97e9d8c2c0/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /home/jorge/.android/build-cache/7dba13e17faecfe8a3c8ee9252b38f83f7063bd1/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/jorge/.android/build-cache/5fa2f4d0bc104705610cead915e09dcde2d1d94a/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/jorge/.android/build-cache/2171e8718bc3eb7ed358e649d2cacd2288cffb15/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/jorge/.android/build-cache/78b85755dacd8b6b1b2b49a0123e1abd5e128fb3/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/jorge/.android/build-cache/4ac8762749dff918b89183b012618d676fcf3070/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /home/jorge/.android/build-cache/731a28c4bc89a3376241e77be622dd5f819afd30/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/jorge/.android/build-cache/8daa4519f5ec2b0953b2941960fe2ae62f0bf663/output/AndroidManifest.xml:20:5-43
+MERGED from [jp.wasabeef:picasso-transformations:2.1.2] /home/jorge/.android/build-cache/f25e0355c9e250ba7d848aa3e9029aa7d5883232/output/AndroidManifest.xml:8:5-10:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jorge/.android/build-cache/d7ef0aedaef373115cb6e5cf07e5175ac5a9cb80/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/jorge/.android/build-cache/e96086bace7c346bc87c9f0891db04dec34d8ddb/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /home/jorge/.android/build-cache/18de21292f3cf716fa04368aa97fd18e6f7428a5/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/jorge/.android/build-cache/ea6068b557b9e3cfc81af6e67457af97e9d8c2c0/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/jorge/.android/build-cache/7dba13e17faecfe8a3c8ee9252b38f83f7063bd1/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/jorge/.android/build-cache/5fa2f4d0bc104705610cead915e09dcde2d1d94a/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/jorge/.android/build-cache/2171e8718bc3eb7ed358e649d2cacd2288cffb15/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/jorge/.android/build-cache/78b85755dacd8b6b1b2b49a0123e1abd5e128fb3/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/jorge/.android/build-cache/4ac8762749dff918b89183b012618d676fcf3070/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/jorge/.android/build-cache/731a28c4bc89a3376241e77be622dd5f819afd30/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:cardview-v7:25.3.1] /home/jorge/.android/build-cache/8daa4519f5ec2b0953b2941960fe2ae62f0bf663/output/AndroidManifest.xml:22:5-24:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:26:9-47

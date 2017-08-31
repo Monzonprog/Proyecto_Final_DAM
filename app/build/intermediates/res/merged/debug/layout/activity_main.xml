@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/vehiculos"
+            android:layout_width="155dp"
+            android:layout_height="104dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.34"
+            android:background="@drawable/flota"
+            android:gravity="bottom|right"
+            android:onClick="vehiculos"
+            android:text="@string/vehiculosButton" />
+
+        <Button
+            android:id="@+id/surtidores"
+            android:layout_width="155dp"
+            android:layout_height="104dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.34"
+            android:background="@drawable/surtidores"
+            android:gravity="bottom|right"
+            android:onClick="repostaje"
+            android:text="@string/respostajeButton"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mantenimiento"
+            android:layout_width="155dp"
+            android:layout_height="104dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.34"
+            android:background="@drawable/mantenimiento"
+            android:gravity="bottom|right"
+            android:onClick="mantenimiento"
+            android:text="@string/mantenimientoButton" />
+
+        <Button
+            android:id="@+id/impuestos"
+            android:layout_width="155dp"
+            android:layout_height="104dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.34"
+            android:background="@drawable/impuestos"
+            android:gravity="bottom|right"
+            android:onClick="impuestos"
+            android:text="@string/impuestosButton"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/datos"
+            android:layout_width="155dp"
+            android:layout_height="104dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.34"
+            android:background="@drawable/datos"
+            android:gravity="bottom|right"
+            android:text="@string/datosButton" />
+
+        <Button
+            android:id="@+id/gasolineras"
+            android:layout_width="155dp"
+            android:layout_height="104dp"
+            android:layout_margin="7dp"
+            android:layout_weight="0.34"
+            android:background="@drawable/gasolineras"
+            android:gravity="bottom|right"
+            android:onClick="gasolineras"
+            android:text="@string/gasolinerasButton"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.46" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/salir"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="7dp"
+        android:onClick="salirAplicacion"
+        android:src="@drawable/salir"
+        app:fabSize="normal" />
+
+
+</LinearLayout>
