@@ -96,7 +96,7 @@ public class RepostajeActivity extends AppCompatActivity {
 
         for(i=0; i < vehiculos.size();i++){
 
-            String aux = vehiculos.get(i).getApodo();
+            String aux = vehiculos.get(i).getApodo() + " - " + vehiculos.get(i).getMarca();
             coches.add(aux);
 
         }
