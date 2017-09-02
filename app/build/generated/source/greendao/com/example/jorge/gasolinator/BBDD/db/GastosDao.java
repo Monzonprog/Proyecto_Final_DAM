@@ -26,7 +26,10 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
         public final static Property Tipo_operacion = new Property(1, String.class, "tipo_operacion", false, "TIPO_OPERACION");
         public final static Property Coste = new Property(2, String.class, "coste", false, "COSTE");
         public final static Property Acciones = new Property(3, String.class, "acciones", false, "ACCIONES");
-        public final static Property Foto_uri_gasto = new Property(4, String.class, "foto_uri_gasto", false, "FOTO_URI_GASTO");
+        public final static Property DiaGastos = new Property(4, String.class, "diaGastos", false, "DIA_GASTOS");
+        public final static Property MesGastos = new Property(5, String.class, "mesGastos", false, "MES_GASTOS");
+        public final static Property AñoGastos = new Property(6, String.class, "añoGastos", false, "AÑO_GASTOS");
+        public final static Property Foto_uri_gasto = new Property(7, String.class, "foto_uri_gasto", false, "FOTO_URI_GASTO");
     }
 
 
@@ -46,7 +49,10 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
                 "\"TIPO_OPERACION\" TEXT NOT NULL ," + // 1: tipo_operacion
                 "\"COSTE\" TEXT NOT NULL ," + // 2: coste
                 "\"ACCIONES\" TEXT NOT NULL ," + // 3: acciones
-                "\"FOTO_URI_GASTO\" TEXT);"); // 4: foto_uri_gasto
+                "\"DIA_GASTOS\" TEXT NOT NULL ," + // 4: diaGastos
+                "\"MES_GASTOS\" TEXT NOT NULL ," + // 5: mesGastos
+                "\"AÑO_GASTOS\" TEXT NOT NULL ," + // 6: añoGastos
+                "\"FOTO_URI_GASTO\" TEXT);"); // 7: foto_uri_gasto
     }
 
     /** Drops the underlying database table. */
@@ -66,10 +72,13 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
         stmt.bindString(2, entity.getTipo_operacion());
         stmt.bindString(3, entity.getCoste());
         stmt.bindString(4, entity.getAcciones());
+        stmt.bindString(5, entity.getDiaGastos());
+        stmt.bindString(6, entity.getMesGastos());
+        stmt.bindString(7, entity.getAñoGastos());
  
         String foto_uri_gasto = entity.getFoto_uri_gasto();
         if (foto_uri_gasto != null) {
-            stmt.bindString(5, foto_uri_gasto);
+            stmt.bindString(8, foto_uri_gasto);
         }
     }
 
@@ -84,10 +93,13 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
         stmt.bindString(2, entity.getTipo_operacion());
         stmt.bindString(3, entity.getCoste());
         stmt.bindString(4, entity.getAcciones());
+        stmt.bindString(5, entity.getDiaGastos());
+        stmt.bindString(6, entity.getMesGastos());
+        stmt.bindString(7, entity.getAñoGastos());
  
         String foto_uri_gasto = entity.getFoto_uri_gasto();
         if (foto_uri_gasto != null) {
-            stmt.bindString(5, foto_uri_gasto);
+            stmt.bindString(8, foto_uri_gasto);
         }
     }
 
@@ -103,7 +115,10 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
             cursor.getString(offset + 1), // tipo_operacion
             cursor.getString(offset + 2), // coste
             cursor.getString(offset + 3), // acciones
-            cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4) // foto_uri_gasto
+            cursor.getString(offset + 4), // diaGastos
+            cursor.getString(offset + 5), // mesGastos
+            cursor.getString(offset + 6), // añoGastos
+            cursor.isNull(offset + 7) ? null : cursor.getString(offset + 7) // foto_uri_gasto
         );
         return entity;
     }
@@ -114,7 +129,10 @@ public class GastosDao extends AbstractDao<Gastos, Void> {
         entity.setTipo_operacion(cursor.getString(offset + 1));
         entity.setCoste(cursor.getString(offset + 2));
         entity.setAcciones(cursor.getString(offset + 3));
-        entity.setFoto_uri_gasto(cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4));
+        entity.setDiaGastos(cursor.getString(offset + 4));
+        entity.setMesGastos(cursor.getString(offset + 5));
+        entity.setAñoGastos(cursor.getString(offset + 6));
+        entity.setFoto_uri_gasto(cursor.isNull(offset + 7) ? null : cursor.getString(offset + 7));
      }
     
     @Override

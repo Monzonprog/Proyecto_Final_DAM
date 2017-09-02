@@ -23,12 +23,15 @@ public class RepostajeDao extends AbstractDao<Repostaje, Void> {
      */
     public static class Properties {
         public final static Property IdVehiculo = new Property(0, String.class, "idVehiculo", false, "ID_VEHICULO");
-        public final static Property Marca = new Property(1, String.class, "marca", false, "MARCA");
-        public final static Property Modelo = new Property(2, String.class, "modelo", false, "MODELO");
-        public final static Property Apodo = new Property(3, String.class, "apodo", false, "APODO");
-        public final static Property Tipo = new Property(4, String.class, "tipo", false, "TIPO");
-        public final static Property Combustible = new Property(5, String.class, "combustible", false, "COMBUSTIBLE");
-        public final static Property Foto_Uri = new Property(6, String.class, "foto_Uri", false, "FOTO__URI");
+        public final static Property TipoLlenado = new Property(1, String.class, "tipoLlenado", false, "TIPO_LLENADO");
+        public final static Property KmActuales = new Property(2, String.class, "kmActuales", false, "KM_ACTUALES");
+        public final static Property CosteRepostaje = new Property(3, String.class, "costeRepostaje", false, "COSTE_REPOSTAJE");
+        public final static Property LitrosRepostaje = new Property(4, String.class, "litrosRepostaje", false, "LITROS_REPOSTAJE");
+        public final static Property PrecioLitroRepostaje = new Property(5, String.class, "precioLitroRepostaje", false, "PRECIO_LITRO_REPOSTAJE");
+        public final static Property DiaRepostaje = new Property(6, String.class, "diaRepostaje", false, "DIA_REPOSTAJE");
+        public final static Property MesRepostaje = new Property(7, String.class, "mesRepostaje", false, "MES_REPOSTAJE");
+        public final static Property AñoRepostaje = new Property(8, String.class, "añoRepostaje", false, "AÑO_REPOSTAJE");
+        public final static Property Foto_Uri = new Property(9, String.class, "foto_Uri", false, "FOTO__URI");
     }
 
 
@@ -44,13 +47,16 @@ public class RepostajeDao extends AbstractDao<Repostaje, Void> {
     public static void createTable(Database db, boolean ifNotExists) {
         String constraint = ifNotExists? "IF NOT EXISTS ": "";
         db.execSQL("CREATE TABLE " + constraint + "\"REPOSTAJE\" (" + //
-                "\"ID_VEHICULO\" TEXT," + // 0: idVehiculo
-                "\"MARCA\" TEXT NOT NULL ," + // 1: marca
-                "\"MODELO\" TEXT NOT NULL ," + // 2: modelo
-                "\"APODO\" TEXT NOT NULL ," + // 3: apodo
-                "\"TIPO\" TEXT NOT NULL ," + // 4: tipo
-                "\"COMBUSTIBLE\" TEXT NOT NULL ," + // 5: combustible
-                "\"FOTO__URI\" TEXT);"); // 6: foto_Uri
+                "\"ID_VEHICULO\" TEXT NOT NULL ," + // 0: idVehiculo
+                "\"TIPO_LLENADO\" TEXT NOT NULL ," + // 1: tipoLlenado
+                "\"KM_ACTUALES\" TEXT NOT NULL ," + // 2: kmActuales
+                "\"COSTE_REPOSTAJE\" TEXT NOT NULL ," + // 3: costeRepostaje
+                "\"LITROS_REPOSTAJE\" TEXT NOT NULL ," + // 4: litrosRepostaje
+                "\"PRECIO_LITRO_REPOSTAJE\" TEXT NOT NULL ," + // 5: precioLitroRepostaje
+                "\"DIA_REPOSTAJE\" TEXT NOT NULL ," + // 6: diaRepostaje
+                "\"MES_REPOSTAJE\" TEXT NOT NULL ," + // 7: mesRepostaje
+                "\"AÑO_REPOSTAJE\" TEXT NOT NULL ," + // 8: añoRepostaje
+                "\"FOTO__URI\" TEXT);"); // 9: foto_Uri
     }
 
     /** Drops the underlying database table. */
@@ -62,40 +68,38 @@ public class RepostajeDao extends AbstractDao<Repostaje, Void> {
     @Override
     protected final void bindValues(DatabaseStatement stmt, Repostaje entity) {
         stmt.clearBindings();
- 
-        String idVehiculo = entity.getIdVehiculo();
-        if (idVehiculo != null) {
-            stmt.bindString(1, idVehiculo);
-        }
-        stmt.bindString(2, entity.getMarca());
-        stmt.bindString(3, entity.getModelo());
-        stmt.bindString(4, entity.getApodo());
-        stmt.bindString(5, entity.getTipo());
-        stmt.bindString(6, entity.getCombustible());
+        stmt.bindString(1, entity.getIdVehiculo());
+        stmt.bindString(2, entity.getTipoLlenado());
+        stmt.bindString(3, entity.getKmActuales());
+        stmt.bindString(4, entity.getCosteRepostaje());
+        stmt.bindString(5, entity.getLitrosRepostaje());
+        stmt.bindString(6, entity.getPrecioLitroRepostaje());
+        stmt.bindString(7, entity.getDiaRepostaje());
+        stmt.bindString(8, entity.getMesRepostaje());
+        stmt.bindString(9, entity.getAñoRepostaje());
  
         String foto_Uri = entity.getFoto_Uri();
         if (foto_Uri != null) {
-            stmt.bindString(7, foto_Uri);
+            stmt.bindString(10, foto_Uri);
         }
     }
 
     @Override
     protected final void bindValues(SQLiteStatement stmt, Repostaje entity) {
         stmt.clearBindings();
- 
-        String idVehiculo = entity.getIdVehiculo();
-        if (idVehiculo != null) {
-            stmt.bindString(1, idVehiculo);
-        }
-        stmt.bindString(2, entity.getMarca());
-        stmt.bindString(3, entity.getModelo());
-        stmt.bindString(4, entity.getApodo());
-        stmt.bindString(5, entity.getTipo());
-        stmt.bindString(6, entity.getCombustible());
+        stmt.bindString(1, entity.getIdVehiculo());
+        stmt.bindString(2, entity.getTipoLlenado());
+        stmt.bindString(3, entity.getKmActuales());
+        stmt.bindString(4, entity.getCosteRepostaje());
+        stmt.bindString(5, entity.getLitrosRepostaje());
+        stmt.bindString(6, entity.getPrecioLitroRepostaje());
+        stmt.bindString(7, entity.getDiaRepostaje());
+        stmt.bindString(8, entity.getMesRepostaje());
+        stmt.bindString(9, entity.getAñoRepostaje());
  
         String foto_Uri = entity.getFoto_Uri();
         if (foto_Uri != null) {
-            stmt.bindString(7, foto_Uri);
+            stmt.bindString(10, foto_Uri);
         }
     }
 
@@ -107,26 +111,32 @@ public class RepostajeDao extends AbstractDao<Repostaje, Void> {
     @Override
     public Repostaje readEntity(Cursor cursor, int offset) {
         Repostaje entity = new Repostaje( //
-            cursor.isNull(offset + 0) ? null : cursor.getString(offset + 0), // idVehiculo
-            cursor.getString(offset + 1), // marca
-            cursor.getString(offset + 2), // modelo
-            cursor.getString(offset + 3), // apodo
-            cursor.getString(offset + 4), // tipo
-            cursor.getString(offset + 5), // combustible
-            cursor.isNull(offset + 6) ? null : cursor.getString(offset + 6) // foto_Uri
+            cursor.getString(offset + 0), // idVehiculo
+            cursor.getString(offset + 1), // tipoLlenado
+            cursor.getString(offset + 2), // kmActuales
+            cursor.getString(offset + 3), // costeRepostaje
+            cursor.getString(offset + 4), // litrosRepostaje
+            cursor.getString(offset + 5), // precioLitroRepostaje
+            cursor.getString(offset + 6), // diaRepostaje
+            cursor.getString(offset + 7), // mesRepostaje
+            cursor.getString(offset + 8), // añoRepostaje
+            cursor.isNull(offset + 9) ? null : cursor.getString(offset + 9) // foto_Uri
         );
         return entity;
     }
      
     @Override
     public void readEntity(Cursor cursor, Repostaje entity, int offset) {
-        entity.setIdVehiculo(cursor.isNull(offset + 0) ? null : cursor.getString(offset + 0));
-        entity.setMarca(cursor.getString(offset + 1));
-        entity.setModelo(cursor.getString(offset + 2));
-        entity.setApodo(cursor.getString(offset + 3));
-        entity.setTipo(cursor.getString(offset + 4));
-        entity.setCombustible(cursor.getString(offset + 5));
-        entity.setFoto_Uri(cursor.isNull(offset + 6) ? null : cursor.getString(offset + 6));
+        entity.setIdVehiculo(cursor.getString(offset + 0));
+        entity.setTipoLlenado(cursor.getString(offset + 1));
+        entity.setKmActuales(cursor.getString(offset + 2));
+        entity.setCosteRepostaje(cursor.getString(offset + 3));
+        entity.setLitrosRepostaje(cursor.getString(offset + 4));
+        entity.setPrecioLitroRepostaje(cursor.getString(offset + 5));
+        entity.setDiaRepostaje(cursor.getString(offset + 6));
+        entity.setMesRepostaje(cursor.getString(offset + 7));
+        entity.setAñoRepostaje(cursor.getString(offset + 8));
+        entity.setFoto_Uri(cursor.isNull(offset + 9) ? null : cursor.getString(offset + 9));
      }
     
     @Override
