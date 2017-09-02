@@ -1,9 +1,8 @@
 package com.example.jorge.gasolinator.Activities;
 
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.example.jorge.gasolinator.R;
@@ -41,10 +40,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gasolineras(View v) {
-        Uri gmmIntentUri = Uri.parse("geo:0,0?q=gas_station");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
+        Intent i = new Intent(this, MapsActivity.class);
+        startActivity(i);
     }
 
     //Método para salir de la aplicación

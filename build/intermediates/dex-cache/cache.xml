@@ -3,12 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/home/jorge/.android/build-cache/e49506c92cab6d36402433ad324cb09589a0994f/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="87c920f8ef5cd5f8d7e3c8ea5ffbfbad8cd14fa1">
-        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_884121b1f53932c39fa3c8cdae703525f0cd560d/classes.dex" />
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1bdd04361772894ac35216181a41f1a1232c67a0/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +18,42 @@
         revision="25.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7b93b0a1a14c63d067ccf4bad95a4b2a6246939d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jorge/.android/build-cache/328e78466c6719618830dad52c10f46b8a926282/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_668f3a299fc02a7ca88e3d979674cee73573d74e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d7700ae7ed2965ff3eb56e483b23b9e29708a9a">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_884121b1f53932c39fa3c8cdae703525f0cd560d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jorge/.android/build-cache/3276b278ad7a6ba3c2835af1090da93f1cf34e2b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0995fc7d1e3a2a72860715d1c7fea5dd7ed973fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/jorge/.android/build-cache/d075360002e2607b8c6d1a5c90ea7caab206af47/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
+        <dex dex="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_03c78116041e8c6f2d099d26337d0e5b802a5259/classes.dex" />
     </item>
 
 </items>

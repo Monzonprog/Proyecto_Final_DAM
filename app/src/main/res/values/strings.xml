@@ -97,6 +97,10 @@
     <string name="datosIncompletos">Faltan datos por rellenar</string>
     <string name="litrosTV">Litros</string>
     <string name="fechaButton">Fecha</string>
+    <string name="repostajeOk">El registro se ha creado correctamente</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="no_camera">No se puede abrir la cámara sin permisos</string>
+    <string name="no_gps">No te hemos podido localizar sin los permisos</string>
 
 
 </resources>

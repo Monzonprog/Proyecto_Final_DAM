@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    },
+    {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    }
+]

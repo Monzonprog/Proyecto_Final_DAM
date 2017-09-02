@@ -75,7 +75,9 @@ public class RepostajeActivity extends AppCompatActivity {
             precioLETRepostaje;
     private Button fechaRepostaje, añadirFotoRepostaje;
     private TextView fechaTVRepostaje;
-    private String yearUsuario, monthUsuario, dayUsuario;
+    private String yearUsuario = "";
+    private String monthUsuario = "";
+    private String dayUsuario = "";
     private ImageView fotoRepostaje;
     private FloatingActionButton guardarRespostaje;
     private List<Vehiculos> vehiculos;
@@ -177,6 +179,7 @@ public class RepostajeActivity extends AppCompatActivity {
                 String costeRespostaje = costeETRepostaje.getText().toString();
                 String litrosRespostaje = litrosETRespostaje.getText().toString();
                 String precioLitrosRespostaje = precioLETRepostaje.getText().toString();
+                String uriUsuario = verficarUri();
 
                 DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(RepostajeActivity.this, "Vehiculos-db"); //The users-db here is the name of our database.
                 Database db = helper.getWritableDb();
@@ -188,21 +191,46 @@ public class RepostajeActivity extends AppCompatActivity {
                 repostaje.setKmActuales(kmActuales);
                 repostaje.setCosteRepostaje(costeRespostaje);
                 repostaje.setLitrosRepostaje(litrosRespostaje);
-                repostaje.setLitrosRepostaje(precioLitrosRespostaje);
+                repostaje.setPrecioLitroRepostaje(precioLitrosRespostaje);
                 repostaje.setDiaRepostaje(dayUsuario);
                 repostaje.setMesRepostaje(monthUsuario);
                 repostaje.setAñoRepostaje(yearUsuario);
-                repostaje.setFoto_Uri("d");
+                repostaje.setFoto_Uri(uriUsuario);
+
+                if (verificarDatos() && verificarFechas())  {
 
                 daoSession.insert(repostaje);
 
-                Toast.makeText(RepostajeActivity.this, repostaje.toString(), Toast.LENGTH_LONG).show(); ;
+                Toast.makeText(RepostajeActivity.this, R.string.repostajeOk, Toast.LENGTH_LONG).show();
+
+            } else {
+
+                Toast.makeText(RepostajeActivity.this, R.string.datosIncompletos, Toast.LENGTH_LONG).show();
+            }
 
 
             }
         });
 
     }
+
+    private boolean verificarFechas() {
+
+        boolean verificacion;
+
+        if (dayUsuario.equals("") || monthUsuario.equals("") || yearUsuario.equals("")) {
+            verificacion = false;
+
+        } else {
+
+            verificacion = true;
+        }
+
+        return verificacion;
+
+    }
+
+
 
     private String checkTipoLlenado() {
 
@@ -217,6 +245,34 @@ public class RepostajeActivity extends AppCompatActivity {
         }
 
         return tipo;
+    }
+
+
+    private boolean verificarDatos() { //Verificamos si los campos están rellenos
+
+        boolean verificacion;
+
+        if (kmActualesETRepostaje.getText().toString().isEmpty() || (costeETRepostaje.getText().toString().isEmpty()) ||
+                (litrosETRespostaje.getText().toString().isEmpty()) ||
+                (precioLETRepostaje.getText().toString().isEmpty())) {
+            verificacion = false;
+
+        } else {
+
+            verificacion = true;
+        }
+
+        return verificacion;
+    }
+    private String verficarUri() {
+
+        if (yourUri.equals("")) {
+
+            return "";
+        } else {
+
+            return yourUri.toString();
+        }
     }
 
 
@@ -331,13 +387,11 @@ public class RepostajeActivity extends AppCompatActivity {
             }
         }
 
-
     }
 
     public String saveImage(Bitmap myBitmap) {
-        Bitmap reducedBitmap = getResizedBitmap(myBitmap, 320);
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-        reducedBitmap.compress(Bitmap.CompressFormat.JPEG, 10, bytes);
+        myBitmap.compress(Bitmap.CompressFormat.JPEG, 50, bytes);
 
         File wallpaperDirectory = new File(
                 Environment.getExternalStorageDirectory() + IMAGE_DIRECTORY);
@@ -404,35 +458,34 @@ public class RepostajeActivity extends AppCompatActivity {
                 if (grantResults.length > 0) {
 
                     boolean storageAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
-                    boolean cameraAccepted = grantResults[1] == PackageManager.PERMISSION_GRANTED;
+                    boolean cameraAccepted = false;
+
+                    if (grantResults.length > 1) {
+                        cameraAccepted = grantResults[1] == PackageManager.PERMISSION_GRANTED;
+                    }
 
 
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                        if (shouldShowRequestPermissionRationale(WRITE_EXTERNAL_STORAGE)) {
+                        shouldShowRequestPermissionRationale(WRITE_EXTERNAL_STORAGE);
+                    }
 
-                        }
-
+                    if (storageAccepted && cameraAccepted) {
+                        values = new ContentValues();
+                        values.put(MediaStore.Images.Media.TITLE, Calendar.getInstance()
+                                .getTimeInMillis());
+                        imageUri = this.getContentResolver().insert(
+                                MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+                        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                        intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
+                        startActivityForResult(intent, CAMERA);
+                    } else {
+                        Toast.makeText(this, getString(R.string.no_camera), Toast.LENGTH_LONG).show();
                     }
                 }
 
 
                 break;
         }
-    }
-    public Bitmap getResizedBitmap(Bitmap image, int maxSize) {
-        int width = image.getWidth();
-        int height = image.getHeight();
-
-        float bitmapRatio = (float) width / (float) height;
-        if (bitmapRatio > 1) {
-            width = maxSize;
-            height = (int) (width / bitmapRatio);
-        } else {
-            height = maxSize;
-            width = (int) (height * bitmapRatio);
-        }
-
-        return Bitmap.createScaledBitmap(image, width, height, true);
     }
 
 }

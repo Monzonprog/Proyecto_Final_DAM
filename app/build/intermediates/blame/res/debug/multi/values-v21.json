@@ -2018,9 +2018,30 @@
                     "startLine": 279,
                     "startColumn": 4,
                     "startOffset": 20451,
-                    "endLine": 281,
+                    "endLine": 280,
+                    "endColumn": 8,
+                    "endOffset": 20576
+                },
+                "from": {
+                    "file": "/home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/res/values-v21/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 172,
+                        "endLine": 5,
+                        "endColumn": 8,
+                        "endOffset": 297
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 281,
+                    "startColumn": 4,
+                    "startOffset": 20581,
+                    "endLine": 283,
                     "endColumn": 12,
-                    "endOffset": 20621
+                    "endOffset": 20751
                 },
                 "from": {
                     "file": "/home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/res/values-v21/values-v21.xml",
@@ -2036,12 +2057,12 @@
             },
             {
                 "to": {
-                    "startLine": 282,
+                    "startLine": 284,
                     "startColumn": 4,
-                    "startOffset": 20626,
-                    "endLine": 286,
+                    "startOffset": 20756,
+                    "endLine": 288,
                     "endColumn": 12,
-                    "endOffset": 20962
+                    "endOffset": 21092
                 },
                 "from": {
                     "file": "/home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/res/values-v21/values-v21.xml",
@@ -2057,12 +2078,12 @@
             },
             {
                 "to": {
-                    "startLine": 287,
+                    "startLine": 289,
                     "startColumn": 4,
-                    "startOffset": 20967,
-                    "endLine": 289,
+                    "startOffset": 21097,
+                    "endLine": 291,
                     "endColumn": 12,
-                    "endOffset": 21160
+                    "endOffset": 21290
                 },
                 "from": {
                     "file": "/home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/res/values-v21/values-v21.xml",
