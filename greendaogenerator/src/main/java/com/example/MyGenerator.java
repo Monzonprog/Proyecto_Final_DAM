@@ -42,12 +42,15 @@ public class MyGenerator {
     private static Entity addRepostajeEntities(Schema schema) {
 
         Entity repostaje = schema.addEntity("Repostaje");
-        repostaje.addStringProperty("idVehiculo");
-        repostaje.addStringProperty("marca").notNull();
-        repostaje.addStringProperty("modelo").notNull();
-        repostaje.addStringProperty("apodo").notNull();
-        repostaje.addStringProperty("tipo").notNull();
-        repostaje.addStringProperty("combustible").notNull();
+        repostaje.addStringProperty("idVehiculo").notNull();;
+        repostaje.addStringProperty("tipoLlenado").notNull();
+        repostaje.addStringProperty("kmActuales").notNull();
+        repostaje.addStringProperty("costeRepostaje").notNull();
+        repostaje.addStringProperty("litrosRepostaje").notNull();
+        repostaje.addStringProperty("precioLitroRepostaje").notNull();
+        repostaje.addStringProperty("diaRepostaje").notNull();
+        repostaje.addStringProperty("mesRepostaje").notNull();
+        repostaje.addStringProperty("añoRepostaje").notNull();
         repostaje.addStringProperty("foto_Uri");
         return repostaje;
     }
@@ -59,6 +62,9 @@ public class MyGenerator {
         impuestos.addStringProperty("concepto").notNull();
         impuestos.addStringProperty("coste").notNull();
         impuestos.addStringProperty("descripcion").notNull();
+        impuestos.addStringProperty("diaImpuestos").notNull();
+        impuestos.addStringProperty("mesImpuestos").notNull();
+        impuestos.addStringProperty("añoImpuestos").notNull();
         impuestos.addStringProperty("foto_uri_impuesto");
         return impuestos;
     }
@@ -70,6 +76,9 @@ public class MyGenerator {
         gastos.addStringProperty("tipo_operacion").notNull();
         gastos.addStringProperty("coste").notNull();
         gastos.addStringProperty("acciones").notNull();
+        gastos.addStringProperty("diaGastos").notNull();
+        gastos.addStringProperty("mesGastos").notNull();
+        gastos.addStringProperty("añoGastos").notNull();
         gastos.addStringProperty("foto_uri_gasto");
         return gastos;
     }

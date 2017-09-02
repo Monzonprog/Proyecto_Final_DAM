@@ -199,8 +199,7 @@ public class RepostajeActivity extends AppCompatActivity {
                 Uri contentURI = data.getData();
                 try {
                     Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), contentURI);
-
-                   // fotoAñadida.setImageBitmap(bitmap); //Pintamos la foto que hemos seleccionado
+                    // fotoAñadida.setImageBitmap(bitmap); //Pintamos la foto que hemos seleccionado
                     String path = saveImage(bitmap);
 
                 } catch (IOException e) {

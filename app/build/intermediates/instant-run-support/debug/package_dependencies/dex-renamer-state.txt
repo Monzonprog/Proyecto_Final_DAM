@@ -1,4 +1,4 @@
-#Tue Aug 29 20:23:46 CEST 2017
+#Sat Sep 02 14:29:59 CEST 2017
 file.2=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f583cc62d164f4bac9a0c11bdfd427a4eee2b6ed/classes.dex
 base.2=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f583cc62d164f4bac9a0c11bdfd427a4eee2b6ed
 file.1=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ca1027643b5561c3f69993b27df3b3a5de671c22/classes.dex

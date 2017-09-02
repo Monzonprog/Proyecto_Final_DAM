@@ -12,99 +12,144 @@ import org.greenrobot.greendao.annotation.*;
  */
 @Entity
 public class Repostaje {
+
+    @NotNull
     private String idVehiculo;
 
     @NotNull
-    private String marca;
+    private String tipoLlenado;
 
     @NotNull
-    private String modelo;
+    private String kmActuales;
 
     @NotNull
-    private String apodo;
+    private String costeRepostaje;
 
     @NotNull
-    private String tipo;
+    private String litrosRepostaje;
 
     @NotNull
-    private String combustible;
+    private String precioLitroRepostaje;
+
+    @NotNull
+    private String diaRepostaje;
+
+    @NotNull
+    private String mesRepostaje;
+
+    @NotNull
+    private String añoRepostaje;
     private String foto_Uri;
 
     // KEEP FIELDS - put your custom fields here
     // KEEP FIELDS END
 
-    @Generated(hash = 1404494208)
+    @Generated
     public Repostaje() {
     }
 
-    @Generated(hash = 2143715741)
-    public Repostaje(String idVehiculo, @NotNull String marca, @NotNull String modelo, @NotNull String apodo, @NotNull String tipo,
-            @NotNull String combustible, @NotNull String foto_Uri) {
+    @Generated
+    public Repostaje(String idVehiculo, String tipoLlenado, String kmActuales, String costeRepostaje, String litrosRepostaje, String precioLitroRepostaje, String diaRepostaje, String mesRepostaje, String añoRepostaje, String foto_Uri) {
         this.idVehiculo = idVehiculo;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.apodo = apodo;
-        this.tipo = tipo;
-        this.combustible = combustible;
+        this.tipoLlenado = tipoLlenado;
+        this.kmActuales = kmActuales;
+        this.costeRepostaje = costeRepostaje;
+        this.litrosRepostaje = litrosRepostaje;
+        this.precioLitroRepostaje = precioLitroRepostaje;
+        this.diaRepostaje = diaRepostaje;
+        this.mesRepostaje = mesRepostaje;
+        this.añoRepostaje = añoRepostaje;
         this.foto_Uri = foto_Uri;
     }
 
+    @NotNull
     public String getIdVehiculo() {
         return idVehiculo;
     }
 
-    public void setIdVehiculo(String idVehiculo) {
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setIdVehiculo(@NotNull String idVehiculo) {
         this.idVehiculo = idVehiculo;
     }
 
     @NotNull
-    public String getMarca() {
-        return marca;
+    public String getTipoLlenado() {
+        return tipoLlenado;
     }
 
     /** Not-null value; ensure this value is available before it is saved to the database. */
-    public void setMarca(@NotNull String marca) {
-        this.marca = marca;
+    public void setTipoLlenado(@NotNull String tipoLlenado) {
+        this.tipoLlenado = tipoLlenado;
     }
 
     @NotNull
-    public String getModelo() {
-        return modelo;
+    public String getKmActuales() {
+        return kmActuales;
     }
 
     /** Not-null value; ensure this value is available before it is saved to the database. */
-    public void setModelo(@NotNull String modelo) {
-        this.modelo = modelo;
+    public void setKmActuales(@NotNull String kmActuales) {
+        this.kmActuales = kmActuales;
     }
 
     @NotNull
-    public String getApodo() {
-        return apodo;
+    public String getCosteRepostaje() {
+        return costeRepostaje;
     }
 
     /** Not-null value; ensure this value is available before it is saved to the database. */
-    public void setApodo(@NotNull String apodo) {
-        this.apodo = apodo;
+    public void setCosteRepostaje(@NotNull String costeRepostaje) {
+        this.costeRepostaje = costeRepostaje;
     }
 
     @NotNull
-    public String getTipo() {
-        return tipo;
+    public String getLitrosRepostaje() {
+        return litrosRepostaje;
     }
 
     /** Not-null value; ensure this value is available before it is saved to the database. */
-    public void setTipo(@NotNull String tipo) {
-        this.tipo = tipo;
+    public void setLitrosRepostaje(@NotNull String litrosRepostaje) {
+        this.litrosRepostaje = litrosRepostaje;
     }
 
     @NotNull
-    public String getCombustible() {
-        return combustible;
+    public String getPrecioLitroRepostaje() {
+        return precioLitroRepostaje;
     }
 
     /** Not-null value; ensure this value is available before it is saved to the database. */
-    public void setCombustible(@NotNull String combustible) {
-        this.combustible = combustible;
+    public void setPrecioLitroRepostaje(@NotNull String precioLitroRepostaje) {
+        this.precioLitroRepostaje = precioLitroRepostaje;
+    }
+
+    @NotNull
+    public String getDiaRepostaje() {
+        return diaRepostaje;
+    }
+
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setDiaRepostaje(@NotNull String diaRepostaje) {
+        this.diaRepostaje = diaRepostaje;
+    }
+
+    @NotNull
+    public String getMesRepostaje() {
+        return mesRepostaje;
+    }
+
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setMesRepostaje(@NotNull String mesRepostaje) {
+        this.mesRepostaje = mesRepostaje;
+    }
+
+    @NotNull
+    public String getAñoRepostaje() {
+        return añoRepostaje;
+    }
+
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setAñoRepostaje(@NotNull String añoRepostaje) {
+        this.añoRepostaje = añoRepostaje;
     }
 
     public String getFoto_Uri() {

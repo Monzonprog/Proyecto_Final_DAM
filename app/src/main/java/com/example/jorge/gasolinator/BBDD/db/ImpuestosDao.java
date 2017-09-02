@@ -26,7 +26,10 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
         public final static Property Concepto = new Property(1, String.class, "concepto", false, "CONCEPTO");
         public final static Property Coste = new Property(2, String.class, "coste", false, "COSTE");
         public final static Property Descripcion = new Property(3, String.class, "descripcion", false, "DESCRIPCION");
-        public final static Property Foto_uri_impuesto = new Property(4, String.class, "foto_uri_impuesto", false, "FOTO_URI_IMPUESTO");
+        public final static Property DiaImpuestos = new Property(4, String.class, "diaImpuestos", false, "DIA_IMPUESTOS");
+        public final static Property MesImpuestos = new Property(5, String.class, "mesImpuestos", false, "MES_IMPUESTOS");
+        public final static Property AñoImpuestos = new Property(6, String.class, "añoImpuestos", false, "AÑO_IMPUESTOS");
+        public final static Property Foto_uri_impuesto = new Property(7, String.class, "foto_uri_impuesto", false, "FOTO_URI_IMPUESTO");
     }
 
 
@@ -46,7 +49,10 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
                 "\"CONCEPTO\" TEXT NOT NULL ," + // 1: concepto
                 "\"COSTE\" TEXT NOT NULL ," + // 2: coste
                 "\"DESCRIPCION\" TEXT NOT NULL ," + // 3: descripcion
-                "\"FOTO_URI_IMPUESTO\" TEXT);"); // 4: foto_uri_impuesto
+                "\"DIA_IMPUESTOS\" TEXT NOT NULL ," + // 4: diaImpuestos
+                "\"MES_IMPUESTOS\" TEXT NOT NULL ," + // 5: mesImpuestos
+                "\"AÑO_IMPUESTOS\" TEXT NOT NULL ," + // 6: añoImpuestos
+                "\"FOTO_URI_IMPUESTO\" TEXT);"); // 7: foto_uri_impuesto
     }
 
     /** Drops the underlying database table. */
@@ -66,10 +72,13 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
         stmt.bindString(2, entity.getConcepto());
         stmt.bindString(3, entity.getCoste());
         stmt.bindString(4, entity.getDescripcion());
+        stmt.bindString(5, entity.getDiaImpuestos());
+        stmt.bindString(6, entity.getMesImpuestos());
+        stmt.bindString(7, entity.getAñoImpuestos());
  
         String foto_uri_impuesto = entity.getFoto_uri_impuesto();
         if (foto_uri_impuesto != null) {
-            stmt.bindString(5, foto_uri_impuesto);
+            stmt.bindString(8, foto_uri_impuesto);
         }
     }
 
@@ -84,10 +93,13 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
         stmt.bindString(2, entity.getConcepto());
         stmt.bindString(3, entity.getCoste());
         stmt.bindString(4, entity.getDescripcion());
+        stmt.bindString(5, entity.getDiaImpuestos());
+        stmt.bindString(6, entity.getMesImpuestos());
+        stmt.bindString(7, entity.getAñoImpuestos());
  
         String foto_uri_impuesto = entity.getFoto_uri_impuesto();
         if (foto_uri_impuesto != null) {
-            stmt.bindString(5, foto_uri_impuesto);
+            stmt.bindString(8, foto_uri_impuesto);
         }
     }
 
@@ -103,7 +115,10 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
             cursor.getString(offset + 1), // concepto
             cursor.getString(offset + 2), // coste
             cursor.getString(offset + 3), // descripcion
-            cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4) // foto_uri_impuesto
+            cursor.getString(offset + 4), // diaImpuestos
+            cursor.getString(offset + 5), // mesImpuestos
+            cursor.getString(offset + 6), // añoImpuestos
+            cursor.isNull(offset + 7) ? null : cursor.getString(offset + 7) // foto_uri_impuesto
         );
         return entity;
     }
@@ -114,7 +129,10 @@ public class ImpuestosDao extends AbstractDao<Impuestos, Void> {
         entity.setConcepto(cursor.getString(offset + 1));
         entity.setCoste(cursor.getString(offset + 2));
         entity.setDescripcion(cursor.getString(offset + 3));
-        entity.setFoto_uri_impuesto(cursor.isNull(offset + 4) ? null : cursor.getString(offset + 4));
+        entity.setDiaImpuestos(cursor.getString(offset + 4));
+        entity.setMesImpuestos(cursor.getString(offset + 5));
+        entity.setAñoImpuestos(cursor.getString(offset + 6));
+        entity.setFoto_uri_impuesto(cursor.isNull(offset + 7) ? null : cursor.getString(offset + 7));
      }
     
     @Override

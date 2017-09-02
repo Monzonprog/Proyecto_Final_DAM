@@ -6,6 +6,6 @@ package com.example.jorge.gasolinator.Interfaces;
 
 public interface OpcionesTarjetaVehiculos {
 
-    void modificarVehiculo(String id);
+    void modificarVehiculo(String id, String modelo, String marca, String apodo);
     void eliminarVehiculo(String id);
 }

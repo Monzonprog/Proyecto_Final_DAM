@@ -22,22 +22,33 @@ public class Gastos {
 
     @NotNull
     private String acciones;
+
+    @NotNull
+    private String diaGastos;
+
+    @NotNull
+    private String mesGastos;
+
+    @NotNull
+    private String añoGastos;
     private String foto_uri_gasto;
 
     // KEEP FIELDS - put your custom fields here
     // KEEP FIELDS END
 
-    @Generated(hash = 315446416)
+    @Generated
     public Gastos() {
     }
 
-    @Generated(hash = 207852931)
-    public Gastos(String idVehiculo, @NotNull String tipo_operacion, @NotNull String coste, @NotNull String acciones,
-            @NotNull String foto_uri_gasto) {
+    @Generated
+    public Gastos(String idVehiculo, String tipo_operacion, String coste, String acciones, String diaGastos, String mesGastos, String añoGastos, String foto_uri_gasto) {
         this.idVehiculo = idVehiculo;
         this.tipo_operacion = tipo_operacion;
         this.coste = coste;
         this.acciones = acciones;
+        this.diaGastos = diaGastos;
+        this.mesGastos = mesGastos;
+        this.añoGastos = añoGastos;
         this.foto_uri_gasto = foto_uri_gasto;
     }
 
@@ -77,6 +88,36 @@ public class Gastos {
     /** Not-null value; ensure this value is available before it is saved to the database. */
     public void setAcciones(@NotNull String acciones) {
         this.acciones = acciones;
+    }
+
+    @NotNull
+    public String getDiaGastos() {
+        return diaGastos;
+    }
+
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setDiaGastos(@NotNull String diaGastos) {
+        this.diaGastos = diaGastos;
+    }
+
+    @NotNull
+    public String getMesGastos() {
+        return mesGastos;
+    }
+
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setMesGastos(@NotNull String mesGastos) {
+        this.mesGastos = mesGastos;
+    }
+
+    @NotNull
+    public String getAñoGastos() {
+        return añoGastos;
+    }
+
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setAñoGastos(@NotNull String añoGastos) {
+        this.añoGastos = añoGastos;
     }
 
     public String getFoto_uri_gasto() {

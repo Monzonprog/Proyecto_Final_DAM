@@ -95,6 +95,8 @@
     <string name="borrarVehiculoOk">El vehículo se ha borrado correctamente</string>
     <string name="editarVehiculoOk">El vehículo se ha editado correctamente</string>
     <string name="datosIncompletos">Faltan datos por rellenar</string>
+    <string name="litrosTV">Litros</string>
+    <string name="fechaButton">Fecha</string>
 
 
 </resources>

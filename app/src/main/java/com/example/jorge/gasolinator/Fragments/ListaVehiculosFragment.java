@@ -23,6 +23,7 @@ import com.example.jorge.gasolinator.Interfaces.OpcionesTarjetaVehiculos;
 import com.example.jorge.gasolinator.R;
 
 import java.util.List;
+import java.util.Objects;
 
 
 /**
@@ -77,7 +78,14 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
     public void onActivityCreated(Bundle state) {
         super.onActivityCreated(state);
 
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
         pintarListaVehiculos();
+
     }
 
     private void pintarListaVehiculos() { //Metodo para mostrar en pantalla los vehiculos de la BBDD
@@ -107,7 +115,7 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
     }
 
     @Override
-    public void modificarVehiculo(final String id) { //Editamos datos y guardamos
+    public void modificarVehiculo(final String id, String modelo, String marca, String apodo) { //Editamos datos y guardamos
 
         final Dialog dialog = new Dialog(getActivity());
         dialog.setContentView(R.layout.dialog_editar);
@@ -118,6 +126,9 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
         marcaUsuario = (EditText)dialog.findViewById(R.id.marcaEditTextDialog);
         modeloUsuario = (EditText)dialog.findViewById(R.id.modeloEditTextDialog);
         apodoUsuario = (EditText)dialog.findViewById(R.id.apodoEditTextDialog);
+        marcaUsuario.setText(marca);
+        modeloUsuario.setText(modelo);
+        apodoUsuario.setText(apodo);
 
 
         dialog.show();
@@ -131,16 +142,28 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
                 vehiculo.setMarca(marcaUsuario.getText().toString());
                 vehiculo.setModelo(modeloUsuario.getText().toString());
                 vehiculo.setApodo(apodoUsuario.getText().toString());
-                vehiculo.setCombustible(vehiculos.get(0).getCombustible());
-                vehiculo.setTipo(vehiculos.get(0).getTipo());
-                vehiculo.setFoto_Uri(vehiculos.get(0).getFoto_Uri());
-                vehiculosDao.saveInTx(vehiculo);
+                for (Vehiculos vehiculofor:vehiculos) {
+                    if(Objects.equals(vehiculofor.getId(), lg)) {
+                        vehiculo.setCombustible(vehiculofor.getCombustible());
+                        vehiculo.setTipo(vehiculofor.getTipo());
+                        vehiculo.setFoto_Uri(vehiculofor.getFoto_Uri());
+                        break;
+                    }
+                }
+                if (verificarDatos()) {
 
-                Toast.makeText(getActivity(),getString(R.string.editarVehiculoOk), Toast.LENGTH_LONG).show();
+                    vehiculosDao.saveInTx(vehiculo);
 
-                dialog.cancel();
+                    Toast.makeText(getActivity(), getString(R.string.editarVehiculoOk), Toast.LENGTH_LONG).show();
 
-                pintarListaVehiculos();
+                    dialog.cancel();
+
+                    pintarListaVehiculos();
+
+                }else{
+
+                    Toast.makeText(getActivity(), R.string.datosIncompletos, Toast.LENGTH_LONG).show();
+                }
 
 
             }
@@ -155,6 +178,22 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
             }
         });
 
+    }
+
+    private boolean verificarDatos() { //Verificamos si los campos están rellenos
+
+        boolean verificacion;
+
+        if (marcaUsuario.getText().toString().isEmpty() || (modeloUsuario.getText().toString().isEmpty()) ||
+                (apodoUsuario.getText().toString().isEmpty())) {
+            verificacion = false;
+
+        } else {
+
+            verificacion = true;
+        }
+
+        return verificacion;
     }
 
     @Override
@@ -189,6 +228,14 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
                 dialog.cancel();
             }
         });
+
+    }
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser && getActivity() != null) {
+            pintarListaVehiculos();
+        }
 
     }
 }

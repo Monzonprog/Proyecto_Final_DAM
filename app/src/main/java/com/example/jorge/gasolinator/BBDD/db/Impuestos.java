@@ -22,22 +22,33 @@ public class Impuestos {
 
     @NotNull
     private String descripcion;
+
+    @NotNull
+    private String diaImpuestos;
+
+    @NotNull
+    private String mesImpuestos;
+
+    @NotNull
+    private String añoImpuestos;
     private String foto_uri_impuesto;
 
     // KEEP FIELDS - put your custom fields here
     // KEEP FIELDS END
 
-    @Generated(hash = 1225475835)
+    @Generated
     public Impuestos() {
     }
 
-    @Generated(hash = 1733668326)
-    public Impuestos(String idVehiculo, @NotNull String concepto, @NotNull String coste, @NotNull String descripcion,
-            @NotNull String foto_uri_impuesto) {
+    @Generated
+    public Impuestos(String idVehiculo, String concepto, String coste, String descripcion, String diaImpuestos, String mesImpuestos, String añoImpuestos, String foto_uri_impuesto) {
         this.idVehiculo = idVehiculo;
         this.concepto = concepto;
         this.coste = coste;
         this.descripcion = descripcion;
+        this.diaImpuestos = diaImpuestos;
+        this.mesImpuestos = mesImpuestos;
+        this.añoImpuestos = añoImpuestos;
         this.foto_uri_impuesto = foto_uri_impuesto;
     }
 
@@ -77,6 +88,36 @@ public class Impuestos {
     /** Not-null value; ensure this value is available before it is saved to the database. */
     public void setDescripcion(@NotNull String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    @NotNull
+    public String getDiaImpuestos() {
+        return diaImpuestos;
+    }
+
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setDiaImpuestos(@NotNull String diaImpuestos) {
+        this.diaImpuestos = diaImpuestos;
+    }
+
+    @NotNull
+    public String getMesImpuestos() {
+        return mesImpuestos;
+    }
+
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setMesImpuestos(@NotNull String mesImpuestos) {
+        this.mesImpuestos = mesImpuestos;
+    }
+
+    @NotNull
+    public String getAñoImpuestos() {
+        return añoImpuestos;
+    }
+
+    /** Not-null value; ensure this value is available before it is saved to the database. */
+    public void setAñoImpuestos(@NotNull String añoImpuestos) {
+        this.añoImpuestos = añoImpuestos;
     }
 
     public String getFoto_uri_impuesto() {

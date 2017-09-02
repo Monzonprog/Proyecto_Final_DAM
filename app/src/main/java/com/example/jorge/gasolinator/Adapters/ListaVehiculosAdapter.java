@@ -80,7 +80,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
     @Override
     public void onBindViewHolder(VehiculosViewHolder viewholder, final int i) {
 
-        if(items.get(i).getFoto_Uri().toString().equals("")){
+        if(items.get(i).getFoto_Uri().equals("")){
             Picasso.with(context).load(R.drawable.siluetas_vehiculos)
                     .into( viewholder.imagenTarjetaVehiculo);
         }else{Picasso.with(context).load(items.get(i).getFoto_Uri()).transform(new CropCircleTransformation())
@@ -101,7 +101,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
         viewholder.editarTarjetaVehiculo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.modificarVehiculo(convertirValor(i));
+                listener.modificarVehiculo(convertirValor(i), items.get(i).getModelo(), items.get(i).getMarca(), items.get(i).getApodo());
 
             }
         });

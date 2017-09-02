@@ -35,7 +35,7 @@ public class Vehiculos {
     // KEEP FIELDS - put your custom fields here
     // KEEP FIELDS END
 
-    @Generated(hash = 1024189188)
+    @Generated
     public Vehiculos() {
     }
 
@@ -43,9 +43,8 @@ public class Vehiculos {
         this.id = id;
     }
 
-    @Generated(hash = 1841301493)
-    public Vehiculos(Long id, @NotNull String marca, @NotNull String modelo, @NotNull String apodo, @NotNull String tipo,
-            @NotNull String combustible, @NotNull String foto_Uri) {
+    @Generated
+    public Vehiculos(Long id, String marca, String modelo, String apodo, String tipo, String combustible, String foto_Uri) {
         this.id = id;
         this.marca = marca;
         this.modelo = modelo;

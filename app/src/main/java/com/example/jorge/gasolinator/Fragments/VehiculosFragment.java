@@ -53,8 +53,11 @@ import static com.example.jorge.gasolinator.R.id.view;
  * Created by jorge on 10/04/17.
  */
 
-public class VehiculosFragment extends Fragment  {
+public class VehiculosFragment extends Fragment {
 
+    private static final int PERMISSION_REQUEST_CODE = 200;
+    private static final int permsRequestCode = 200;
+    private static final int GALLERY = 2;
     private TextInputEditText marca;
     private TextInputEditText modelo;
     private TextInputEditText apodo;
@@ -63,11 +66,6 @@ public class VehiculosFragment extends Fragment  {
     private Spinner combustible;
     private Button añadirFoto;
     private ImageView fotoAñadida;
-
-    private static final int PERMISSION_REQUEST_CODE = 200;
-    private static final int permsRequestCode = 200;
-
-    private static final int GALLERY = 2;
     private String IMAGE_DIRECTORY = "/controlGasolina/";
     private Uri imageUri;
     private Uri yourUri = Uri.parse("");
@@ -75,7 +73,6 @@ public class VehiculosFragment extends Fragment  {
     private ContentValues values;
 
     private DaoSession daoSession;
-
 
 
     public static VehiculosFragment newInstance() {
@@ -113,7 +110,7 @@ public class VehiculosFragment extends Fragment  {
         combustible = (Spinner) getActivity().findViewById(R.id.combustibleVehiculoAñadirVehiculos);
         crearVehiculo = (FloatingActionButton) getActivity().findViewById(R.id.crearVehiculoAñadirVehiculos);
         fotoAñadida = (ImageView) getActivity().findViewById(R.id.fotoAñadidaAñadirVehiculos);
-        añadirFoto = (Button)getActivity().findViewById(R.id.añadirFotoAñadirVehiculos);
+        añadirFoto = (Button) getActivity().findViewById(R.id.añadirFotoAñadirVehiculos);
 
 
         crearVehiculo.setOnClickListener(new View.OnClickListener() {
@@ -128,7 +125,7 @@ public class VehiculosFragment extends Fragment  {
                 String uriUsuario = verficarUri();
 
 
-                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(getActivity(),"Vehiculos-db"); //The users-db here is the name of our database.
+                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(getActivity(), "Vehiculos-db"); //The users-db here is the name of our database.
                 Database db = helper.getWritableDb();
 
                 daoSession = new DaoMaster(db).newSession();
@@ -141,13 +138,13 @@ public class VehiculosFragment extends Fragment  {
                 vehiculo.setCombustible(combustibleUsuario);
                 vehiculo.setFoto_Uri(uriUsuario);
 
-                if(verificarDatos()){
+                if (verificarDatos()) {
 
-                daoSession.insert(vehiculo);
+                    daoSession.insert(vehiculo);
 
-                Toast.makeText(getActivity(), R.string.creacionVehiculoOk, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getActivity(), R.string.creacionVehiculoOk, Toast.LENGTH_LONG).show();
 
-                }else{
+                } else {
 
                     Toast.makeText(getActivity(), R.string.datosIncompletos, Toast.LENGTH_LONG).show();
                 }
@@ -165,10 +162,10 @@ public class VehiculosFragment extends Fragment  {
 
     private String verficarUri() {
 
-        if(yourUri.equals("")){
+        if (yourUri.equals("")) {
 
             return "";
-        }else{
+        } else {
 
             return yourUri.toString();
         }
@@ -178,11 +175,11 @@ public class VehiculosFragment extends Fragment  {
 
         boolean verificacion;
 
-        if(marca.getText().toString().isEmpty() || (modelo.getText().toString().isEmpty())||
-                (apodo.getText().toString().isEmpty())){
+        if (marca.getText().toString().isEmpty() || (modelo.getText().toString().isEmpty()) ||
+                (apodo.getText().toString().isEmpty())) {
             verificacion = false;
 
-        }else{
+        } else {
 
             verificacion = true;
         }
@@ -190,13 +187,13 @@ public class VehiculosFragment extends Fragment  {
         return verificacion;
     }
 
-    public void camaraGaleria(View view){
+    public void camaraGaleria(View view) {
 
         AlertDialog.Builder pictureDialog = new AlertDialog.Builder(getActivity());
         pictureDialog.setTitle("Elige el origen de la fotografía");
         String[] pictureDialogItems = {
                 "Elige una foto de la galería",
-                "Haz una nueva fotografía" };
+                "Haz una nueva fotografía"};
         pictureDialog.setItems(pictureDialogItems,
                 new DialogInterface.OnClickListener() {
                     @Override
@@ -223,18 +220,16 @@ public class VehiculosFragment extends Fragment  {
             listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
         }
 
-            Intent galleryIntent = new Intent(Intent.ACTION_PICK,
-                    android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            startActivityForResult(galleryIntent, GALLERY);
-
-
+        Intent galleryIntent = new Intent(Intent.ACTION_PICK,
+                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(galleryIntent, GALLERY);
 
 
     }
 
     private void takePhotoFromCamera() {
 
-        if(checkPermission()){
+        if (checkPermission()) {
 
             values = new ContentValues();
             values.put(MediaStore.Images.Media.TITLE, Calendar.getInstance()
@@ -278,7 +273,8 @@ public class VehiculosFragment extends Fragment  {
                             getActivity().getContentResolver(), imageUri);
                     fotoAñadida.setImageBitmap(thumbnail);
                     String imageUrl = getRealPathFromURI(imageUri);
-                    Log.e("EH", "Url es: "+ imageUrl);
+                    String path = saveImage(thumbnail);
+                    Log.e("EH", "Url es: " + imageUrl);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -290,8 +286,9 @@ public class VehiculosFragment extends Fragment  {
     }
 
     public String saveImage(Bitmap myBitmap) {
+        Bitmap reducedBitmap = getResizedBitmap(myBitmap, 320);
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-        myBitmap.compress(Bitmap.CompressFormat.PNG, 100, bytes);
+        reducedBitmap.compress(Bitmap.CompressFormat.JPEG, 10, bytes);
 
         File wallpaperDirectory = new File(
                 Environment.getExternalStorageDirectory() + IMAGE_DIRECTORY);
@@ -319,8 +316,9 @@ public class VehiculosFragment extends Fragment  {
         return "";
 
     }
+
     public String getRealPathFromURI(Uri contentUri) {
-        String[] proj = { MediaStore.Images.Media.DATA };
+        String[] proj = {MediaStore.Images.Media.DATA};
         Cursor cursor = getActivity().managedQuery(contentUri, proj, null, null, null);
         int column_index = cursor
                 .getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
@@ -330,7 +328,7 @@ public class VehiculosFragment extends Fragment  {
 
 
     private boolean checkPermission() {
-        int permissionSendMessage = ContextCompat.checkSelfPermission(getActivity(),Manifest.permission.CAMERA);
+        int permissionSendMessage = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.CAMERA);
         int storagePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
         List<String> listPermissionsNeeded = new ArrayList<>();
 
@@ -344,7 +342,7 @@ public class VehiculosFragment extends Fragment  {
 
 
             ActivityCompat.requestPermissions(getActivity(), listPermissionsNeeded.
-                    toArray(new String[listPermissionsNeeded.size()]),permsRequestCode);
+                    toArray(new String[listPermissionsNeeded.size()]), permsRequestCode);
             return false;
         }
         return true;
@@ -360,8 +358,8 @@ public class VehiculosFragment extends Fragment  {
                     boolean cameraAccepted = grantResults[1] == PackageManager.PERMISSION_GRANTED;
 
 
-                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                            if (shouldShowRequestPermissionRationale(WRITE_EXTERNAL_STORAGE)) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        if (shouldShowRequestPermissionRationale(WRITE_EXTERNAL_STORAGE)) {
 
                         }
 
@@ -372,10 +370,21 @@ public class VehiculosFragment extends Fragment  {
                 break;
         }
     }
+    public Bitmap getResizedBitmap(Bitmap image, int maxSize) {
+        int width = image.getWidth();
+        int height = image.getHeight();
 
+        float bitmapRatio = (float) width / (float) height;
+        if (bitmapRatio > 1) {
+            width = maxSize;
+            height = (int) (width / bitmapRatio);
+        } else {
+            height = maxSize;
+            width = (int) (height * bitmapRatio);
+        }
 
-
-
+        return Bitmap.createScaledBitmap(image, width, height, true);
+    }
 
 }
 
