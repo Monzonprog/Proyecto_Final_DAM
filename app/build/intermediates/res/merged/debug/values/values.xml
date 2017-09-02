@@ -736,6 +736,7 @@
     <string name="editarVehiculoButton">Editar</string>
     <string name="editarVehiculoOk">El vehículo se ha editado correctamente</string>
     <string name="factura">Subir una foto de la factura (Opcional)</string>
+    <string name="fechaButton">Fecha</string>
     <string name="fotoHecha">Se ha realizado la fotografía</string>
     <string name="gasolinerasActivity">Gasolineras</string>
     <string name="gasolinerasButton">Gasolineras</string>
@@ -747,6 +748,7 @@
     <string name="instrucciones">Añade los datos de tu vehículo, si lo deseas también
     puedes añadir una fotografía</string>
     <string name="kmActualesTV">KM Actuales</string>
+    <string name="litrosTV">Litros</string>
     <string name="mantenimientoActivity">Mantenimiento</string>
     <string name="mantenimientoButton">Mantenimiento</string>
     <string name="marca">Marca</string>
