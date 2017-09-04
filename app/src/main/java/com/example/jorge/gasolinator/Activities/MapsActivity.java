@@ -15,6 +15,11 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.jorge.gasolinator.Class.ConexionManager;
+import com.example.jorge.gasolinator.Class.GasolinerasCercanasItem;
+import com.example.jorge.gasolinator.Class.GasolinerasCercanasObject;
+import com.example.jorge.gasolinator.Class.Result;
+import com.example.jorge.gasolinator.Interfaces.IDataGasolinerasCercanas;
 import com.example.jorge.gasolinator.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
@@ -27,22 +32,26 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
-        LocationListener {
+        LocationListener, IDataGasolinerasCercanas {
 
     private static final int permsRequestCode = 200;
     private static final int REQUEST_CODE_RECOVER_PLAY_SERVICES = 100;
-
     private GoogleMap mMap;
     private GoogleApiClient mGoogleApiClient;
     private Location mLastLocation;
     private LocationRequest mLocationRequest;
+    private  ArrayList<Marker>gasolinerasMarker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,7 +171,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             double longitude = location.getLongitude();
 
 
-            //obtenerParadasCercanas(latitude, longitude);
+            obtenerGasolinerasCercanas(latitude, longitude);
 
             CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(posicion, 17);
             mMap.animateCamera(cameraUpdate);
@@ -283,4 +292,62 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .build();
 
     }
+
+    private void obtenerGasolinerasCercanas(double latitude, double longitude) {
+        ConexionManager conexion = new ConexionManager("https://maps.googleapis.com/maps/");
+        conexion.getGasolinerasCercanas(this, "gas_station", latitude, longitude, 5000);
+    }
+    @Override
+    public void conexionCorrecta(GasolinerasCercanasObject gasolinerasCercanas) {
+
+      /* BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.icono_gasolinera);
+
+        for (Marker item:gasolinerasMarker){
+
+            item.remove();
+        }
+
+
+        gasolinerasMarker = new ArrayList<>();
+
+        for(final Result item: gasolinerasCercanas.getResults()){
+
+            gasolinerasMarker.add(mMap.addMarker(new MarkerOptions().title(item.getName())
+                    .position(new LatLng(item.getGeometry().getLocation().getLat(),
+                            item.getGeometry().getLocation().getLng())).icon(icon)));
+
+
+        }*/
+
+        mMap.clear();
+        // This loop will go through all the results and add marker on each location.
+        for (int i = 0; i < gasolinerasCercanas.getResults().size(); i++) {
+            Double lat = gasolinerasCercanas.getResults().get(i).getGeometry().getLocation().getLat();
+            Double lng = gasolinerasCercanas.getResults().get(i).getGeometry().getLocation().getLng();
+            String placeName = gasolinerasCercanas.getResults().get(i).getName();
+            String vicinity = gasolinerasCercanas.getResults().get(i).getVicinity();
+            MarkerOptions markerOptions = new MarkerOptions();
+            LatLng latLng = new LatLng(lat, lng);
+            // Position of Marker on Map
+            markerOptions.position(latLng);
+            // Adding Title to the Marker
+            markerOptions.title(placeName + " : " + vicinity);
+            // Adding Marker to the Camera.
+            Marker m = mMap.addMarker(markerOptions);
+            // Adding colour to the marker
+            markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.icono_gasolinera));
+            // move map camera
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
+
+        }
+    }
+
+    @Override
+    public void conexionIncorrecta() {
+
+        Toast.makeText(this, R.string.errorDescargaGasolineras, Toast.LENGTH_LONG).show();
+    }
+
+
 }

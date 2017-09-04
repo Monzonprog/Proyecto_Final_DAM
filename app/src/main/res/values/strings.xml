@@ -101,7 +101,8 @@
     <string name="no_camera">No se puede abrir la cámara sin permisos</string>
     <string name="no_gps">No te hemos podido localizar sin los permisos</string>
 
-
+    <!--Mapas-->
+    <string name="errorDescargaGasolineras">Error al descargar las gasolineras cercanas</string>
 
 
 </resources>

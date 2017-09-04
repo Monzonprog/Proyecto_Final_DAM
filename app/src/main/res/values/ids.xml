@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="errorDescargaGasolineras" type="id">Se ha producido un error al descargar las
+        gasolineras cercanas
+    </item>
+</resources>

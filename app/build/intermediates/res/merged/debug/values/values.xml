@@ -968,6 +968,9 @@
     <item name="cast_featurehighlight_view" type="id"/>
     <item name="cast_notification_id" type="id"/>
     <item name="crash_reporting_present" type="id"/>
+    <item name="errorDescargaGasolineras" type="id">Se ha producido un error al descargar las
+        gasolineras cercanas
+    </item>
     <item name="home" type="id"/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="progress_circular" type="id"/>
@@ -1101,6 +1104,7 @@
     <string name="editarVehiculo">Editar vehículo</string>
     <string name="editarVehiculoButton">Editar</string>
     <string name="editarVehiculoOk">El vehículo se ha editado correctamente</string>
+    <string name="errorDescargaGasolineras">Error al descargar las gasolineras cercanas</string>
     <string name="factura">Subir una foto de la factura (Opcional)</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="fechaButton">Fecha</string>
@@ -1153,8 +1157,8 @@
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="precioLTV">Precio por litro</string>
+    <string name="registroOk">El registro se ha creado correctamente</string>
     <string name="repostajeActivity">Repostaje</string>
-    <string name="repostajeOk">El registro se ha creado correctamente</string>
     <string name="respostajeButton">Repostaje</string>
     <string name="s1">Save image</string>
     <string name="s2">"Allow Ad to store image in Picture gallery?"</string>
@@ -1172,7 +1176,6 @@
     <string name="tipoCombustible">Tipo de combustible</string>
     <string name="tipoLlenadoTV">Tipo de llenado</string>
     <string name="tipoVehiculo">Tipo de vehículo</string>
-    <string name="title_activity_gasolineras">Map</string>
     <string name="title_activity_maps">Gasolineras cercanas</string>
     <string name="totalTV">Total</string>
     <string name="vehiculoTV">Vehículo</string>
