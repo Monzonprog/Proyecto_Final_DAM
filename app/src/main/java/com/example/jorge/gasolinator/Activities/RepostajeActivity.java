@@ -69,11 +69,11 @@ public class RepostajeActivity extends AppCompatActivity {
     private String IMAGE_DIRECTORY = "/controlGasolina/";
     private Uri imageUri;
     private Uri yourUri = Uri.parse("");
-    private Spinner vehiculosSpinner;
-    private RadioButton totalRBRepostaje, parcialRBRepostaje;
+    private Spinner vehiculosSpinnerRepostaje;
+    private RadioButton totalRBRepostaje;
     private TextInputEditText kmActualesETRepostaje, costeETRepostaje, litrosETRespostaje,
             precioLETRepostaje;
-    private Button fechaRepostaje, añadirFotoRepostaje;
+    private Button fechaRepostaje;
     private TextView fechaTVRepostaje;
     private String yearUsuario = "";
     private String monthUsuario = "";
@@ -85,7 +85,6 @@ public class RepostajeActivity extends AppCompatActivity {
     private DaoMaster daoMaster;
     private DaoSession daoSession;
     private VehiculosDao vehiculosDao;
-    private RepostajeDao repostajeDao;
 
 
 
@@ -99,10 +98,9 @@ public class RepostajeActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         fotoRepostaje = (ImageView) findViewById(R.id.fotoRepostaje);
-        vehiculosSpinner = (Spinner) this.findViewById(R.id.vehiculoSpinnerRepostaje);
+        vehiculosSpinnerRepostaje = (Spinner) this.findViewById(R.id.vehiculoSpinnerRepostaje);
         guardarRespostaje = (FloatingActionButton)this.findViewById(R.id.guardarRespostaje);
         totalRBRepostaje = (RadioButton)this.findViewById(R.id.totalRBRepostaje);
-        parcialRBRepostaje = (RadioButton)this.findViewById(R.id.parcialRBRepostaje);
         kmActualesETRepostaje = (TextInputEditText)this.findViewById(R.id.kmActualesETRepostaje);
         costeETRepostaje = (TextInputEditText)this.findViewById(R.id.costeETRepostaje);
         litrosETRespostaje = (TextInputEditText)this.findViewById(R.id.litrosETRespostaje);
@@ -137,7 +135,7 @@ public class RepostajeActivity extends AppCompatActivity {
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, coches);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        vehiculosSpinner.setAdapter(dataAdapter);
+        vehiculosSpinnerRepostaje.setAdapter(dataAdapter);
 
         fechaRepostaje.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -173,7 +171,7 @@ public class RepostajeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String idVehiculoUsuario = idVehiculoGuardar.get(vehiculosSpinner.getSelectedItemPosition());
+                String idVehiculoUsuario = idVehiculoGuardar.get(vehiculosSpinnerRepostaje.getSelectedItemPosition());
                 String llenadoUsuario = checkTipoLlenado();
                 String kmActuales = kmActualesETRepostaje.getText().toString();
                 String costeRespostaje = costeETRepostaje.getText().toString();
@@ -201,7 +199,7 @@ public class RepostajeActivity extends AppCompatActivity {
 
                 daoSession.insert(repostaje);
 
-                Toast.makeText(RepostajeActivity.this, R.string.repostajeOk, Toast.LENGTH_LONG).show();
+                Toast.makeText(RepostajeActivity.this, R.string.registroOk, Toast.LENGTH_LONG).show();
 
             } else {
 
@@ -264,6 +262,7 @@ public class RepostajeActivity extends AppCompatActivity {
 
         return verificacion;
     }
+
     private String verficarUri() {
 
         if (yourUri.equals("")) {

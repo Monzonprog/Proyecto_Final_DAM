@@ -21,7 +21,6 @@
     <string name="gasolinerasButton">Gasolineras</string>
     <string name="salirButton">Salir</string>
 
-    <!--Botones menú vehículos-->
 
 
     <!--Titulos de activities-->
@@ -30,6 +29,7 @@
     <string name="mantenimientoActivity">Mantenimiento</string>
     <string name="impuestoActivity">Impuestos/Gastos</string>
     <string name="gasolinerasActivity">Gasolineras</string>
+    <string name="title_activity_maps">Gasolineras cercanas</string>
 
     <!--Nuevo vehículo fragment-->
     <string name="instrucciones">Añade los datos de tu vehículo, si lo deseas también
@@ -81,10 +81,6 @@
     <string name="nuevo_vehiculo">Nuevo Vehículo</string>
     <string name="creacionVehiculoOk">El vehículo se ha guardado correctamente</string>
 
-
-    <string name="title_activity_gasolineras">Map</string>
-
-
     <!--Dialogs-->
     <string name="borrarVehiculo">Borrar vehículo</string>
     <string name="cancelar">Cancelar</string>
@@ -94,13 +90,18 @@
     <string name="editarVehiculoButton">Editar</string>
     <string name="borrarVehiculoOk">El vehículo se ha borrado correctamente</string>
     <string name="editarVehiculoOk">El vehículo se ha editado correctamente</string>
+
+    <!--Comunes-->
     <string name="datosIncompletos">Faltan datos por rellenar</string>
     <string name="litrosTV">Litros</string>
     <string name="fechaButton">Fecha</string>
-    <string name="repostajeOk">El registro se ha creado correctamente</string>
-    <string name="title_activity_maps">Map</string>
+    <string name="registroOk">El registro se ha creado correctamente</string>
+
+    <!--Permisos-->
     <string name="no_camera">No se puede abrir la cámara sin permisos</string>
     <string name="no_gps">No te hemos podido localizar sin los permisos</string>
+
+
 
 
 </resources>

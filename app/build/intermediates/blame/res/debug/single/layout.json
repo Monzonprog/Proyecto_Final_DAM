@@ -44,12 +44,12 @@
         "source": "/home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/res/layout/design_layout_tab_text.xml"
     },
     {
-        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/res/layout/design_navigation_item_header.xml"
-    },
-    {
         "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/cast_expanded_controller_activity.xml",
         "source": "/home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/res/layout/cast_expanded_controller_activity.xml"
+    },
+    {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
