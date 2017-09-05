@@ -166,6 +166,12 @@ public class ImpuestosActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                if(vehiculos.size()==0){
+
+                    Toast.makeText(ImpuestosActivity.this, R.string.sinVehiculos, Toast.LENGTH_LONG).show();
+
+                }else {
+
                 String idVehiculoUsuario = idVehiculoGuardar.get(vehiculoSpinnerImpuesto.getSelectedItemPosition());
                 String coste = costeETImpuesto.toString();
                 String concepto = conceptoETImpuesto.toString();
@@ -187,18 +193,20 @@ public class ImpuestosActivity extends AppCompatActivity {
                 impuestos.setAñoImpuestos(yearUsuario);
                 impuestos.setFoto_uri_impuesto(uriUsuario);
 
-                if (verificarDatos() && verificarFechas()) {
 
-                    daoSession.insert(impuestos);
 
-                    Toast.makeText(ImpuestosActivity.this, R.string.registroOk, Toast.LENGTH_LONG).show();
+                    if (verificarDatos() && verificarFechas()) {
 
-                } else {
+                        daoSession.insert(impuestos);
 
-                    Toast.makeText(ImpuestosActivity.this, R.string.datosIncompletos, Toast.LENGTH_LONG).show();
+                        Toast.makeText(ImpuestosActivity.this, R.string.registroOk, Toast.LENGTH_LONG).show();
+
+                    } else {
+
+                        Toast.makeText(ImpuestosActivity.this, R.string.datosIncompletos, Toast.LENGTH_LONG).show();
+                    }
+
                 }
-
-
             }
         });
     }

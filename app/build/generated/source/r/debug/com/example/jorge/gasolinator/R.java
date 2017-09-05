@@ -5243,20 +5243,21 @@ containing a value of this type.
         public static final int s6=0x7f090064;
         public static final int salirButton=0x7f0900aa;
         public static final int search_menu_title=0x7f090065;
+        public static final int sinVehiculos=0x7f0900ab;
         public static final int status_bar_notification_info_overflow=0x7f090066;
-        public static final int tagmanager_preview_dialog_button=0x7f0900ab;
-        public static final int tagmanager_preview_dialog_message=0x7f0900ac;
-        public static final int tagmanager_preview_dialog_title=0x7f0900ad;
-        public static final int ticket=0x7f0900ae;
-        public static final int tipoCombustible=0x7f0900af;
-        public static final int tipoLlenadoTV=0x7f0900b0;
-        public static final int tipoVehiculo=0x7f0900b1;
-        public static final int title_activity_maps=0x7f0900b2;
-        public static final int totalTV=0x7f0900b3;
-        public static final int vehiculoTV=0x7f0900b4;
-        public static final int vehiculos=0x7f0900b5;
-        public static final int vehiculosActivity=0x7f0900b6;
-        public static final int vehiculosButton=0x7f0900b7;
+        public static final int tagmanager_preview_dialog_button=0x7f0900ac;
+        public static final int tagmanager_preview_dialog_message=0x7f0900ad;
+        public static final int tagmanager_preview_dialog_title=0x7f0900ae;
+        public static final int ticket=0x7f0900af;
+        public static final int tipoCombustible=0x7f0900b0;
+        public static final int tipoLlenadoTV=0x7f0900b1;
+        public static final int tipoVehiculo=0x7f0900b2;
+        public static final int title_activity_maps=0x7f0900b3;
+        public static final int totalTV=0x7f0900b4;
+        public static final int vehiculoTV=0x7f0900b5;
+        public static final int vehiculos=0x7f0900b6;
+        public static final int vehiculosActivity=0x7f0900b7;
+        public static final int vehiculosButton=0x7f0900b8;
         public static final int wallet_buy_button_place_holder=0x7f090067;
     }
     public static final class style {

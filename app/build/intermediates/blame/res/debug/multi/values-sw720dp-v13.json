@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+        "outputFile": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "file": "/home/jorge/.android/build-cache/005d5d20603e51b745b387c7c96c176b27d2747e/output/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 188
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "file": "/home/jorge/.android/build-cache/005d5d20603e51b745b387c7c96c176b27d2747e/output/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,

@@ -169,43 +169,49 @@ public class RepostajeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String idVehiculoUsuario = idVehiculoGuardar.get(vehiculosSpinnerRepostaje.getSelectedItemPosition());
-                String llenadoUsuario = checkTipoLlenado();
-                String kmActuales = kmActualesETRepostaje.getText().toString();
-                String costeRespostaje = costeETRepostaje.getText().toString();
-                String litrosRespostaje = litrosETRespostaje.getText().toString();
-                String precioLitrosRespostaje = precioLETRepostaje.getText().toString();
-                String uriUsuario = verficarUri();
+                if(vehiculos.size()==0){
 
-                //Abrimos bbdd y creamos registro de repostaje
-                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(RepostajeActivity.this, "Vehiculos-db");
-                Database db = helper.getWritableDb();
-                daoSession = new DaoMaster(db).newSession();
+                    Toast.makeText(RepostajeActivity.this, R.string.sinVehiculos, Toast.LENGTH_LONG).show();
 
-                Repostaje repostaje = new Repostaje();
-                repostaje.setIdVehiculo(idVehiculoUsuario);
-                repostaje.setTipoLlenado(llenadoUsuario);
-                repostaje.setKmActuales(kmActuales);
-                repostaje.setCosteRepostaje(costeRespostaje);
-                repostaje.setLitrosRepostaje(litrosRespostaje);
-                repostaje.setPrecioLitroRepostaje(precioLitrosRespostaje);
-                repostaje.setDiaRepostaje(dayUsuario);
-                repostaje.setMesRepostaje(monthUsuario);
-                repostaje.setAñoRepostaje(yearUsuario);
-                repostaje.setFoto_Uri(uriUsuario);
+                }else {
 
-                if (verificarDatos() && verificarFechas())  {
+                    String idVehiculoUsuario = idVehiculoGuardar.get(vehiculosSpinnerRepostaje.getSelectedItemPosition());
+                    String llenadoUsuario = checkTipoLlenado();
+                    String kmActuales = kmActualesETRepostaje.getText().toString();
+                    String costeRespostaje = costeETRepostaje.getText().toString();
+                    String litrosRespostaje = litrosETRespostaje.getText().toString();
+                    String precioLitrosRespostaje = precioLETRepostaje.getText().toString();
+                    String uriUsuario = verficarUri();
 
-                daoSession.insert(repostaje);
+                    //Abrimos bbdd y creamos registro de repostaje
+                    DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(RepostajeActivity.this, "Vehiculos-db");
+                    Database db = helper.getWritableDb();
+                    daoSession = new DaoMaster(db).newSession();
 
-                Toast.makeText(RepostajeActivity.this, R.string.registroOk, Toast.LENGTH_LONG).show();
+                    Repostaje repostaje = new Repostaje();
+                    repostaje.setIdVehiculo(idVehiculoUsuario);
+                    repostaje.setTipoLlenado(llenadoUsuario);
+                    repostaje.setKmActuales(kmActuales);
+                    repostaje.setCosteRepostaje(costeRespostaje);
+                    repostaje.setLitrosRepostaje(litrosRespostaje);
+                    repostaje.setPrecioLitroRepostaje(precioLitrosRespostaje);
+                    repostaje.setDiaRepostaje(dayUsuario);
+                    repostaje.setMesRepostaje(monthUsuario);
+                    repostaje.setAñoRepostaje(yearUsuario);
+                    repostaje.setFoto_Uri(uriUsuario);
 
-            } else {
+                    if (verificarDatos() && verificarFechas()) {
 
-                Toast.makeText(RepostajeActivity.this, R.string.datosIncompletos, Toast.LENGTH_LONG).show();
-            }
+                        daoSession.insert(repostaje);
 
+                        Toast.makeText(RepostajeActivity.this, R.string.registroOk, Toast.LENGTH_LONG).show();
 
+                    } else {
+
+                        Toast.makeText(RepostajeActivity.this, R.string.datosIncompletos, Toast.LENGTH_LONG).show();
+                    }
+
+                }
             }
         });
 

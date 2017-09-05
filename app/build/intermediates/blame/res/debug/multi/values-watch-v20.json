@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+        "outputFile": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 129
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\bd230c58d273bac2d00decd9a7ccf011e08217b5\\output\\res\\values-watch-v20\\values.xml",
+                    "file": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/values-watch-v20/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -30,7 +30,7 @@
                     "endOffset": 209
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\bd230c58d273bac2d00decd9a7ccf011e08217b5\\output\\res\\values-watch-v20\\values.xml",
+                    "file": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/values-watch-v20/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -49,7 +49,7 @@
                     "endOffset": 288
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\bd230c58d273bac2d00decd9a7ccf011e08217b5\\output\\res\\values-watch-v20\\values.xml",
+                    "file": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/values-watch-v20/values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -68,7 +68,7 @@
                     "endOffset": 367
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\bd230c58d273bac2d00decd9a7ccf011e08217b5\\output\\res\\values-watch-v20\\values.xml",
+                    "file": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/values-watch-v20/values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -87,7 +87,7 @@
                     "endOffset": 458
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\bd230c58d273bac2d00decd9a7ccf011e08217b5\\output\\res\\values-watch-v20\\values.xml",
+                    "file": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/values-watch-v20/values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -106,7 +106,7 @@
                     "endOffset": 539
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\bd230c58d273bac2d00decd9a7ccf011e08217b5\\output\\res\\values-watch-v20\\values.xml",
+                    "file": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/values-watch-v20/values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -125,7 +125,7 @@
                     "endOffset": 630
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\bd230c58d273bac2d00decd9a7ccf011e08217b5\\output\\res\\values-watch-v20\\values.xml",
+                    "file": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/values-watch-v20/values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 0,
@@ -144,7 +144,7 @@
                     "endOffset": 710
                 },
                 "from": {
-                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\bd230c58d273bac2d00decd9a7ccf011e08217b5\\output\\res\\values-watch-v20\\values.xml",
+                    "file": "/home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/res/values-watch-v20/values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 0,

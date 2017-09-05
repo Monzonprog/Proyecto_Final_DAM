@@ -166,39 +166,45 @@ public class MantenimientoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String idVehiculoUsuario = idVehiculoGuardar.get(vehiculoSpinnerMantenimiento.getSelectedItemPosition());
-                String tipoOperacion =  operacionSpinnerMantenimiento.getSelectedItem().toString();
-                String coste = costeETMantenimiento.toString();
-                String descripcion = descripcionMantenimiento.toString();
-                String uriUsuario = verficarUri();
+                if(vehiculos.size()==0){
 
-                //Abrimos bbdd y creamos registro de mantenimiento
-                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(MantenimientoActivity.this, "Vehiculos-db"); //The users-db here is the name of our database.
-                Database db = helper.getWritableDb();
-                daoSession = new DaoMaster(db).newSession();
+                    Toast.makeText(MantenimientoActivity.this, R.string.sinVehiculos, Toast.LENGTH_LONG).show();
 
-                Gastos gastos = new Gastos();
-                gastos.setIdVehiculo(idVehiculoUsuario);
-                gastos.setTipo_operacion(tipoOperacion);
-                gastos.setCoste(coste);
-                gastos.setAcciones(descripcion);
-                gastos.setDiaGastos(dayUsuario);
-                gastos.setMesGastos(monthUsuario);
-                gastos.setAñoGastos(yearUsuario);
-                gastos.setFoto_uri_gasto(uriUsuario);
+                }else {
 
-                if (verificarDatos() && verificarFechas())  {
+                    String idVehiculoUsuario = idVehiculoGuardar.get(vehiculoSpinnerMantenimiento.getSelectedItemPosition());
+                    String tipoOperacion = operacionSpinnerMantenimiento.getSelectedItem().toString();
+                    String coste = costeETMantenimiento.toString();
+                    String descripcion = descripcionMantenimiento.toString();
+                    String uriUsuario = verficarUri();
 
-                    daoSession.insert(gastos);
+                    //Abrimos bbdd y creamos registro de mantenimiento
+                    DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(MantenimientoActivity.this, "Vehiculos-db"); //The users-db here is the name of our database.
+                    Database db = helper.getWritableDb();
+                    daoSession = new DaoMaster(db).newSession();
 
-                    Toast.makeText(MantenimientoActivity.this, R.string.registroOk, Toast.LENGTH_LONG).show();
+                    Gastos gastos = new Gastos();
+                    gastos.setIdVehiculo(idVehiculoUsuario);
+                    gastos.setTipo_operacion(tipoOperacion);
+                    gastos.setCoste(coste);
+                    gastos.setAcciones(descripcion);
+                    gastos.setDiaGastos(dayUsuario);
+                    gastos.setMesGastos(monthUsuario);
+                    gastos.setAñoGastos(yearUsuario);
+                    gastos.setFoto_uri_gasto(uriUsuario);
 
-                } else {
+                    if (verificarDatos() && verificarFechas()) {
 
-                    Toast.makeText(MantenimientoActivity.this, R.string.datosIncompletos, Toast.LENGTH_LONG).show();
+                        daoSession.insert(gastos);
+
+                        Toast.makeText(MantenimientoActivity.this, R.string.registroOk, Toast.LENGTH_LONG).show();
+
+                    } else {
+
+                        Toast.makeText(MantenimientoActivity.this, R.string.datosIncompletos, Toast.LENGTH_LONG).show();
+                    }
+
                 }
-
-
             }
         });
 

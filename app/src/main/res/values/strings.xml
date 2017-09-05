@@ -102,6 +102,7 @@
 
     <!--Mapas-->
     <string name="errorDescargaGasolineras">Error al descargar las gasolineras cercanas</string>
+    <string name="sinVehiculos">Primero debes crear un vehículo</string>
 
 
 </resources>

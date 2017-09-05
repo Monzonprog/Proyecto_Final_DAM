@@ -65,13 +65,13 @@
 
                     <TextView
                         android:id="@+id/ETRepostajeTarjetaDatos"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_weight="1.70"
                         android:text="@string/respostajeButton"
                         android:textColor="@color/black"
-                        android:textSize="22sp"/>
+                        android:textSize="21sp" />
 
                     <ImageView
                         android:id="@+id/IVRepostajeTarjetaDatos"
@@ -118,13 +118,13 @@
 
                     <TextView
                         android:id="@+id/ETMantenimientoTarjetaDatos"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="5dp"
                         android:layout_weight="1.70"
                         android:text="@string/mantenimientoButton"
                         android:textColor="@color/black"
-                        android:textSize="22sp"/>
+                        android:textSize="21sp" />
 
                     <ImageView
                         android:id="@+id/IVMantenimientoTarjetaDatos"
@@ -188,13 +188,13 @@
 
                 <TextView
                     android:id="@+id/ETImpuestosTarjetaDatos"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
                     android:layout_weight="1.70"
                     android:text="@string/impuestosButton"
                     android:textColor="@color/black"
-                    android:textSize="22sp"/>
+                    android:textSize="21sp" />
 
                 <ImageView
                     android:id="@+id/IVImpuestosTarjetaDatos"
