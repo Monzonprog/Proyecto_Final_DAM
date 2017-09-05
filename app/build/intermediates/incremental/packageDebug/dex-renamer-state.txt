@@ -1,4 +1,4 @@
-#Tue Sep 05 20:11:59 CEST 2017
+#Wed Sep 06 01:11:15 CEST 2017
 base.0=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7b93b0a1a14c63d067ccf4bad95a4b2a6246939d
 renamed.1=classes2.dex
 renamed.0=classes.dex

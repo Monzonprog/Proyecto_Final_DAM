@@ -56,6 +56,10 @@
         "source": "/home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/res/layout/abc_activity_chooser_view.xml"
     },
     {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/tarjeta_repostaje.xml",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/tarjeta_repostaje.xml"
+    },
+    {
         "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
         "source": "/home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/res/layout/design_navigation_item_separator.xml"
     },
@@ -138,10 +142,6 @@
     {
         "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/place_autocomplete_progress.xml",
         "source": "/home/jorge/.android/build-cache/446b3735781b211a3892be70074ff2cd1174c299/output/res/layout/place_autocomplete_progress.xml"
-    },
-    {
-        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/tarjeta_datos.xml",
-        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/tarjeta_datos.xml"
     },
     {
         "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",

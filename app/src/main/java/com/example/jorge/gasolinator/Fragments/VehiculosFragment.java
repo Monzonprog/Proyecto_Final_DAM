@@ -335,11 +335,11 @@ public class VehiculosFragment extends Fragment {
 
     //Permisos para el uso de cámara y galería
     private boolean checkPermission() {
-        int permissionSendMessage = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.CAMERA);
+        int permissionCamera = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.CAMERA);
         int storagePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
         List<String> listPermissionsNeeded = new ArrayList<>();
 
-        if (permissionSendMessage != PackageManager.PERMISSION_GRANTED) {
+        if (permissionCamera != PackageManager.PERMISSION_GRANTED) {
             listPermissionsNeeded.add(Manifest.permission.CAMERA);
         }
         if (storagePermission != PackageManager.PERMISSION_GRANTED) {
