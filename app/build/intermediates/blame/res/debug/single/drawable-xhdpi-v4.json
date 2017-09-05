@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
-        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
-    },
-    {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_dialog_close_light.png",
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_dialog_close_light.png"
+    },
+    {
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_19_light.png",
@@ -20,16 +20,16 @@
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_08_dark.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connecting_16_dark.png",
-        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_16_dark.png"
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_09_light.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_09_light.png"
     },
     {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_03_light.png",
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_03_light.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connected_09_light.png",
-        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_09_light.png"
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connecting_16_dark.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_16_dark.png"
     },
     {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
@@ -88,16 +88,16 @@
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_04_light.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
-        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connecting_15_light.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_15_light.png"
     },
     {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connecting_05_light.png",
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_05_light.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connecting_15_light.png",
-        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_15_light.png"
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
@@ -116,12 +116,12 @@
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_06_dark.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_cast_connected_white_24.png",
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\drawable-xhdpi-v4\\quantum_ic_cast_connected_white_24.png"
+    },
+    {
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
@@ -200,12 +200,12 @@
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\drawable-xhdpi-v4\\quantum_ic_pause_grey600_36.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_closed_caption_white_36.png",
-        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\drawable-xhdpi-v4\\quantum_ic_closed_caption_white_36.png"
-    },
-    {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png",
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\drawable-xhdpi-v4\\quantum_ic_pause_circle_filled_white_36.png"
+    },
+    {
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\quantum_ic_closed_caption_white_36.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\drawable-xhdpi-v4\\quantum_ic_closed_caption_white_36.png"
     },
     {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_mr_button_connecting_09_light.png",

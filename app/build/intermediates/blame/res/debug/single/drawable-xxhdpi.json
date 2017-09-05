@@ -8,6 +8,10 @@
         "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xxhdpi\\borrar.png"
     },
     {
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\desplegar.png",
+        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xxhdpi\\desplegar.png"
+    },
+    {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\icono_gasolinera.png",
         "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xxhdpi\\icono_gasolinera.png"
     }

@@ -48,6 +48,10 @@
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\layout\\cast_intro_overlay.xml"
     },
     {
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tarjeta_datos.xml",
+        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\layout\\tarjeta_datos.xml"
+    },
+    {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_playback_control.xml",
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\layout\\mr_playback_control.xml"
     },
@@ -82,6 +86,10 @@
     {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_datos.xml",
+        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\layout\\activity_datos.xml"
     },
     {
         "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mr_chooser_dialog.xml",

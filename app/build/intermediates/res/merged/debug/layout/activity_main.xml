@@ -96,6 +96,7 @@
             android:layout_weight="0.34"
             android:background="@drawable/datos"
             android:gravity="bottom|right"
+            android:onClick="datos"
             android:text="@string/datosButton" />
 
         <Button

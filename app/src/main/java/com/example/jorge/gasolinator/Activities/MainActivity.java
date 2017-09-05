@@ -38,6 +38,13 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, ImpuestosActivity.class);
         startActivity(i);
     }
+
+    //Método para llamar a la actividad impuesto/gastos
+    public void datos(View v) {
+        Intent i = new Intent(this, DatosActivity.class);
+        startActivity(i);
+    }
+
     //Método para llamar a la actividad de mapas donde veremos las gasolineras cercanas
     public void gasolineras(View v) {
         Intent i = new Intent(this, MapsActivity.class);

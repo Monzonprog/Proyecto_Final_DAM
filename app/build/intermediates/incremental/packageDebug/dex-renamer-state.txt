@@ -1,4 +1,4 @@
-#Tue Sep 05 11:15:06 CEST 2017
+#Tue Sep 05 13:20:25 CEST 2017
 base.0=C\:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_99671d1b3019a3d343ff3885b3f912df6a6789d4
 renamed.1=classes.dex
 renamed.0=classes2.dex

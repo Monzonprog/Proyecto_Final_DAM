@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:2:1-81:12
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:2:1-82:12
 	package
 		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:3:5-44
 		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
@@ -67,7 +67,7 @@ ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.
 	android:name
 		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:23:22-76
 application
-ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:25:5-79:19
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:25:5-80:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\118afc7f46a8f5664484520c03b97408dc5fcd28\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\226d4712170530062597f09acd52f939974484c4\output\AndroidManifest.xml:26:5-20
@@ -114,8 +114,8 @@ MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] C:\User
 MERGED from [com.google.android.gms:play-services-vision:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1e2ea43b605ffdfa455b4f84e78a74d8d90c676f\output\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-vision-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\37c67137fd9be3156fdfa32d1dc34057ae261eb5\output\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-identity:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\6b37ea25a15e908539b650bd576f6c8eac3cad43\output\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-wearable:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\2adf3b16e3b198daa4405556d09ea99e42f6f36e\output\AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\1ea52e8f6fbbd8af6abe54e1734a1277fe4ce2be\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-wearable:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\2adf3b16e3b198daa4405556d09ea99e42f6f36e\output\AndroidManifest.xml:18:5-19
 MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\d528097210ba5e02127804b5323844f53a876677\output\AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\777b72c467076e02c99a4abca5c521fabdb52c47\output\AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\53f3ca621dac15c2a75639a78e7b68daa308db40\output\AndroidManifest.xml:19:5-21:19
@@ -204,11 +204,15 @@ ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.
 	android:name
 		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:73:13-58
 activity#com.example.jorge.gasolinator.Activities.MapsActivity
-ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:76:9-78:68
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:76:9-78:59
 	android:label
 		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:78:13-56
 	android:name
 		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:77:13-52
+activity#com.example.jorge.gasolinator.Activities.DatosActivity
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:79:9-71
+	android:name
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:79:19-59
 uses-sdk
 INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\118afc7f46a8f5664484520c03b97408dc5fcd28\output\AndroidManifest.xml:5:5-7:41
@@ -268,9 +272,8 @@ MERGED from [com.google.android.gms:play-services-vision:11.0.2] C:\Users\Jorge 
 MERGED from [com.google.android.gms:play-services-vision-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\37c67137fd9be3156fdfa32d1dc34057ae261eb5\output\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-wallet:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\433e4ad0254cfbb632b97024ec44277137236ab9\output\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-identity:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\6b37ea25a15e908539b650bd576f6c8eac3cad43\output\AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-wearable:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\2adf3b16e3b198daa4405556d09ea99e42f6f36e\output\AndroidManifest.xml:17:5-43
-MERGED from [jp.wasabeef:picasso-transformations:2.1.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\471b727dbf793aa043fcb5bc4ef87692aeb94eea\output\AndroidManifest.xml:8:5-10:41
 MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\1ea52e8f6fbbd8af6abe54e1734a1277fe4ce2be\output\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\2adf3b16e3b198daa4405556d09ea99e42f6f36e\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\d528097210ba5e02127804b5323844f53a876677\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\777b72c467076e02c99a4abca5c521fabdb52c47\output\AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\53f3ca621dac15c2a75639a78e7b68daa308db40\output\AndroidManifest.xml:17:5-43
@@ -280,6 +283,7 @@ MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jorge Mon
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\84ee104bb46e3780df6a1402098888e6d2aa980a\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\0358cd5838846219c9d23dcb8b0d779e7ca3998c\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\29e96fb85b252166046d2254c8e315a041b1b8aa\output\AndroidManifest.xml:21:5-23:58
+MERGED from [jp.wasabeef:picasso-transformations:2.1.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\471b727dbf793aa043fcb5bc4ef87692aeb94eea\output\AndroidManifest.xml:8:5-10:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
