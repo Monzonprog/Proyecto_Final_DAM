@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+        "outputFile": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rCA\\values-en-rCA.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 154
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/b8d710153097ee422a39024b319dd0b4f4786b21/output/res/values-en-rCA/values.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\433e4ad0254cfbb632b97024ec44277137236ab9\\output\\res\\values-en-rCA\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,

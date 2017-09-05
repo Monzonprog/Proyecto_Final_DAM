@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="play-services-nearby-11.0.2">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/3d0ce58404663702c1e5f7a65ef2be2c63f3891d/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/3d0ce58404663702c1e5f7a65ef2be2c63f3891d/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/f52a3ce5c20615bdac4e9c242d53039588fccd1a/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/f52a3ce5c20615bdac4e9c242d53039588fccd1a/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
