@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+        "outputFile": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 120
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/res/values-land/values-land.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\values-land\\values-land.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 184
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/res/values-land/values-land.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\values-land\\values-land.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 255
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/res/values-land/values-land.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\values-land\\values-land.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 323
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/res/values-land/values-land.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\\output\\res\\values-land\\values-land.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 408
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/res/values-land/values.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\values-land\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 0,
@@ -106,7 +106,7 @@
                     "endOffset": 492
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/res/values-land/values.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\values-land\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 0,
@@ -125,7 +125,7 @@
                     "endOffset": 566
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/res/values-land/values.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\values-land\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 0,
@@ -144,7 +144,7 @@
                     "endOffset": 639
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/res/values-land/values.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\values-land\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 0,
@@ -163,7 +163,7 @@
                     "endOffset": 738
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/res/values-land/values.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\values-land\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 0,
@@ -182,7 +182,7 @@
                     "endOffset": 833
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/res/values-land/values.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\\output\\res\\values-land\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 0,
@@ -201,7 +201,7 @@
                     "endOffset": 908
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/005d5d20603e51b745b387c7c96c176b27d2747e/output/res/values-land/values-land.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\values-land\\values-land.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 986
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/005d5d20603e51b745b387c7c96c176b27d2747e/output/res/values-land/values-land.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\values-land\\values-land.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1061
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/005d5d20603e51b745b387c7c96c176b27d2747e/output/res/values-land/values-land.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\\output\\res\\values-land\\values-land.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -259,7 +259,7 @@
                     "endOffset": 1243
                 },
                 "from": {
-                    "file": "/home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/res/values-land/values-land.xml",
+                    "file": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\370a42e7d6ca7c3a003db3c70c59e14b020e8811\\output\\res\\values-land\\values-land.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

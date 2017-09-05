@@ -1,544 +1,544 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:2:1-81:12
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:2:1-81:12
 	package
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:3:5-44
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:6:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] /home/jorge/.android/build-cache/d4f7943a9eecd242d18c2ce658c801576526cb46/output/AndroidManifest.xml:19:5-66
-MERGED from [com.google.android.gms:play-services-analytics:11.0.2] /home/jorge/.android/build-cache/69fbbf19ec5a107d5db3f6ad3da5ece86ad4fa6c/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:18:5-66
-MERGED from [com.google.firebase:firebase-crash:11.0.2] /home/jorge/.android/build-cache/0e114e039f6079dfd95f239f2baea8f16bc49c34/output/AndroidManifest.xml:18:5-66
-MERGED from [com.google.android.gms:play-services-gcm:11.0.2] /home/jorge/.android/build-cache/cb8b349d05107495821a16fdb78738b2803dbc51/output/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-iid:11.0.2] /home/jorge/.android/build-cache/97d0890fded05deb0e55b1ed81531ca820bfb9e2/output/AndroidManifest.xml:21:5-66
-MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] /home/jorge/.android/build-cache/7e76bfa7b7fcdff17e2e468281fc04ced8ac9ce0/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] /home/jorge/.android/build-cache/f5732b01a13f37a9569badaf7885aa1d5bc4e62a/output/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/jorge/.android/build-cache/d075360002e2607b8c6d1a5c90ea7caab206af47/output/AndroidManifest.xml:20:5-66
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3de9aeab34d9e03325756128c58ec2576d57c99c\output\AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ac0386db56da48928384aa1f40e8fc6118105452\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4751594421d01690cc3aa811dae099418a13f315\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3c2334892a6f2820a8613d2a0fafa0ba551fa3d6\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\77738cf45ca377b0506c5b5cd448ec657c55f7a7\output\AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\78a285274ee2a941426c2b449567e401718e93e4\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1bd9f026491c50bc81efe2d16e7a646b62e11ebd\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\1ea52e8f6fbbd8af6abe54e1734a1277fe4ce2be\output\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:6:22-64
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] /home/jorge/.android/build-cache/d4f7943a9eecd242d18c2ce658c801576526cb46/output/AndroidManifest.xml:20:5-78
-MERGED from [com.google.android.gms:play-services-analytics:11.0.2] /home/jorge/.android/build-cache/69fbbf19ec5a107d5db3f6ad3da5ece86ad4fa6c/output/AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-nearby:11.0.2] /home/jorge/.android/build-cache/3d0ce58404663702c1e5f7a65ef2be2c63f3891d/output/AndroidManifest.xml:4:5-78
-MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] /home/jorge/.android/build-cache/7e76bfa7b7fcdff17e2e468281fc04ced8ac9ce0/output/AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:19:5-78
-MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] /home/jorge/.android/build-cache/f5732b01a13f37a9569badaf7885aa1d5bc4e62a/output/AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/jorge/.android/build-cache/d075360002e2607b8c6d1a5c90ea7caab206af47/output/AndroidManifest.xml:19:5-78
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3de9aeab34d9e03325756128c58ec2576d57c99c\output\AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ac0386db56da48928384aa1f40e8fc6118105452\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f52a3ce5c20615bdac4e9c242d53039588fccd1a\output\AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\78a285274ee2a941426c2b449567e401718e93e4\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1bd9f026491c50bc81efe2d16e7a646b62e11ebd\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\1ea52e8f6fbbd8af6abe54e1734a1277fe4ce2be\output\AndroidManifest.xml:19:5-78
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.CAMERA
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:8:5-65
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:8:5-65
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:8:22-62
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:8:22-62
 uses-feature#android.hardware.camera
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:10:5-60
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:10:5-60
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:10:19-57
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:10:19-57
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:13:5-81
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:13:22-78
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:14:5-80
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:14:5-80
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:14:22-77
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:14:22-77
 protected-broadcast
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:16:5-79
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:16:5-79
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:16:26-76
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:16:26-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:23:5-79
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:23:22-76
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:23:22-76
 application
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:25:5-79:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jorge/.android/build-cache/f197b1c0f1d02d44c728b35bdecfce585eae33b7/output/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:transition:25.3.1] /home/jorge/.android/build-cache/18de21292f3cf716fa04368aa97fd18e6f7428a5/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:cardview-v7:25.3.1] /home/jorge/.android/build-cache/8daa4519f5ec2b0953b2941960fe2ae62f0bf663/output/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services:11.0.2] /home/jorge/.android/build-cache/28d3414d2d6ecb9b30c34360327044cdfdac5b90/output/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] /home/jorge/.android/build-cache/d4f7943a9eecd242d18c2ce658c801576526cb46/output/AndroidManifest.xml:23:5-26:19
-MERGED from [com.google.android.gms:play-services-analytics:11.0.2] /home/jorge/.android/build-cache/69fbbf19ec5a107d5db3f6ad3da5ece86ad4fa6c/output/AndroidManifest.xml:26:5-19
-MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:19:5-26:19
-MERGED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:19:5-25:19
-MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] /home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/AndroidManifest.xml:4:5-8:19
-MERGED from [com.google.android.gms:play-services-cast:11.0.2] /home/jorge/.android/build-cache/185f9e5ef8a881fad698fb74301572f1e117b26b/output/AndroidManifest.xml:18:5-19
-MERGED from [com.android.support:mediarouter-v7:25.2.0] /home/jorge/.android/build-cache/005d5d20603e51b745b387c7c96c176b27d2747e/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jorge/.android/build-cache/d7ef0aedaef373115cb6e5cf07e5175ac5a9cb80/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/jorge/.android/build-cache/e96086bace7c346bc87c9f0891db04dec34d8ddb/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:palette-v7:25.2.0] /home/jorge/.android/build-cache/f68faf4046fb78011d9ff9b637ea8f10adf2d3c4/output/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] /home/jorge/.android/build-cache/4e5623f1dabd06200f130d32ddd37ce5238b8190/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.firebase:firebase-config:11.0.2] /home/jorge/.android/build-cache/2501caad25f99780a27cedc9b4dcd725680346d3/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-awareness:11.0.2] /home/jorge/.android/build-cache/6e613d2129f2e9712e3b9f9ff66ec506fd3ec228/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.firebase:firebase-crash:11.0.2] /home/jorge/.android/build-cache/0e114e039f6079dfd95f239f2baea8f16bc49c34/output/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-auth:11.0.2] /home/jorge/.android/build-cache/8c6094d1fe0a55f76b569b3d8d0ee848afba2b62/output/AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.firebase:firebase-dynamic-links:11.0.2] /home/jorge/.android/build-cache/69844183c125b339b942c50d71c390c01bdbaa4a/output/AndroidManifest.xml:5:3-17
-MERGED from [com.google.firebase:firebase-messaging:11.0.2] /home/jorge/.android/build-cache/3add28999eba00a3066baf42669f5d17fe68ac94/output/AndroidManifest.xml:19:5-29:19
-MERGED from [com.google.android.gms:play-services-fitness:11.0.2] /home/jorge/.android/build-cache/4610c3202a386d0aac9604db88f53ff2a56728e0/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-games:11.0.2] /home/jorge/.android/build-cache/1d7483d1e50a2431af118358543c9e894c71f254/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-drive:11.0.2] /home/jorge/.android/build-cache/eedd3d66d112534d61ad1cb7db9a6b7dd87d617d/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-gass:11.0.2] /home/jorge/.android/build-cache/ec7ade800b95ea5a288042a38ae0def933a8cb9d/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-gcm:11.0.2] /home/jorge/.android/build-cache/cb8b349d05107495821a16fdb78738b2803dbc51/output/AndroidManifest.xml:23:5-19
-MERGED from [com.google.firebase:firebase-appindexing:11.0.2] /home/jorge/.android/build-cache/30831b371e9c1b10096238d493bd7206fbe83366/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-iid:11.0.2] /home/jorge/.android/build-cache/97d0890fded05deb0e55b1ed81531ca820bfb9e2/output/AndroidManifest.xml:23:5-19
-MERGED from [com.google.android.gms:play-services-location:11.0.2] /home/jorge/.android/build-cache/9efe9e5709c06ac1516ac3c6a12b9bff9fb2e6dd/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-nearby:11.0.2] /home/jorge/.android/build-cache/3d0ce58404663702c1e5f7a65ef2be2c63f3891d/output/AndroidManifest.xml:5:5-19
-MERGED from [com.google.android.gms:play-services-panorama:11.0.2] /home/jorge/.android/build-cache/0f47dea21f96846988193b6e2c1e64ec2a1d39ec/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-places:11.0.2] /home/jorge/.android/build-cache/446b3735781b211a3892be70074ff2cd1174c299/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-plus:11.0.2] /home/jorge/.android/build-cache/f8cb7bc5dce8730221007d55bf8f3472f06e8895/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-safetynet:11.0.2] /home/jorge/.android/build-cache/8f5f66a5ced3e58df7b5cd7b0af39f6cb867c7e3/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:23:5-33:19
-MERGED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:24:5-34:19
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] /home/jorge/.android/build-cache/7e76bfa7b7fcdff17e2e468281fc04ced8ac9ce0/output/AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:28:5-49:19
-MERGED from [com.google.firebase:firebase-common:11.0.2] /home/jorge/.android/build-cache/79099af990798c7820e6dfb34e032ea4c9f578b2/output/AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.2] /home/jorge/.android/build-cache/84a8e373960547fba490acd233eeb4b7e36322cd/output/AndroidManifest.xml:19:5-19
-MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] /home/jorge/.android/build-cache/f5732b01a13f37a9569badaf7885aa1d5bc4e62a/output/AndroidManifest.xml:26:5-19
-MERGED from [com.google.android.gms:play-services-vision:11.0.2] /home/jorge/.android/build-cache/dcc41484bc91e0ba7fc9777fd8593fa0b4a885c6/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-vision-common:11.0.2] /home/jorge/.android/build-cache/2f27ba83df398ad4122c41c7e90ba39f1d7a260e/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-identity:11.0.2] /home/jorge/.android/build-cache/849b9c787b380c680c7d4bbccfbfa22f66fcc17d/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-wearable:11.0.2] /home/jorge/.android/build-cache/9c6be02baf401ed00d96e794b1e16f0321548abc/output/AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/jorge/.android/build-cache/d075360002e2607b8c6d1a5c90ea7caab206af47/output/AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/jorge/.android/build-cache/e49506c92cab6d36402433ad324cb09589a0994f/output/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/jorge/.android/build-cache/328e78466c6719618830dad52c10f46b8a926282/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/jorge/.android/build-cache/3276b278ad7a6ba3c2835af1090da93f1cf34e2b/output/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.3.1] /home/jorge/.android/build-cache/ea6068b557b9e3cfc81af6e67457af97e9d8c2c0/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] /home/jorge/.android/build-cache/7dba13e17faecfe8a3c8ee9252b38f83f7063bd1/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] /home/jorge/.android/build-cache/5fa2f4d0bc104705610cead915e09dcde2d1d94a/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] /home/jorge/.android/build-cache/4ac8762749dff918b89183b012618d676fcf3070/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] /home/jorge/.android/build-cache/2171e8718bc3eb7ed358e649d2cacd2288cffb15/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] /home/jorge/.android/build-cache/731a28c4bc89a3376241e77be622dd5f819afd30/output/AndroidManifest.xml:29:5-20
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:25:5-79:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\118afc7f46a8f5664484520c03b97408dc5fcd28\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\226d4712170530062597f09acd52f939974484c4\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\4f521a401f7513244c634a9866a57cebc4c3d300\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\9017c63159e4a74e44761fc0c014328c63304f48\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3de9aeab34d9e03325756128c58ec2576d57c99c\output\AndroidManifest.xml:23:5-26:19
+MERGED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ac0386db56da48928384aa1f40e8fc6118105452\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\output\AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b04fd24c57cdb3366e7e3914a25832f25fc5ee11\output\AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Jorge Monzón Manzano\.android\build-cache\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\68bc75be3f56683774862665a00d3d111da1bf29\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\2ba97183450360f4d03bb8e49dce0232f368862c\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\Jorge Monzón Manzano\.android\build-cache\0ebe03c3872decb88b34246a074ba00570127461\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\a77f6d93dbbdbe66e9fdf29045d0c1d0a30a6bde\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\acd9b84d2e5ce6d50dd0370d3f0a72b5c35eadf6\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\51b310f2b8cdd58ffd23c781390673cc56e8a48c\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-crash:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4751594421d01690cc3aa811dae099418a13f315\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\d7a8bfb62d19b04c6442a679d31f40adf47b6e3c\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-dynamic-links:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\606bb7fb05054f2bc797b2bb5ba59e0a8074bf14\output\AndroidManifest.xml:5:3-17
+MERGED from [com.google.firebase:firebase-messaging:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7c46842d4d900936af815eb96afb259cc8b0c263\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-fitness:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3fa4f5d87806466042a08f517db6d569c7d3f89f\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\767a8efae467a3e731f4aec9b10ae10efc4fa5d5\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\c93fbefd3025a98be0c634951e3b803a1be29011\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\2c9040e74f94dd89b1080aaa7083a162e806b077\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3c2334892a6f2820a8613d2a0fafa0ba551fa3d6\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\5b538883ebae7f6774c3cef324c3544bd3c26c93\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\77738cf45ca377b0506c5b5cd448ec657c55f7a7\output\AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\54a28520c8e8aa4788b4ae27c50eda02253f7330\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-nearby:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f52a3ce5c20615bdac4e9c242d53039588fccd1a\output\AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ca963d35fe0fdd80ae0a670275341ae3882adfab\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\e7fed25b8d8d49256e8ff82d476613468ae8d88b\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\c310b4c596aca5208ee8c2a766b6c13826ab3482\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7bf1acd21b0c506b372de0722479976b4cbf5b37\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\78a285274ee2a941426c2b449567e401718e93e4\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f6ae7975fa538bc57d63fb67109b73e83844afc1\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\a64daf5bf65c0eddfe196f496d0509ad64284d1f\output\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1bd9f026491c50bc81efe2d16e7a646b62e11ebd\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-vision:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1e2ea43b605ffdfa455b4f84e78a74d8d90c676f\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-vision-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\37c67137fd9be3156fdfa32d1dc34057ae261eb5\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\6b37ea25a15e908539b650bd576f6c8eac3cad43\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-wearable:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\2adf3b16e3b198daa4405556d09ea99e42f6f36e\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\1ea52e8f6fbbd8af6abe54e1734a1277fe4ce2be\output\AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\d528097210ba5e02127804b5323844f53a876677\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\777b72c467076e02c99a4abca5c521fabdb52c47\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\53f3ca621dac15c2a75639a78e7b68daa308db40\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\33730318c85742770d8b5d928d035f54a0ef67e3\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\badb705784db88b67520f978bb3ed7c476264674\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\5723eb05ae87b1c4ee8216badc9e8857c24960e2\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\84ee104bb46e3780df6a1402098888e6d2aa980a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\0358cd5838846219c9d23dcb8b0d779e7ca3998c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\29e96fb85b252166046d2254c8e315a041b1b8aa\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:28:9-41
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:28:9-41
 	android:supportsRtl
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:30:9-35
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:30:9-35
 	android:roundIcon
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:29:9-44
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:29:9-44
 	android:allowBackup
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:26:9-35
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:26:9-35
 	android:icon
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:27:9-39
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:27:9-39
 	android:theme
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:31:9-40
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:31:9-40
 activity#com.example.jorge.gasolinator.Activities.SplashScreenActivity
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:32:9-43:20
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:32:9-43:20
 	android:screenOrientation
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:35:13-49
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:35:13-49
 	android:label
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:34:13-45
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:34:13-45
 	android:theme
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:36:13-71
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:36:13-71
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:33:13-60
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:33:13-60
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:38:13-42:29
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:39:17-69
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:39:25-66
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:41:17-77
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:41:27-74
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:41:27-74
 activity#com.example.jorge.gasolinator.Activities.MainActivity
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:44:9-47:52
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:44:9-47:52
 	android:screenOrientation
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:47:13-49
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:47:13-49
 	android:label
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:46:13-45
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:46:13-45
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:45:13-52
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:45:13-52
 activity#com.example.jorge.gasolinator.Activities.VehiculosActivity
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:48:9-51:52
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:48:9-51:52
 	android:screenOrientation
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:51:13-49
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:51:13-49
 	android:label
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:50:13-54
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:50:13-54
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:49:13-57
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:49:13-57
 activity#com.example.jorge.gasolinator.Activities.RepostajeActivity
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:52:9-55:52
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:52:9-55:52
 	android:screenOrientation
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:55:13-49
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:55:13-49
 	android:label
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:54:13-54
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:54:13-54
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:53:13-57
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:53:13-57
 activity#com.example.jorge.gasolinator.Activities.MantenimientoActivity
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:56:9-59:52
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:56:9-59:52
 	android:screenOrientation
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:59:13-49
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:59:13-49
 	android:label
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:58:13-58
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:58:13-58
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:57:13-61
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:57:13-61
 activity#com.example.jorge.gasolinator.Activities.ImpuestosActivity
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:60:9-63:52
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:60:9-63:52
 	android:screenOrientation
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:63:13-49
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:63:13-49
 	android:label
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:62:13-53
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:62:13-53
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:61:13-57
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:61:13-57
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:72:9-74:55
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:72:9-74:55
 	android:value
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:74:13-52
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:74:13-52
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:73:13-58
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:73:13-58
 activity#com.example.jorge.gasolinator.Activities.MapsActivity
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:76:9-78:68
+ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:76:9-78:68
 	android:label
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:78:13-56
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:78:13-56
 	android:name
-		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:77:13-52
+		ADDED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml:77:13-52
 uses-sdk
-INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jorge/.android/build-cache/f197b1c0f1d02d44c728b35bdecfce585eae33b7/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:transition:25.3.1] /home/jorge/.android/build-cache/18de21292f3cf716fa04368aa97fd18e6f7428a5/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/jorge/.android/build-cache/78b85755dacd8b6b1b2b49a0123e1abd5e128fb3/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:25.3.1] /home/jorge/.android/build-cache/8daa4519f5ec2b0953b2941960fe2ae62f0bf663/output/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services:11.0.2] /home/jorge/.android/build-cache/28d3414d2d6ecb9b30c34360327044cdfdac5b90/output/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-ads:11.0.2] /home/jorge/.android/build-cache/f3c3e30e9b04dc2dc3967a2feb01e485f51eeecc/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] /home/jorge/.android/build-cache/d4f7943a9eecd242d18c2ce658c801576526cb46/output/AndroidManifest.xml:22:5-43
-MERGED from [com.google.android.gms:play-services-analytics:11.0.2] /home/jorge/.android/build-cache/69fbbf19ec5a107d5db3f6ad3da5ece86ad4fa6c/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.0.2] /home/jorge/.android/build-cache/27f21cea09f841ee5b4a36a555d4b451cbd74e2f/output/AndroidManifest.xml:3:3-41
-MERGED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:11.0.2] /home/jorge/.android/build-cache/3dd5c4f7b63cb5ce04e647a842bc0bd162c6224e/output/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] /home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-cast:11.0.2] /home/jorge/.android/build-cache/185f9e5ef8a881fad698fb74301572f1e117b26b/output/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:mediarouter-v7:25.2.0] /home/jorge/.android/build-cache/005d5d20603e51b745b387c7c96c176b27d2747e/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jorge/.android/build-cache/d7ef0aedaef373115cb6e5cf07e5175ac5a9cb80/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/jorge/.android/build-cache/e96086bace7c346bc87c9f0891db04dec34d8ddb/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:palette-v7:25.2.0] /home/jorge/.android/build-cache/f68faf4046fb78011d9ff9b637ea8f10adf2d3c4/output/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] /home/jorge/.android/build-cache/4e5623f1dabd06200f130d32ddd37ce5238b8190/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-config:11.0.2] /home/jorge/.android/build-cache/2501caad25f99780a27cedc9b4dcd725680346d3/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-awareness:11.0.2] /home/jorge/.android/build-cache/6e613d2129f2e9712e3b9f9ff66ec506fd3ec228/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-crash:11.0.2] /home/jorge/.android/build-cache/0e114e039f6079dfd95f239f2baea8f16bc49c34/output/AndroidManifest.xml:20:5-43
-MERGED from [com.google.firebase:firebase-auth:11.0.2] /home/jorge/.android/build-cache/8c6094d1fe0a55f76b569b3d8d0ee848afba2b62/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-database:11.0.2] /home/jorge/.android/build-cache/78bc68a85506106caad72d339f8eb38c31b519f2/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-database-connection:11.0.2] /home/jorge/.android/build-cache/42cb0e6d08a97e4edaab80c04747d8960eb41786/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-dynamic-links:11.0.2] /home/jorge/.android/build-cache/69844183c125b339b942c50d71c390c01bdbaa4a/output/AndroidManifest.xml:3:3-41
-MERGED from [com.google.firebase:firebase-messaging:11.0.2] /home/jorge/.android/build-cache/3add28999eba00a3066baf42669f5d17fe68ac94/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-storage:11.0.2] /home/jorge/.android/build-cache/7433b35f621d82dc876848bbbedcf299699b42f6/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.firebase:firebase-storage-common:11.0.2] /home/jorge/.android/build-cache/4f916791e7eccd64e7e412c77f2139f3f32a41d8/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-fitness:11.0.2] /home/jorge/.android/build-cache/4610c3202a386d0aac9604db88f53ff2a56728e0/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-games:11.0.2] /home/jorge/.android/build-cache/1d7483d1e50a2431af118358543c9e894c71f254/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-drive:11.0.2] /home/jorge/.android/build-cache/eedd3d66d112534d61ad1cb7db9a6b7dd87d617d/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-gass:11.0.2] /home/jorge/.android/build-cache/ec7ade800b95ea5a288042a38ae0def933a8cb9d/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-gcm:11.0.2] /home/jorge/.android/build-cache/cb8b349d05107495821a16fdb78738b2803dbc51/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-appindexing:11.0.2] /home/jorge/.android/build-cache/30831b371e9c1b10096238d493bd7206fbe83366/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-iid:11.0.2] /home/jorge/.android/build-cache/97d0890fded05deb0e55b1ed81531ca820bfb9e2/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-instantapps:11.0.2] /home/jorge/.android/build-cache/35842dac1b96223bd82d582cb9d89b12a1ea41af/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-location:11.0.2] /home/jorge/.android/build-cache/9efe9e5709c06ac1516ac3c6a12b9bff9fb2e6dd/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-nearby:11.0.2] /home/jorge/.android/build-cache/3d0ce58404663702c1e5f7a65ef2be2c63f3891d/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-panorama:11.0.2] /home/jorge/.android/build-cache/0f47dea21f96846988193b6e2c1e64ec2a1d39ec/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-places:11.0.2] /home/jorge/.android/build-cache/446b3735781b211a3892be70074ff2cd1174c299/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-plus:11.0.2] /home/jorge/.android/build-cache/f8cb7bc5dce8730221007d55bf8f3472f06e8895/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-safetynet:11.0.2] /home/jorge/.android/build-cache/8f5f66a5ced3e58df7b5cd7b0af39f6cb867c7e3/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tagmanager:11.0.2] /home/jorge/.android/build-cache/fc58ad10881dc4fcb155078ba1dd3b40d6e80e22/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] /home/jorge/.android/build-cache/7e76bfa7b7fcdff17e2e468281fc04ced8ac9ce0/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.firebase:firebase-common:11.0.2] /home/jorge/.android/build-cache/79099af990798c7820e6dfb34e032ea4c9f578b2/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.2] /home/jorge/.android/build-cache/84a8e373960547fba490acd233eeb4b7e36322cd/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] /home/jorge/.android/build-cache/f5732b01a13f37a9569badaf7885aa1d5bc4e62a/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-vision:11.0.2] /home/jorge/.android/build-cache/dcc41484bc91e0ba7fc9777fd8593fa0b4a885c6/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-vision-common:11.0.2] /home/jorge/.android/build-cache/2f27ba83df398ad4122c41c7e90ba39f1d7a260e/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-wallet:11.0.2] /home/jorge/.android/build-cache/b8d710153097ee422a39024b319dd0b4f4786b21/output/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-identity:11.0.2] /home/jorge/.android/build-cache/849b9c787b380c680c7d4bbccfbfa22f66fcc17d/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-wearable:11.0.2] /home/jorge/.android/build-cache/9c6be02baf401ed00d96e794b1e16f0321548abc/output/AndroidManifest.xml:17:5-43
-MERGED from [jp.wasabeef:picasso-transformations:2.1.2] /home/jorge/.android/build-cache/f25e0355c9e250ba7d848aa3e9029aa7d5883232/output/AndroidManifest.xml:8:5-10:41
-MERGED from [com.google.android.gms:play-services-maps:11.0.4] /home/jorge/.android/build-cache/d075360002e2607b8c6d1a5c90ea7caab206af47/output/AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.4] /home/jorge/.android/build-cache/e49506c92cab6d36402433ad324cb09589a0994f/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /home/jorge/.android/build-cache/328e78466c6719618830dad52c10f46b8a926282/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] /home/jorge/.android/build-cache/3276b278ad7a6ba3c2835af1090da93f1cf34e2b/output/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.3.1] /home/jorge/.android/build-cache/ea6068b557b9e3cfc81af6e67457af97e9d8c2c0/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] /home/jorge/.android/build-cache/7dba13e17faecfe8a3c8ee9252b38f83f7063bd1/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] /home/jorge/.android/build-cache/5fa2f4d0bc104705610cead915e09dcde2d1d94a/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] /home/jorge/.android/build-cache/4ac8762749dff918b89183b012618d676fcf3070/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] /home/jorge/.android/build-cache/2171e8718bc3eb7ed358e649d2cacd2288cffb15/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] /home/jorge/.android/build-cache/731a28c4bc89a3376241e77be622dd5f819afd30/output/AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\118afc7f46a8f5664484520c03b97408dc5fcd28\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\226d4712170530062597f09acd52f939974484c4\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\f8615611323d4a490c95b741e61da942abca8cba\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\4f521a401f7513244c634a9866a57cebc4c3d300\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\9017c63159e4a74e44761fc0c014328c63304f48\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\75032ac010d2bc07f95d69c7fa658c0fbd0e17cd\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3de9aeab34d9e03325756128c58ec2576d57c99c\output\AndroidManifest.xml:22:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ac0386db56da48928384aa1f40e8fc6118105452\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1254169ec8f6e3f4e421a31654d355830acdb397\output\AndroidManifest.xml:3:3-41
+MERGED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\8b0315653df88b94ab68050728b6fd3f7dfc0256\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-cast:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b04fd24c57cdb3366e7e3914a25832f25fc5ee11\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:mediarouter-v7:25.2.0] C:\Users\Jorge Monzón Manzano\.android\build-cache\5c30e496a4ba07740bf3c3be5c8d813dad00b11e\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\68bc75be3f56683774862665a00d3d111da1bf29\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\2ba97183450360f4d03bb8e49dce0232f368862c\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:25.2.0] C:\Users\Jorge Monzón Manzano\.android\build-cache\0ebe03c3872decb88b34246a074ba00570127461\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\a77f6d93dbbdbe66e9fdf29045d0c1d0a30a6bde\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\acd9b84d2e5ce6d50dd0370d3f0a72b5c35eadf6\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-awareness:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\51b310f2b8cdd58ffd23c781390673cc56e8a48c\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-crash:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4751594421d01690cc3aa811dae099418a13f315\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\d7a8bfb62d19b04c6442a679d31f40adf47b6e3c\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-database:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\5ad35690d27a03e70d4228f6ead4f62c0a6450d7\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\8ef00ed749992ece341b16cbc3c9ebf3c0ed52f9\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-dynamic-links:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\606bb7fb05054f2bc797b2bb5ba59e0a8074bf14\output\AndroidManifest.xml:3:3-41
+MERGED from [com.google.firebase:firebase-messaging:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7c46842d4d900936af815eb96afb259cc8b0c263\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-storage:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3427decbf0e3e99b9be81edf4ba88eb1be4c70b0\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-storage-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3d674fbe865b30d6e263fe78ac6a7cd8b9ae939e\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-fitness:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3fa4f5d87806466042a08f517db6d569c7d3f89f\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-games:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\767a8efae467a3e731f4aec9b10ae10efc4fa5d5\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-drive:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\c93fbefd3025a98be0c634951e3b803a1be29011\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-gass:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\2c9040e74f94dd89b1080aaa7083a162e806b077\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3c2334892a6f2820a8613d2a0fafa0ba551fa3d6\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\5b538883ebae7f6774c3cef324c3544bd3c26c93\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\77738cf45ca377b0506c5b5cd448ec657c55f7a7\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-instantapps:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\069ba5f04bd48a0591b1acede55185be64db3b23\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\54a28520c8e8aa4788b4ae27c50eda02253f7330\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-nearby:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f52a3ce5c20615bdac4e9c242d53039588fccd1a\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-panorama:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ca963d35fe0fdd80ae0a670275341ae3882adfab\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-places:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\e7fed25b8d8d49256e8ff82d476613468ae8d88b\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-plus:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\c310b4c596aca5208ee8c2a766b6c13826ab3482\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7bf1acd21b0c506b372de0722479976b4cbf5b37\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\2fbfd4a07e3d9e59d43cd7acf2aaa2685e9edc69\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\78a285274ee2a941426c2b449567e401718e93e4\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f6ae7975fa538bc57d63fb67109b73e83844afc1\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\a64daf5bf65c0eddfe196f496d0509ad64284d1f\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1bd9f026491c50bc81efe2d16e7a646b62e11ebd\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-vision:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1e2ea43b605ffdfa455b4f84e78a74d8d90c676f\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-vision-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\37c67137fd9be3156fdfa32d1dc34057ae261eb5\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-wallet:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\433e4ad0254cfbb632b97024ec44277137236ab9\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-identity:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\6b37ea25a15e908539b650bd576f6c8eac3cad43\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-wearable:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\2adf3b16e3b198daa4405556d09ea99e42f6f36e\output\AndroidManifest.xml:17:5-43
+MERGED from [jp.wasabeef:picasso-transformations:2.1.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\471b727dbf793aa043fcb5bc4ef87692aeb94eea\output\AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\1ea52e8f6fbbd8af6abe54e1734a1277fe4ce2be\output\AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\d528097210ba5e02127804b5323844f53a876677\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\777b72c467076e02c99a4abca5c521fabdb52c47\output\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\53f3ca621dac15c2a75639a78e7b68daa308db40\output\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\33730318c85742770d8b5d928d035f54a0ef67e3\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\badb705784db88b67520f978bb3ed7c476264674\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\5723eb05ae87b1c4ee8216badc9e8857c24960e2\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\84ee104bb46e3780df6a1402098888e6d2aa980a\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\0358cd5838846219c9d23dcb8b0d779e7ca3998c\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\29e96fb85b252166046d2254c8e315a041b1b8aa\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
-		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\Proyectos\Proyecto_Final_DAM\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:transition:25.3.1] /home/jorge/.android/build-cache/18de21292f3cf716fa04368aa97fd18e6f7428a5/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/jorge/.android/build-cache/78b85755dacd8b6b1b2b49a0123e1abd5e128fb3/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:cardview-v7:25.3.1] /home/jorge/.android/build-cache/8daa4519f5ec2b0953b2941960fe2ae62f0bf663/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] /home/jorge/.android/build-cache/1d9390fa2970334329012ac93ffd9c79cd118585/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/jorge/.android/build-cache/d7ef0aedaef373115cb6e5cf07e5175ac5a9cb80/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/jorge/.android/build-cache/e96086bace7c346bc87c9f0891db04dec34d8ddb/output/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] /home/jorge/.android/build-cache/ea6068b557b9e3cfc81af6e67457af97e9d8c2c0/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] /home/jorge/.android/build-cache/7dba13e17faecfe8a3c8ee9252b38f83f7063bd1/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] /home/jorge/.android/build-cache/5fa2f4d0bc104705610cead915e09dcde2d1d94a/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] /home/jorge/.android/build-cache/4ac8762749dff918b89183b012618d676fcf3070/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] /home/jorge/.android/build-cache/2171e8718bc3eb7ed358e649d2cacd2288cffb15/output/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] /home/jorge/.android/build-cache/731a28c4bc89a3376241e77be622dd5f819afd30/output/AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\226d4712170530062597f09acd52f939974484c4\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\f8615611323d4a490c95b741e61da942abca8cba\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\4f521a401f7513244c634a9866a57cebc4c3d300\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\68bc75be3f56683774862665a00d3d111da1bf29\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\2ba97183450360f4d03bb8e49dce0232f368862c\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\33730318c85742770d8b5d928d035f54a0ef67e3\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\badb705784db88b67520f978bb3ed7c476264674\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\5723eb05ae87b1c4ee8216badc9e8857c24960e2\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\84ee104bb46e3780df6a1402098888e6d2aa980a\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\0358cd5838846219c9d23dcb8b0d779e7ca3998c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\29e96fb85b252166046d2254c8e315a041b1b8aa\output\AndroidManifest.xml:25:5-27:34
 	android:value
-		ADDED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:25.3.1] C:\Users\Jorge Monzón Manzano\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:26:9-47
 activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:11.0.2] /home/jorge/.android/build-cache/d4f7943a9eecd242d18c2ce658c801576526cb46/output/AndroidManifest.xml:25:9-232
+ADDED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3de9aeab34d9e03325756128c58ec2576d57c99c\output\AndroidManifest.xml:25:9-232
 	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.2] /home/jorge/.android/build-cache/d4f7943a9eecd242d18c2ce658c801576526cb46/output/AndroidManifest.xml:25:72-181
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3de9aeab34d9e03325756128c58ec2576d57c99c\output\AndroidManifest.xml:25:72-181
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.2] /home/jorge/.android/build-cache/d4f7943a9eecd242d18c2ce658c801576526cb46/output/AndroidManifest.xml:25:182-230
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3de9aeab34d9e03325756128c58ec2576d57c99c\output\AndroidManifest.xml:25:182-230
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.2] /home/jorge/.android/build-cache/d4f7943a9eecd242d18c2ce658c801576526cb46/output/AndroidManifest.xml:25:19-71
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3de9aeab34d9e03325756128c58ec2576d57c99c\output\AndroidManifest.xml:25:19-71
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-analytics:11.0.2] /home/jorge/.android/build-cache/69fbbf19ec5a107d5db3f6ad3da5ece86ad4fa6c/output/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] /home/jorge/.android/build-cache/7e76bfa7b7fcdff17e2e468281fc04ced8ac9ce0/output/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] /home/jorge/.android/build-cache/f5732b01a13f37a9569badaf7885aa1d5bc4e62a/output/AndroidManifest.xml:24:5-67
+ADDED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ac0386db56da48928384aa1f40e8fc6118105452\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\78a285274ee2a941426c2b449567e401718e93e4\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1bd9f026491c50bc81efe2d16e7a646b62e11ebd\output\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from [com.google.android.gms:play-services-analytics:11.0.2] /home/jorge/.android/build-cache/69fbbf19ec5a107d5db3f6ad3da5ece86ad4fa6c/output/AndroidManifest.xml:24:22-65
+		ADDED from [com.google.android.gms:play-services-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ac0386db56da48928384aa1f40e8fc6118105452\output\AndroidManifest.xml:24:22-65
 activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:20:9-25:20
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:20:9-25:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:20:51-74
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:20:51-74
 	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:20:75-121
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:20:75-121
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:20:19-50
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:20:19-50
 intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:21:13-24:29
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:21:13-24:29
 action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:22:17-89
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:22:17-89
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:22:25-87
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:22:25-87
 category#android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:23:17-75
+ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:23:17-75
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] /home/jorge/.android/build-cache/eb57131ee0185bfb6fadce354f495633ba101721/output/AndroidManifest.xml:23:27-73
+		ADDED from [com.google.android.gms:play-services-appinvite:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\ab0a9c99d4c1418ccc7dbb2e419bbacb26a91183\output\AndroidManifest.xml:23:27-73
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:20:9-189
+ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:20:9-189
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:20:129-162
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:20:129-162
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:20:163-187
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:20:163-187
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:20:69-128
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:20:69-128
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:20:19-68
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:20:19-68
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:24:9-184
+ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:24:9-184
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:24:64-87
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:24:64-87
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:24:88-182
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:24:88-182
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.0.2] /home/jorge/.android/build-cache/4797c462ad8dfe3df496136c2c61696eb93205bf/output/AndroidManifest.xml:24:18-63
+		ADDED from [com.google.android.gms:play-services-auth:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\bd230c58d273bac2d00decd9a7ccf011e08217b5\output\AndroidManifest.xml:24:18-63
 receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
-ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] /home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/AndroidManifest.xml:5:9-99
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\output\AndroidManifest.xml:5:9-99
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] /home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/AndroidManifest.xml:5:19-97
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\output\AndroidManifest.xml:5:19-97
 service#com.google.android.gms.cast.framework.media.MediaNotificationService
-ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] /home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/AndroidManifest.xml:6:9-103
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\output\AndroidManifest.xml:6:9-103
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] /home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/AndroidManifest.xml:6:18-101
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\output\AndroidManifest.xml:6:18-101
 service#com.google.android.gms.cast.framework.ReconnectionService
-ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] /home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/AndroidManifest.xml:7:9-92
+ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\output\AndroidManifest.xml:7:9-92
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] /home/jorge/.android/build-cache/ac13e7d8e430979ac6b7b6f72fb5ff3be4cf84a6/output/AndroidManifest.xml:7:18-90
+		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\1d6cfdb66c0104b308b87b79c2d5c7701ddaed91\output\AndroidManifest.xml:7:18-90
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:11.0.2] /home/jorge/.android/build-cache/3add28999eba00a3066baf42669f5d17fe68ac94/output/AndroidManifest.xml:23:9-27:19
+ADDED from [com.google.firebase:firebase-messaging:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7c46842d4d900936af815eb96afb259cc8b0c263\output\AndroidManifest.xml:23:9-27:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:11.0.2] /home/jorge/.android/build-cache/3add28999eba00a3066baf42669f5d17fe68ac94/output/AndroidManifest.xml:23:88-111
+		ADDED from [com.google.firebase:firebase-messaging:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7c46842d4d900936af815eb96afb259cc8b0c263\output\AndroidManifest.xml:23:88-111
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:11.0.2] /home/jorge/.android/build-cache/3add28999eba00a3066baf42669f5d17fe68ac94/output/AndroidManifest.xml:23:18-87
+		ADDED from [com.google.firebase:firebase-messaging:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7c46842d4d900936af815eb96afb259cc8b0c263\output\AndroidManifest.xml:23:18-87
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:11.0.2] /home/jorge/.android/build-cache/3add28999eba00a3066baf42669f5d17fe68ac94/output/AndroidManifest.xml:24:13-26:29
+ADDED from [com.google.firebase:firebase-messaging:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7c46842d4d900936af815eb96afb259cc8b0c263\output\AndroidManifest.xml:24:13-26:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:11.0.2] /home/jorge/.android/build-cache/3add28999eba00a3066baf42669f5d17fe68ac94/output/AndroidManifest.xml:24:28-51
+		ADDED from [com.google.firebase:firebase-messaging:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7c46842d4d900936af815eb96afb259cc8b0c263\output\AndroidManifest.xml:24:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:11.0.2] /home/jorge/.android/build-cache/3add28999eba00a3066baf42669f5d17fe68ac94/output/AndroidManifest.xml:25:17-77
+ADDED from [com.google.firebase:firebase-messaging:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7c46842d4d900936af815eb96afb259cc8b0c263\output\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:11.0.2] /home/jorge/.android/build-cache/3add28999eba00a3066baf42669f5d17fe68ac94/output/AndroidManifest.xml:25:25-75
+		ADDED from [com.google.firebase:firebase-messaging:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\7c46842d4d900936af815eb96afb259cc8b0c263\output\AndroidManifest.xml:25:25-75
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.android.gms:play-services-gcm:11.0.2] /home/jorge/.android/build-cache/cb8b349d05107495821a16fdb78738b2803dbc51/output/AndroidManifest.xml:20:5-81
-MERGED from [com.google.android.gms:play-services-iid:11.0.2] /home/jorge/.android/build-cache/97d0890fded05deb0e55b1ed81531ca820bfb9e2/output/AndroidManifest.xml:20:5-81
-MERGED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:22:5-81
+ADDED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3c2334892a6f2820a8613d2a0fafa0ba551fa3d6\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\77738cf45ca377b0506c5b5cd448ec657c55f7a7\output\AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.android.gms:play-services-gcm:11.0.2] /home/jorge/.android/build-cache/cb8b349d05107495821a16fdb78738b2803dbc51/output/AndroidManifest.xml:20:22-79
+		ADDED from [com.google.android.gms:play-services-gcm:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\3c2334892a6f2820a8613d2a0fafa0ba551fa3d6\output\AndroidManifest.xml:20:22-79
 service#com.google.android.gms.tagmanager.TagManagerService
-ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:24:9-134
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:24:9-134
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:24:110-132
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:24:110-132
 	android:exported
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:24:85-109
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:24:85-109
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:24:18-84
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:24:18-84
 activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
-ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:25:9-32:20
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:25:9-32:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:25:94-117
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:25:94-117
 	android:noHistory
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:25:118-142
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:25:118-142
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:25:19-93
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:25:19-93
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:26:13-31:29
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:26:13-31:29
 data
-ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:27:17-71
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:27:17-71
 	android:scheme
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:27:23-69
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:27:23-69
 action#android.intent.action.VIEW
-ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:28:17-68
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:28:17-68
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:28:25-66
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:28:25-66
 category#android.intent.category.BROWSABLE
-ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:30:17-77
+ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] /home/jorge/.android/build-cache/c1eb77d81400a5beb800faabe4236e79b50dc54f/output/AndroidManifest.xml:30:27-75
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\b883737745816d7bf65a8309bb76b0c5864eafb1\output\AndroidManifest.xml:30:27-75
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] /home/jorge/.android/build-cache/7e76bfa7b7fcdff17e2e468281fc04ced8ac9ce0/output/AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\78a285274ee2a941426c2b449567e401718e93e4\output\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:27:162-184
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:27:185-208
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:27:185-208
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] /home/jorge/.android/build-cache/7e76bfa7b7fcdff17e2e468281fc04ced8ac9ce0/output/AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\78a285274ee2a941426c2b449567e401718e93e4\output\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:32:16-87
 service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:33:7-197
+ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:33:7-197
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:33:148-170
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:33:148-170
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:33:171-195
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:33:171-195
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:33:91-147
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:33:91-147
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:11.0.2] /home/jorge/.android/build-cache/b9cdc3ffb9c8fd419c44ddcc885a136630ccee51/output/AndroidManifest.xml:33:16-90
+		ADDED from [com.google.firebase:firebase-analytics:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\50d748e1bb96fa4c0fca50d6feb2e4edad1133ba\output\AndroidManifest.xml:33:16-90
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:30:9-35:20
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:30:9-35:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:31:13-34:29
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:31:13-34:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:32:25-78
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:33:17-60
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:33:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:33:27-58
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:33:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:39:9-119
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:39:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:39:93-117
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:39:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:39:19-92
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:39:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:43:9-47:19
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:43:9-47:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:43:83-106
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:43:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:43:18-82
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:43:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:44:13-46:29
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:44:13-46:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:44:28-51
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:44:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:45:17-79
+ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:45:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:11.0.2] /home/jorge/.android/build-cache/8243661cc34f753ae60a2df518b24de06147f80a/output/AndroidManifest.xml:45:25-77
+		ADDED from [com.google.firebase:firebase-iid:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\4bcefed3e81fd3b7ce764783dfb0170d0d5cfdf9\output\AndroidManifest.xml:45:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:11.0.2] /home/jorge/.android/build-cache/79099af990798c7820e6dfb34e032ea4c9f578b2/output/AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f6ae7975fa538bc57d63fb67109b73e83844afc1\output\AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:11.0.2] /home/jorge/.android/build-cache/79099af990798c7820e6dfb34e032ea4c9f578b2/output/AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f6ae7975fa538bc57d63fb67109b73e83844afc1\output\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:11.0.2] /home/jorge/.android/build-cache/79099af990798c7820e6dfb34e032ea4c9f578b2/output/AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f6ae7975fa538bc57d63fb67109b73e83844afc1\output\AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:11.0.2] /home/jorge/.android/build-cache/79099af990798c7820e6dfb34e032ea4c9f578b2/output/AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f6ae7975fa538bc57d63fb67109b73e83844afc1\output\AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:11.0.2] /home/jorge/.android/build-cache/79099af990798c7820e6dfb34e032ea4c9f578b2/output/AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:11.0.2] C:\Users\Jorge Monzón Manzano\.android\build-cache\f6ae7975fa538bc57d63fb67109b73e83844afc1\output\AndroidManifest.xml:6:79-143
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:11.0.4] /home/jorge/.android/build-cache/d075360002e2607b8c6d1a5c90ea7caab206af47/output/AndroidManifest.xml:21:5-77
+ADDED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\1ea52e8f6fbbd8af6abe54e1734a1277fe4ce2be\output\AndroidManifest.xml:21:5-77
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:11.0.4] /home/jorge/.android/build-cache/d075360002e2607b8c6d1a5c90ea7caab206af47/output/AndroidManifest.xml:21:19-51
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\1ea52e8f6fbbd8af6abe54e1734a1277fe4ce2be\output\AndroidManifest.xml:21:19-51
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:11.0.4] /home/jorge/.android/build-cache/d075360002e2607b8c6d1a5c90ea7caab206af47/output/AndroidManifest.xml:21:52-75
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\1ea52e8f6fbbd8af6abe54e1734a1277fe4ce2be\output\AndroidManifest.xml:21:52-75
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/jorge/.android/build-cache/e49506c92cab6d36402433ad324cb09589a0994f/output/AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\d528097210ba5e02127804b5323844f53a876677\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/jorge/.android/build-cache/e49506c92cab6d36402433ad324cb09589a0994f/output/AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\d528097210ba5e02127804b5323844f53a876677\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/jorge/.android/build-cache/e49506c92cab6d36402433ad324cb09589a0994f/output/AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\d528097210ba5e02127804b5323844f53a876677\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] /home/jorge/.android/build-cache/e49506c92cab6d36402433ad324cb09589a0994f/output/AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\d528097210ba5e02127804b5323844f53a876677\output\AndroidManifest.xml:19:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/jorge/.android/build-cache/3276b278ad7a6ba3c2835af1090da93f1cf34e2b/output/AndroidManifest.xml:20:9-121
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\53f3ca621dac15c2a75639a78e7b68daa308db40\output\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/jorge/.android/build-cache/3276b278ad7a6ba3c2835af1090da93f1cf34e2b/output/AndroidManifest.xml:20:66-119
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\53f3ca621dac15c2a75639a78e7b68daa308db40\output\AndroidManifest.xml:20:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /home/jorge/.android/build-cache/3276b278ad7a6ba3c2835af1090da93f1cf34e2b/output/AndroidManifest.xml:20:20-65
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] C:\Users\Jorge Monzón Manzano\.android\build-cache\53f3ca621dac15c2a75639a78e7b68daa308db40\output\AndroidManifest.xml:20:20-65
