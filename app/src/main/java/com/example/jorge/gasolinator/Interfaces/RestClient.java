@@ -10,6 +10,7 @@ import retrofit2.http.Query;
  * Created by jorge on 4/09/17.
  */
 
+//Clase para el uso de retrofit
 public interface RestClient {
 
     @GET("api/place/nearbysearch/json?sensor=true&key=AIzaSyAOWdJ_I5YBEHj_n5BedjU1nNmFDfOpAQ4")

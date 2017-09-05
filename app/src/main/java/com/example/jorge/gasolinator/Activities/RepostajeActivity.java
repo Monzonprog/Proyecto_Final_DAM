@@ -19,19 +19,16 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputEditText;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.SimpleCursorAdapter;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,7 +36,6 @@ import android.widget.Toast;
 import com.example.jorge.gasolinator.BBDD.db.DaoMaster;
 import com.example.jorge.gasolinator.BBDD.db.DaoSession;
 import com.example.jorge.gasolinator.BBDD.db.Repostaje;
-import com.example.jorge.gasolinator.BBDD.db.RepostajeDao;
 import com.example.jorge.gasolinator.BBDD.db.Vehiculos;
 import com.example.jorge.gasolinator.BBDD.db.VehiculosDao;
 import com.example.jorge.gasolinator.R;
@@ -56,7 +52,6 @@ import java.util.List;
 
 import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 import static android.media.MediaRecorder.VideoSource.CAMERA;
-import static com.example.jorge.gasolinator.R.id.fotoRepostaje;
 
 
 public class RepostajeActivity extends AppCompatActivity {
@@ -97,6 +92,7 @@ public class RepostajeActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
+        //Declaramos los elementos
         fotoRepostaje = (ImageView) findViewById(R.id.fotoRepostaje);
         vehiculosSpinnerRepostaje = (Spinner) this.findViewById(R.id.vehiculoSpinnerRepostaje);
         guardarRespostaje = (FloatingActionButton)this.findViewById(R.id.guardarRespostaje);
@@ -118,6 +114,7 @@ public class RepostajeActivity extends AppCompatActivity {
         vehiculosDao = daoSession.getVehiculosDao();
         vehiculos = vehiculosDao.loadAll();
 
+        //Listas para pintar la lista de vehiculos y después guardar su referencia
         List<String> coches = new ArrayList<>();
         final List<String> idVehiculoGuardar = new ArrayList<>();
 
@@ -131,12 +128,13 @@ public class RepostajeActivity extends AppCompatActivity {
             coches.add(aux);
 
         }
-
+        //Array para pintar los vehículos
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, coches);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         vehiculosSpinnerRepostaje.setAdapter(dataAdapter);
 
+        //Tomamos fecha
         fechaRepostaje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -179,7 +177,8 @@ public class RepostajeActivity extends AppCompatActivity {
                 String precioLitrosRespostaje = precioLETRepostaje.getText().toString();
                 String uriUsuario = verficarUri();
 
-                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(RepostajeActivity.this, "Vehiculos-db"); //The users-db here is the name of our database.
+                //Abrimos bbdd y creamos registro de repostaje
+                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(RepostajeActivity.this, "Vehiculos-db");
                 Database db = helper.getWritableDb();
                 daoSession = new DaoMaster(db).newSession();
 
@@ -212,7 +211,8 @@ public class RepostajeActivity extends AppCompatActivity {
 
     }
 
-    private boolean verificarFechas() {
+    private boolean verificarFechas() { //Verificamos si los campos están rellenos
+
 
         boolean verificacion;
 
@@ -230,7 +230,7 @@ public class RepostajeActivity extends AppCompatActivity {
 
 
 
-    private String checkTipoLlenado() {
+    private String checkTipoLlenado() { //Tomamos el dato delRadioButton
 
         String tipo;
 
@@ -263,6 +263,7 @@ public class RepostajeActivity extends AppCompatActivity {
         return verificacion;
     }
 
+    //Verificamos Uri, si está vacia guardamos un string en blanco
     private String verficarUri() {
 
         if (yourUri.equals("")) {
@@ -290,7 +291,7 @@ public class RepostajeActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
+    //Dialog para elegir de donde obtener la imagen
     public void camaraGaleria(View view) {
 
         AlertDialog.Builder pictureDialog = new AlertDialog.Builder(this);
@@ -315,6 +316,7 @@ public class RepostajeActivity extends AppCompatActivity {
         pictureDialog.show();
     }
 
+    //Abrimos y elegimos imagen de la galería
     public void choosePhotoFromGallary() {
 
         int storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
@@ -331,6 +333,7 @@ public class RepostajeActivity extends AppCompatActivity {
 
     }
 
+    //Tomamos la foto de la cámara
     private void takePhotoFromCamera() {
 
         if (checkPermission()) {
@@ -350,6 +353,7 @@ public class RepostajeActivity extends AppCompatActivity {
 
     }
 
+    //Resultado de la acción
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -388,6 +392,7 @@ public class RepostajeActivity extends AppCompatActivity {
 
     }
 
+    //Resultado de la acción
     public String saveImage(Bitmap myBitmap) {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         myBitmap.compress(Bitmap.CompressFormat.JPEG, 50, bytes);
@@ -428,7 +433,7 @@ public class RepostajeActivity extends AppCompatActivity {
         return cursor.getString(column_index);
     }
 
-
+    //Permisos para el uso de cámara y galería
     private boolean checkPermission() {
         int permissionSendMessage = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
         int storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);

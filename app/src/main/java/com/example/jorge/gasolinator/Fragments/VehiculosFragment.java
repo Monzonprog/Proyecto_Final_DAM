@@ -103,6 +103,7 @@ public class VehiculosFragment extends Fragment {
     public void onActivityCreated(Bundle state) {
         super.onActivityCreated(state);
 
+        //Declaración de elementos
         marca = (TextInputEditText) getActivity().findViewById(R.id.marcaVehiculoAñadirVehiculos);
         modelo = (TextInputEditText) getActivity().findViewById(R.id.modeloVehiculoAñadirVehiculos);
         apodo = (TextInputEditText) getActivity().findViewById(R.id.apodoVehiculoAñadirVehiculos);
@@ -124,8 +125,8 @@ public class VehiculosFragment extends Fragment {
                 String combustibleUsuario = combustible.getSelectedItem().toString();
                 String uriUsuario = verficarUri();
 
-
-                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(getActivity(), "Vehiculos-db"); //The users-db here is the name of our database.
+                //Abrimos base de datos para guardar el vehículo guardardo
+                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(getActivity(), "Vehiculos-db");
                 Database db = helper.getWritableDb();
 
                 daoSession = new DaoMaster(db).newSession();
@@ -160,6 +161,7 @@ public class VehiculosFragment extends Fragment {
 
     }
 
+    //Verificamos Uri, si está vacia guardamos un string en blanco
     private String verficarUri() {
 
         if (yourUri.equals("")) {
@@ -187,6 +189,7 @@ public class VehiculosFragment extends Fragment {
         return verificacion;
     }
 
+    //Dialog para elegir de donde obtener la imagen
     public void camaraGaleria(View view) {
 
         AlertDialog.Builder pictureDialog = new AlertDialog.Builder(getActivity());
@@ -211,6 +214,7 @@ public class VehiculosFragment extends Fragment {
         pictureDialog.show();
     }
 
+    //Abrimos y elegimos imagen de la galería
     public void choosePhotoFromGallary() {
 
         int storagePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
@@ -227,6 +231,7 @@ public class VehiculosFragment extends Fragment {
 
     }
 
+    //Tomamos la foto de la cámara
     private void takePhotoFromCamera() {
 
         if (checkPermission()) {
@@ -246,6 +251,7 @@ public class VehiculosFragment extends Fragment {
 
     }
 
+    //Resultado de la acción
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -285,6 +291,7 @@ public class VehiculosFragment extends Fragment {
 
     }
 
+    //Guardamos imagen
     public String saveImage(Bitmap myBitmap) {
         Bitmap reducedBitmap = getResizedBitmap(myBitmap, 320);
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
@@ -326,7 +333,7 @@ public class VehiculosFragment extends Fragment {
         return cursor.getString(column_index);
     }
 
-
+    //Permisos para el uso de cámara y galería
     private boolean checkPermission() {
         int permissionSendMessage = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.CAMERA);
         int storagePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);

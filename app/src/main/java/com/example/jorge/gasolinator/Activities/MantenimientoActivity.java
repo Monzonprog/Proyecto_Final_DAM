@@ -87,6 +87,8 @@ public class MantenimientoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
+        //Declaramos los elementos
+
         vehiculoSpinnerMantenimiento = (Spinner)findViewById(R.id.vehiculoSpinnerMantenimiento);
         operacionSpinnerMantenimiento = (Spinner)findViewById(R.id.operacionSpinnerMantenimiento);
         fechaButtonMantenimiento = (Button)findViewById(R.id.fechaButtonMantenimiento);
@@ -108,6 +110,7 @@ public class MantenimientoActivity extends AppCompatActivity {
         vehiculosDao = daoSession.getVehiculosDao();
         vehiculos = vehiculosDao.loadAll();
 
+        //Listas para pintar la lista de vehiculos y después guardar su referencia
         final List<String> coches = new ArrayList<>();
         final List<String> idVehiculoGuardar = new ArrayList<>();
 
@@ -122,11 +125,13 @@ public class MantenimientoActivity extends AppCompatActivity {
 
         }
 
+        //Array para pintar los vehículos
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, coches);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         vehiculoSpinnerMantenimiento.setAdapter(dataAdapter);
 
+        //Tomamos fecha
         fechaButtonMantenimiento.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -167,6 +172,7 @@ public class MantenimientoActivity extends AppCompatActivity {
                 String descripcion = descripcionMantenimiento.toString();
                 String uriUsuario = verficarUri();
 
+                //Abrimos bbdd y creamos registro de mantenimiento
                 DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(MantenimientoActivity.this, "Vehiculos-db"); //The users-db here is the name of our database.
                 Database db = helper.getWritableDb();
                 daoSession = new DaoMaster(db).newSession();
@@ -216,7 +222,7 @@ public class MantenimientoActivity extends AppCompatActivity {
         return verificacion;
     }
 
-    private boolean verificarFechas() {
+    private boolean verificarFechas() { //Verificamos que el usuario ha introducido fecha
 
         boolean verificacion;
 
@@ -232,6 +238,7 @@ public class MantenimientoActivity extends AppCompatActivity {
 
     }
 
+    //Verificamos Uri, si está vacia guardamos un string en blanco
     private String verficarUri() {
 
         if (yourUri.equals("")) {
@@ -260,6 +267,7 @@ public class MantenimientoActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //Dialog para elegir de donde obtener la imagen
     public void camaraGaleria(View view) {
 
         AlertDialog.Builder pictureDialog = new AlertDialog.Builder(this);
@@ -284,6 +292,7 @@ public class MantenimientoActivity extends AppCompatActivity {
         pictureDialog.show();
     }
 
+    //Abrimos y elegimos imagen de la galería
     public void choosePhotoFromGallary() {
 
         int storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
@@ -300,6 +309,7 @@ public class MantenimientoActivity extends AppCompatActivity {
 
     }
 
+    //Tomamos la foto de la cámara
     private void takePhotoFromCamera() {
 
         if (checkPermission()) {
@@ -317,6 +327,7 @@ public class MantenimientoActivity extends AppCompatActivity {
         }
     }
 
+    //Resultado de la acción
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -355,6 +366,7 @@ public class MantenimientoActivity extends AppCompatActivity {
 
     }
 
+    //Guardamos imagen
     public String saveImage(Bitmap myBitmap) {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         myBitmap.compress(Bitmap.CompressFormat.JPEG, 50, bytes);
@@ -395,12 +407,13 @@ public class MantenimientoActivity extends AppCompatActivity {
         return cursor.getString(column_index);
     }
 
+    //Permisos para el uso de cámara y galería
     private boolean checkPermission() {
-        int permissionSendMessage = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
+        int permissionCamera = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
         int storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         List<String> listPermissionsNeeded = new ArrayList<>();
 
-        if (permissionSendMessage != PackageManager.PERMISSION_GRANTED) {
+        if (permissionCamera != PackageManager.PERMISSION_GRANTED) {
             listPermissionsNeeded.add(Manifest.permission.CAMERA);
         }
         if (storagePermission != PackageManager.PERMISSION_GRANTED) {

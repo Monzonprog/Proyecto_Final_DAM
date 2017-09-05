@@ -17,7 +17,6 @@ import java.util.List;
 
 import jp.wasabeef.picasso.transformations.CropCircleTransformation;
 
-import static android.support.constraint.R.id.parent;
 
 
 /**
@@ -33,12 +32,14 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
 
     public static class VehiculosViewHolder extends RecyclerView.ViewHolder {
 
+    //Elementos del ViewHolder
     public ImageView imagenTarjetaVehiculo;
     public TextView textViewMarcaTarjetaVehiculo;
     public TextView textViewModeloTarjetaVehiculo;
     public TextView textViewApodoTarjetaVehiculo;
     public ImageView editarTarjetaVehiculo;
     public ImageView borrarTarjetaVehiculo;
+
 
     public VehiculosViewHolder(View v) {
         super(v);
@@ -51,19 +52,20 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
     }
 }
 
+    //Recibimos los elementos
     public ListaVehiculosAdapter(List<Vehiculos> items){
 
         this.items = items;
 
     }
 
-
+    //Obtenemos la cantidad de elmentos
     @Override
     public int getItemCount() {
         return items.size();
     }
 
-
+    //Creamos el ViewHolder
     @Override
     public VehiculosViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
 
@@ -77,9 +79,11 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
 
     }
 
+    //Pintamos los elementos del ViewHolder
     @Override
     public void onBindViewHolder(VehiculosViewHolder viewholder, final int i) {
 
+        //Verificamos si el usuario ha guardado una imagen y la pintamos, si no mostrarmos una generica
         if(items.get(i).getFoto_Uri().equals("")){
             Picasso.with(context).load(R.drawable.siluetas_vehiculos)
                     .into( viewholder.imagenTarjetaVehiculo);
@@ -90,7 +94,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
         viewholder.textViewApodoTarjetaVehiculo.setText(items.get(i).getApodo());
 
 
-
+        //Listener de los botones de edutar y borrar de cardview
         viewholder.borrarTarjetaVehiculo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -108,6 +112,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
 
     }
 
+    //Pasamos de integer a string
     private String convertirValor(int i){
 
         String ID = String.valueOf(items.get(i).getId());
@@ -116,6 +121,7 @@ public class ListaVehiculosAdapter extends RecyclerView.Adapter<ListaVehiculosAd
 
     }
 
+    //Listener de la cardview
     public void setListener (OpcionesTarjetaVehiculos listener){
 
         this.listener = listener;

@@ -230,6 +230,8 @@ public class ListaVehiculosFragment extends Fragment implements OpcionesTarjetaV
         });
 
     }
+
+    //Método encargado de pintar los vehículos cuando cambiamos de pestaña
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);

@@ -11,7 +11,6 @@ import com.google.gson.annotations.SerializedName;
 
 public class Location {
 
-
     private Double lat;
 
     private Double lng;

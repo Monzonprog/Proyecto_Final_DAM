@@ -16,9 +16,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.jorge.gasolinator.Class.ConexionManager;
-import com.example.jorge.gasolinator.Class.GasolinerasCercanasItem;
 import com.example.jorge.gasolinator.Class.GasolinerasCercanasObject;
-import com.example.jorge.gasolinator.Class.Result;
 import com.example.jorge.gasolinator.Interfaces.IDataGasolinerasCercanas;
 import com.example.jorge.gasolinator.R;
 import com.google.android.gms.common.ConnectionResult;
@@ -32,7 +30,6 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
@@ -57,6 +54,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
+
         //Mostramos botón "Atrás" en la activity
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -86,7 +84,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         return super.onOptionsItemSelected(item);
     }
 
-
+    //Comprobamos permisos para el acceso a la localización
     private boolean checkPermission() {
         int permissionAccesFine = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION);
         int permissionCoarse = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION);
@@ -126,10 +124,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             return;
         }
         mMap.setMyLocationEnabled(true);
-        // Add a marker in Sydney and move the camera
-        //LatLng sydney = new LatLng(-34, 151);
-        //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 
     @Override
@@ -160,6 +154,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
     }
 
+    //Actualizamos posición al movernos
     @Override
     public void onLocationChanged(Location location) {
         mLastLocation = location;
@@ -171,7 +166,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             double longitude = location.getLongitude();
 
 
-            obtenerGasolinerasCercanas(latitude, longitude);
+            obtenerGasolinerasCercanas(latitude, longitude); //Según nuestra posición volvemos a pintar las gasolineras
 
             CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(posicion, 17);
             mMap.animateCamera(cameraUpdate);
@@ -190,10 +185,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 mGoogleApiClient);
             if (mLastLocation != null) {
 
-
             }
             startLocationUpdates();
-
     }
 
     protected void startLocationUpdates() {
@@ -249,7 +242,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
         return true;
-
     }
 
     @Override
@@ -293,6 +285,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
 
+    //Conexión mediante retrofit para obtener los datos
     private void obtenerGasolinerasCercanas(double latitude, double longitude) {
         ConexionManager conexion = new ConexionManager("https://maps.googleapis.com/maps/");
         conexion.getGasolinerasCercanas(this, "gas_station", latitude, longitude, 5000);
@@ -300,27 +293,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void conexionCorrecta(GasolinerasCercanasObject gasolinerasCercanas) {
 
-      /* BitmapDescriptor icon = BitmapDescriptorFactory.fromResource(R.drawable.icono_gasolinera);
-
-        for (Marker item:gasolinerasMarker){
-
-            item.remove();
-        }
-
-
-        gasolinerasMarker = new ArrayList<>();
-
-        for(final Result item: gasolinerasCercanas.getResults()){
-
-            gasolinerasMarker.add(mMap.addMarker(new MarkerOptions().title(item.getName())
-                    .position(new LatLng(item.getGeometry().getLocation().getLat(),
-                            item.getGeometry().getLocation().getLng())).icon(icon)));
-
-
-        }*/
-
         mMap.clear();
-        // This loop will go through all the results and add marker on each location.
+
+        // Creamos bucle para pintar las gasolineras
         for (int i = 0; i < gasolinerasCercanas.getResults().size(); i++) {
             Double lat = gasolinerasCercanas.getResults().get(i).getGeometry().getLocation().getLat();
             Double lng = gasolinerasCercanas.getResults().get(i).getGeometry().getLocation().getLng();

@@ -17,7 +17,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by jorge on 4/09/17.
  */
 
+
+//Clase para conexión mediante Retrofit
 public class ConexionManager {
+
     private Gson gson;
     private Retrofit retrofit;
     private RestClient restClient;

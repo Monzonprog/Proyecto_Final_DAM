@@ -90,6 +90,7 @@ public class ImpuestosActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
+        //Declaración de elementos
         vehiculoSpinnerImpuesto = (Spinner) findViewById(R.id.vehiculoSpinnerImpuesto);
         fechaButtonImpuesto = (Button) findViewById(R.id.fechaButtonImpuesto);
         añadirFotoImpuesto = (Button) findViewById(R.id.añadirFotoImpuestos);
@@ -110,6 +111,7 @@ public class ImpuestosActivity extends AppCompatActivity {
         vehiculosDao = daoSession.getVehiculosDao();
         vehiculos = vehiculosDao.loadAll();
 
+        //Listas para pintar la lista de vehiculos y después guardar su referencia
         final List<String> coches = new ArrayList<>();
         final List<String> idVehiculoGuardar = new ArrayList<>();
 
@@ -123,12 +125,13 @@ public class ImpuestosActivity extends AppCompatActivity {
             coches.add(aux);
 
         }
-
+        //Array para pintar los vehículos
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, coches);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         vehiculoSpinnerImpuesto.setAdapter(dataAdapter);
 
+        //Tomamos fecha
         fechaButtonImpuesto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -169,7 +172,8 @@ public class ImpuestosActivity extends AppCompatActivity {
                 String descripcion = descripcionImpuesto.toString();
                 String uriUsuario = verficarUri();
 
-                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(ImpuestosActivity.this, "Vehiculos-db"); //The users-db here is the name of our database.
+                //Abrimos bbdd y creamos registro de impuesto
+                DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(ImpuestosActivity.this, "Vehiculos-db");
                 Database db = helper.getWritableDb();
                 daoSession = new DaoMaster(db).newSession();
 
@@ -216,7 +220,7 @@ public class ImpuestosActivity extends AppCompatActivity {
         return verificacion;
     }
 
-    private boolean verificarFechas() {
+    private boolean verificarFechas() { //Verificamos que el usuario ha introducido fecha
 
         boolean verificacion;
 
@@ -232,6 +236,7 @@ public class ImpuestosActivity extends AppCompatActivity {
 
     }
 
+    //Verificamos Uri, si está vacia guardamos un string en blanco
     private String verficarUri() {
 
         if (yourUri.equals("")) {
@@ -258,6 +263,7 @@ public class ImpuestosActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //Dialog para elegir de donde obtener la imagen
     public void camaraGaleria(View view) {
 
         AlertDialog.Builder pictureDialog = new AlertDialog.Builder(this);
@@ -282,6 +288,7 @@ public class ImpuestosActivity extends AppCompatActivity {
         pictureDialog.show();
     }
 
+    //Abrimos y elegimos imagen de la galería
     public void choosePhotoFromGallary() {
 
         int storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
@@ -298,6 +305,7 @@ public class ImpuestosActivity extends AppCompatActivity {
 
     }
 
+    //Tomamos la foto de la cámara
     private void takePhotoFromCamera() {
 
         if (checkPermission()) {
@@ -315,6 +323,7 @@ public class ImpuestosActivity extends AppCompatActivity {
         }
     }
 
+    //Resultado de la acción
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -353,6 +362,7 @@ public class ImpuestosActivity extends AppCompatActivity {
 
     }
 
+    //Guardamos imagen
     public String saveImage(Bitmap myBitmap) {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         myBitmap.compress(Bitmap.CompressFormat.JPEG, 50, bytes);
@@ -384,6 +394,7 @@ public class ImpuestosActivity extends AppCompatActivity {
 
     }
 
+
     public String getRealPathFromURI(Uri contentUri) {
         String[] proj = {MediaStore.Images.Media.DATA};
         Cursor cursor = this.managedQuery(contentUri, proj, null, null, null);
@@ -393,12 +404,13 @@ public class ImpuestosActivity extends AppCompatActivity {
         return cursor.getString(column_index);
     }
 
+    //Permisos para el uso de cámara y galería
     private boolean checkPermission() {
-        int permissionSendMessage = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
+        int permissionCamera = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
         int storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         List<String> listPermissionsNeeded = new ArrayList<>();
 
-        if (permissionSendMessage != PackageManager.PERMISSION_GRANTED) {
+        if (permissionCamera != PackageManager.PERMISSION_GRANTED) {
             listPermissionsNeeded.add(Manifest.permission.CAMERA);
         }
         if (storagePermission != PackageManager.PERMISSION_GRANTED) {
