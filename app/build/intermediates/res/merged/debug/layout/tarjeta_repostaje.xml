@@ -1,22 +1,22 @@
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="5dp"
     app:cardCornerRadius="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
         android:orientation="horizontal"
-        android:weightSum="2"
-        android:layout_marginStart="8dp">
+        android:weightSum="2">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1.80"
             android:orientation="vertical"
-            android:layout_weight="1.70"
             android:weightSum="2">
 
             <LinearLayout
@@ -36,14 +36,14 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/tipoLlenadoTarjetaRepostaje"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -56,25 +56,21 @@
                         android:id="@+id/costeTarjetaRepostaje"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:textColor="@color/black"/>
-
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
-
-
             </LinearLayout>
-        </LinearLayout>
 
+        </LinearLayout>
 
 
         <ImageView
             android:id="@+id/detalleTarjetaRepostaje"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.30"
-            android:layout_margin="5dp"
-            android:src="@drawable/detalle"/>
+            android:layout_weight="0.20"
+            android:src="@drawable/detalle" />
 
     </LinearLayout>
 

@@ -154,7 +154,7 @@ public class RepostajeActivity extends AppCompatActivity {
                                                   int monthOfYear, int dayOfMonth) {
 
                                 dayUsuario = String.valueOf(dayOfMonth);
-                                monthUsuario = String.valueOf(monthOfYear);
+                                monthUsuario = String.valueOf(monthOfYear + 1);
                                 yearUsuario = String.valueOf(year);
 
                                 fechaTVRepostaje.setText(dayOfMonth + " - " + (monthOfYear + 1) +

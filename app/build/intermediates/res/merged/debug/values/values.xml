@@ -9,6 +9,20 @@
 <item>@id/cast_button_type_empty</item>
 <item>@id/cast_button_type_play_pause_toggle</item>
 </array>
+    <string-array name="fechaSpinner">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
     <string-array name="frases">
         <item>Conduce con precaución</item>
         <item>Revisa la presión de tus neumáticos</item>
@@ -1169,6 +1183,8 @@
     <string name="s6">Allow Ad to create a calendar event?</string>
     <string name="salirButton">Salir</string>
     <string name="search_menu_title">Search</string>
+    <string name="sinBuscar">Primero selecciona un vehiculo y el mes a buscar</string>
+    <string name="sinFactura">No has guardado ninguna imagen</string>
     <string name="sinVehiculos">Primero debes crear un vehículo</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="tagmanager_preview_dialog_button">Continue</string>

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:2:1-82:12
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:2:1-83:12
 	package
 		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:3:5-44
 		INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml
@@ -67,7 +67,7 @@ ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app
 	android:name
 		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:23:22-76
 application
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:25:5-80:19
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:25:5-81:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jorge/.android/build-cache/f197b1c0f1d02d44c728b35bdecfce585eae33b7/output/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] /home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:25.3.1] /home/jorge/.android/build-cache/18de21292f3cf716fa04368aa97fd18e6f7428a5/output/AndroidManifest.xml:26:5-20
@@ -210,9 +210,13 @@ ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app
 	android:name
 		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:77:13-52
 activity#com.example.jorge.gasolinator.Activities.DatosActivity
-ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:79:9-71
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:79:9-62
 	android:name
 		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:79:19-59
+activity#com.example.jorge.gasolinator.Activities.FacturaActivity
+ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:80:9-73
+	android:name
+		ADDED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml:80:19-61
 uses-sdk
 INJECTED from /home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/jorge/.android/build-cache/f197b1c0f1d02d44c728b35bdecfce585eae33b7/output/AndroidManifest.xml:5:5-7:41

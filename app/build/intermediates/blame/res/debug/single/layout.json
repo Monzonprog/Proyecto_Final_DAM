@@ -32,6 +32,14 @@
         "source": "/home/jorge/.android/build-cache/005d5d20603e51b745b387c7c96c176b27d2747e/output/res/layout/mr_volume_control.xml"
     },
     {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/activity_factura.xml",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/activity_factura.xml"
+    },
+    {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/tarjeta_gastos.xml",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/tarjeta_gastos.xml"
+    },
+    {
         "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
         "source": "/home/jorge/.android/build-cache/0f386cef776087a6cc566d1f4b758cea25cdb7bf/output/res/layout/design_navigation_menu.xml"
     },

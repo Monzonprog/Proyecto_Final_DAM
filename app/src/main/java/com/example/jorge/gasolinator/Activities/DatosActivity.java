@@ -1,5 +1,6 @@
 package com.example.jorge.gasolinator.Activities;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,37 +13,52 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.jorge.gasolinator.Adapters.ListaMantenimientoAdapter;
 import com.example.jorge.gasolinator.Adapters.ListaRepostajeAdapter;
 import com.example.jorge.gasolinator.Adapters.ListaVehiculosAdapter;
 import com.example.jorge.gasolinator.BBDD.db.DaoMaster;
 import com.example.jorge.gasolinator.BBDD.db.DaoSession;
+import com.example.jorge.gasolinator.BBDD.db.Gastos;
+import com.example.jorge.gasolinator.BBDD.db.GastosDao;
 import com.example.jorge.gasolinator.BBDD.db.Repostaje;
 import com.example.jorge.gasolinator.BBDD.db.RepostajeDao;
 import com.example.jorge.gasolinator.BBDD.db.Vehiculos;
 import com.example.jorge.gasolinator.BBDD.db.VehiculosDao;
 import com.example.jorge.gasolinator.Fragments.ListaVehiculosFragment;
+import com.example.jorge.gasolinator.Interfaces.VerFactura;
 import com.example.jorge.gasolinator.R;
+
+import org.greenrobot.greendao.query.QueryBuilder;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.jorge.gasolinator.R.id.recicladorMantenimientiTarjetaDatos;
 import static com.example.jorge.gasolinator.R.id.recicladorRepostajeTarjetaDatos;
+import static com.example.jorge.gasolinator.R.id.vehiculoSpinnerDatos;
 
-public class DatosActivity extends AppCompatActivity {
+public class DatosActivity extends AppCompatActivity implements VerFactura {
 
     private List<Vehiculos> vehiculos;
     private List<Repostaje> repostajes;
-    private SQLiteDatabase db;
-    private DaoMaster daoMaster;
-    private DaoSession daoSession;
+    private List<Gastos> gastos;
+    private SQLiteDatabase db, db1;
+    private DaoMaster daoMaster, daoMaster1;
+    private DaoSession daoSession, daoSession1;
     private VehiculosDao vehiculosDao;
     private RepostajeDao repostajeDao;
-    private Spinner vehiculoSpinnerDatos;
-    private ImageView IVExpandirRepostajeTarjetaDatos, IVRecogerRepostajeTarjetaDatos;
-    private RecyclerView recycler;
-    private RecyclerView.LayoutManager lManager;
-    private ListaRepostajeAdapter adapter;
+    private GastosDao gastoDao;
+    private Spinner vehiculoSpinnerDatos, fechaSpinnerDatos;
+    private ImageView IVExpandirRepostajeTarjetaDatos, IVRecogerRepostajeTarjetaDatos,
+    buscarDatosActivity, IVExpandirMantenimientoTarjetaDatos, IVRecogerMantenimientoTarjetaDatos;
+    private RecyclerView recycler, recycler1;
+    private RecyclerView.LayoutManager lManager, lManager1;
+    private ListaRepostajeAdapter adapterRepostaje;
+    private ListaMantenimientoAdapter adapterGastos;
+    private String id, aux;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,16 +69,25 @@ public class DatosActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         vehiculoSpinnerDatos = (Spinner)findViewById(R.id.vehiculoSpinnerDatos);
+        fechaSpinnerDatos = (Spinner)findViewById(R.id.fechaSpinnerDatos);
         IVExpandirRepostajeTarjetaDatos = (ImageView)findViewById(R.id.IVExpandirRepostajeTarjetaDatos);
         IVRecogerRepostajeTarjetaDatos = (ImageView)findViewById(R.id.IVRecogerRepostajeTarjetaDatos);
+        IVExpandirMantenimientoTarjetaDatos = (ImageView)findViewById(R.id.IVExpandirMantenimientoTarjetaDatos);
+        IVRecogerMantenimientoTarjetaDatos = (ImageView)findViewById(R.id.IVRecogerMantenimientoTarjetaDatos);
+        buscarDatosActivity = (ImageView)findViewById(R.id.buscarDatosActivity);
 
 
         //Recuperamos datos de los vehiculos creados
-        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this, "Vehiculos-db");
+        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(DatosActivity.this, "Vehiculos-db");
         db = helper.getWritableDatabase();
         daoMaster = new DaoMaster(db);
         daoSession = daoMaster.newSession();
         daoSession.getVehiculosDao();
+
+        db1 = helper.getWritableDatabase();
+        daoMaster1 = new DaoMaster(db1);
+        daoSession1 = daoMaster1.newSession();
+        daoSession1.getGastosDao();
 
         vehiculosDao = daoSession.getVehiculosDao();
         vehiculos = vehiculosDao.loadAll();
@@ -75,40 +100,112 @@ public class DatosActivity extends AppCompatActivity {
 
         for (i = 0; i < vehiculos.size(); i++) {
 
-            String id = vehiculos.get(i).getId().toString();
-            String aux = vehiculos.get(i).getApodo() + " - " + vehiculos.get(i).getMarca();
+            id = vehiculos.get(i).getId().toString();
+            aux = vehiculos.get(i).getApodo() + " - " + vehiculos.get(i).getMarca();
             idVehiculoGuardar.add(id);
             coches.add(aux);
 
         }
         //Array para pintar los vehículos
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(this,
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(DatosActivity.this,
                 android.R.layout.simple_spinner_item, coches);
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         vehiculoSpinnerDatos.setAdapter(dataAdapter);
 
-        //Recuperamos datos de repostajes
-        daoSession.getRepostajeDao();
 
-        repostajeDao = daoSession.getRepostajeDao();
-        repostajes = repostajeDao.loadAll(); //TODO filtrar busqueda a vehiculo seleccionado
+        buscarDatosActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        recycler = (RecyclerView) findViewById(recicladorRepostajeTarjetaDatos);
+                if ( id != null) {
+
+                    String idBuscar = vehiculos.get( vehiculoSpinnerDatos.getSelectedItemPosition()).getId().toString();
+                    String mes =  String.valueOf(fechaSpinnerDatos.getSelectedItemPosition() +1);
+
+                  //Recuperamos datos de repostajes
+                    daoSession.getRepostajeDao();
+
+                    repostajeDao = daoSession.getRepostajeDao();
+
+                    repostajes =  repostajeDao.queryBuilder()
+                            .where(RepostajeDao.Properties.IdVehiculo.eq(idBuscar),
+                            RepostajeDao.Properties.MesRepostaje.eq(mes)).build().list();
+
+                    recycler = (RecyclerView) findViewById(recicladorRepostajeTarjetaDatos);
 
 
-        lManager = new LinearLayoutManager(this);
-        recycler.setLayoutManager(lManager);
-        adapter = new ListaRepostajeAdapter(repostajes);
-        //adapter.setListener(this); //Listener para el botón de borrar y editar
-        recycler.setAdapter(adapter);
+                    lManager = new LinearLayoutManager(DatosActivity.this);
+                    recycler.setLayoutManager(lManager);
+                    adapterRepostaje = new ListaRepostajeAdapter(repostajes);
+                    adapterRepostaje.setListener(DatosActivity.this); //Listener para el botón de factura
+                    recycler.setAdapter(adapterRepostaje);
+
+                    //Recuperamos datos de gastos
+                    daoSession1.getGastosDao();
+
+                    gastoDao = daoSession1.getGastosDao();
+
+                    gastos =  gastoDao.queryBuilder()
+                            .where(GastosDao.Properties.IdVehiculo.eq(idBuscar),
+                                    GastosDao.Properties.MesGastos.eq(mes)).build().list();
+
+                    recycler1 = (RecyclerView) findViewById(recicladorMantenimientiTarjetaDatos);
+
+
+                    lManager1 = new LinearLayoutManager(DatosActivity.this);
+                  recycler1.setLayoutManager(lManager1);
+                    adapterGastos = new ListaMantenimientoAdapter(gastos);
+                    adapterGastos.setListener(DatosActivity.this); //Listener para el botón de factura
+                    recycler1.setAdapter(adapterGastos);
+
+                }else{
+
+                    Toast.makeText(DatosActivity.this, R.string.sinVehiculos, Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
+
+
+
+        IVExpandirMantenimientoTarjetaDatos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(recycler1 != null){ //Evitamos que si no hay datos la aplicación falle
+
+                recycler1.setVisibility(View.VISIBLE); //Mostramos RecyclerView y botón
+                    IVRecogerMantenimientoTarjetaDatos.setVisibility(View.VISIBLE);}
+                else{
+
+                    Toast.makeText(DatosActivity.this, R.string.sinBuscar, Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+        IVRecogerMantenimientoTarjetaDatos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                recycler1.setVisibility(View.GONE);//Ocultamos RecyclerView y botón
+                IVRecogerMantenimientoTarjetaDatos.setVisibility(View.GONE);
+            }
+        });
+
 
 
         IVExpandirRepostajeTarjetaDatos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                recycler.setVisibility(View.VISIBLE);
-                IVRecogerRepostajeTarjetaDatos.setVisibility(View.VISIBLE);
+                if(recycler != null){ //Evitamos que si no hay datos la aplicación falle
+
+                    recycler.setVisibility(View.VISIBLE); //Mostramos RecyclerView y botón
+                    IVRecogerRepostajeTarjetaDatos.setVisibility(View.VISIBLE);}
+                else{
+
+                    Toast.makeText(DatosActivity.this, R.string.sinBuscar, Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -116,7 +213,7 @@ public class DatosActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                recycler.setVisibility(View.GONE);
+                recycler.setVisibility(View.GONE);//Ocultamos RecyclerView y botón
                 IVRecogerRepostajeTarjetaDatos.setVisibility(View.GONE);
             }
         });
@@ -137,4 +234,20 @@ public class DatosActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    //Llamamos a la activity que contiene un imageview para mostrar la factura
+    @Override
+    public void examinarFactura(String uri) {
+
+        if(uri.equals("")){
+
+            Toast.makeText(this, R.string.sinFactura, Toast.LENGTH_LONG).show();
+
+        }else {
+            Intent i = new Intent(this, FacturaActivity.class);
+            i.putExtra("StringURI", uri); //Pasamos valor Uri
+            startActivity(i);
+        }
+    }
+
 }

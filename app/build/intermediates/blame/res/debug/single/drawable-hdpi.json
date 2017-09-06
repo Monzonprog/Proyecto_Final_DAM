@@ -22,5 +22,13 @@
     {
         "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-hdpi/recoger.png",
         "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-hdpi/recoger.png"
+    },
+    {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-hdpi/sin_detalle.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-hdpi/sin_detalle.png"
+    },
+    {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-hdpi/buscar.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-hdpi/buscar.png"
     }
 ]

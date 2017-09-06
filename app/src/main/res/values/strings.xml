@@ -103,6 +103,24 @@
     <!--Mapas-->
     <string name="errorDescargaGasolineras">Error al descargar las gasolineras cercanas</string>
     <string name="sinVehiculos">Primero debes crear un vehículo</string>
+    <string name="sinFactura">No has guardado ninguna imagen</string>
+    <string name="sinBuscar">Primero selecciona un vehiculo y el mes a buscar</string>
 
+    <!--Datos-->
+
+    <string-array name="fechaSpinner">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
 
 </resources>

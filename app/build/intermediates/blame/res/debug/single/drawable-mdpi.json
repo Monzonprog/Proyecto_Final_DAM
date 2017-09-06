@@ -8,6 +8,10 @@
         "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-mdpi/recoger.png"
     },
     {
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-mdpi/buscar.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-mdpi/buscar.png"
+    },
+    {
         "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-mdpi/icono_gasolinera.png",
         "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-mdpi/icono_gasolinera.png"
     },

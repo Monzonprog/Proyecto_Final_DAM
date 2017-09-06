@@ -76,7 +76,8 @@
         <activity
             android:name=".Activities.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".Activities.DatosActivity"></activity>
+        <activity android:name=".Activities.DatosActivity" />
+        <activity android:name=".Activities.FacturaActivity"></activity>
     </application>
 
 </manifest>

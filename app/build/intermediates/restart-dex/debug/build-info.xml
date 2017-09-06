@@ -6,40 +6,31 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1504653073998"
+    timestamp="1504739943159"
     token="-153397759909774899"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="140" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="20" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
-    <artifact
-        location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-        type="SPLIT" />
     <artifact
         location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/outputs/apk/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1504652510621"
+        timestamp="1504738359780"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
         <artifact
             location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
@@ -73,17 +64,22 @@
         <artifact
             location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
+        <artifact
+            location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1504653073998"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
+        timestamp="1504739812429"
+        verifier="METHOD_DELETED" >
         <artifact
             location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1504739943159"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />

@@ -4,29 +4,27 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="2">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <View
-                    android:id="@+id/view"
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_marginTop="10dp" />
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
 
                 <TextView
                     android:id="@+id/vehiculoTV"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/vehiculoTV"
                     android:textColor="@color/black"
@@ -35,18 +33,59 @@
 
                 <Spinner
                     android:id="@+id/vehiculoSpinnerDatos"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-                <View
-                    android:id="@+id/view2"
-                    android:layout_width="match_parent"
-                    android:layout_height="4dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.75">
+
+                <TextView
+                    android:id="@+id/fechaTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fechaButton"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/fechaSpinnerDatos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/fechaSpinner"/>
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="0.25">
+
+                <ImageView
+                    android:id="@+id/buscarDatosActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/buscar"/>
+
+                </LinearLayout>
         </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></LinearLayout>
 
         <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
@@ -57,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@color/grey_soft">
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -86,7 +125,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:background="@color/grey_soft">
 
                     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
                         android:id="@+id/recicladorRepostajeTarjetaDatos"
@@ -104,8 +144,6 @@
                         android:layout_gravity="end"
                         android:layout_marginEnd="10dp"
                         android:visibility="gone"/>
-
-
 
                 </LinearLayout>
 
@@ -139,7 +177,7 @@
                         android:textSize="21sp" />
 
                     <ImageView
-                        android:id="@+id/IVMantenimientoTarjetaDatos"
+                        android:id="@+id/IVExpandirMantenimientoTarjetaDatos"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="0.30"
@@ -149,16 +187,26 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/grey_soft">
 
                     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:id="@+id/recicladorMantenientoTarjetaDatos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
+                        android:id="@+id/recicladorMantenimientiTarjetaDatos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:padding="3dp"
                         android:scrollbars="vertical"
-                        android:visibility="invisible" />
+                        android:visibility="gone"/>
 
+                    <ImageView
+                        android:id="@+id/IVRecogerMantenimientoTarjetaDatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/recoger"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone"/>
 
                 </LinearLayout>
 
@@ -176,22 +224,6 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-                        android:id="@+id/recicladorImpuestosTarjetaDatos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
-                        android:padding="3dp"
-                        android:scrollbars="vertical"
-                        android:visibility="invisible" />
-
-
-                </LinearLayout>
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -215,9 +247,30 @@
                     android:layout_weight="0.30"
                     android:src="@drawable/desplegar" />
 
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/recicladorImpuestosTarjetaDatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:padding="3dp"
+                        android:scrollbars="vertical"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
+
 
     </LinearLayout>
 
