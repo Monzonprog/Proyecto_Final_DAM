@@ -7,9 +7,9 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM" />
-            <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app" />
-            <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/greendaogenerator" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/greendaogenerator" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,4 +1,4 @@
-#Tue Sep 05 19:27:50 CEST 2017
-base.0=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2
+#Thu Sep 07 10:40:39 CEST 2017
+base.0=C\:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2
 renamed.0=classes.dex
-file.0=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex
+file.0=C\:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2\\classes.dex

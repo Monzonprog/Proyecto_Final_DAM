@@ -1,7 +1,7 @@
-#Thu Sep 07 01:19:05 CEST 2017
-base.0=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7b93b0a1a14c63d067ccf4bad95a4b2a6246939d
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_884121b1f53932c39fa3c8cdae703525f0cd560d/classes.dex
-base.1=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_884121b1f53932c39fa3c8cdae703525f0cd560d
-file.0=/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7b93b0a1a14c63d067ccf4bad95a4b2a6246939d/classes.dex
+#Thu Sep 07 10:40:39 CEST 2017
+base.0=C\:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_99671d1b3019a3d343ff3885b3f912df6a6789d4
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_76f67d7078d1585dd0e8f6c89bd9ca97937d82cf\\classes.dex
+base.1=C\:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_76f67d7078d1585dd0e8f6c89bd9ca97937d82cf
+file.0=C\:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_99671d1b3019a3d343ff3885b3f912df6a6789d4\\classes.dex

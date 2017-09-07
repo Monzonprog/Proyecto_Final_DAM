@@ -241,28 +241,36 @@
                     android:textSize="21sp" />
 
                 <ImageView
-                    android:id="@+id/IVImpuestosTarjetaDatos"
+                    android:id="@+id/IVExpandirImpuestosTarjetaDatos"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.30"
                     android:src="@drawable/desplegar" />
 
-
-
             </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/grey_soft">
 
                     <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
                         android:id="@+id/recicladorImpuestosTarjetaDatos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:padding="3dp"
                         android:scrollbars="vertical"
-                        android:visibility="invisible" />
+                        android:visibility="gone"/>
 
+                    <ImageView
+                        android:id="@+id/IVRecogerImpuestosTarjetaDatos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/recoger"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:visibility="gone"/>
 
                 </LinearLayout>
 

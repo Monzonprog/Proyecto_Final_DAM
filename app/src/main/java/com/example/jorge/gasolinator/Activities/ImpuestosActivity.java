@@ -151,7 +151,7 @@ public class ImpuestosActivity extends AppCompatActivity {
                                                   int monthOfYear, int dayOfMonth) {
 
                                 dayUsuario = String.valueOf(dayOfMonth);
-                                monthUsuario = String.valueOf(monthOfYear);
+                                monthUsuario = String.valueOf(monthOfYear+1);
                                 yearUsuario = String.valueOf(year);
 
                                 fechaTVImpuesto.setText(dayOfMonth + " - " + (monthOfYear + 1) +
@@ -173,9 +173,9 @@ public class ImpuestosActivity extends AppCompatActivity {
                 }else {
 
                 String idVehiculoUsuario = idVehiculoGuardar.get(vehiculoSpinnerImpuesto.getSelectedItemPosition());
-                String coste = costeETImpuesto.toString();
-                String concepto = conceptoETImpuesto.toString();
-                String descripcion = descripcionImpuesto.toString();
+                String coste = costeETImpuesto.getText().toString();
+                String concepto = conceptoETImpuesto.getText().toString();
+                String descripcion = descripcionImpuesto.getText().toString();
                 String uriUsuario = verficarUri();
 
                 //Abrimos bbdd y creamos registro de impuesto

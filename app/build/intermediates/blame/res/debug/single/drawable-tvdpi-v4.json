@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_tall_off_client.png",
-        "source": "/home/jorge/.android/build-cache/f8cb7bc5dce8730221007d55bf8f3472f06e8895/output/res/drawable-tvdpi-v4/ic_plusone_tall_off_client.png"
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c310b4c596aca5208ee8c2a766b6c13826ab3482\\output\\res\\drawable-tvdpi-v4\\ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_small_off_client.png",
-        "source": "/home/jorge/.android/build-cache/f8cb7bc5dce8730221007d55bf8f3472f06e8895/output/res/drawable-tvdpi-v4/ic_plusone_small_off_client.png"
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c310b4c596aca5208ee8c2a766b6c13826ab3482\\output\\res\\drawable-tvdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
-        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_standard_off_client.png",
-        "source": "/home/jorge/.android/build-cache/f8cb7bc5dce8730221007d55bf8f3472f06e8895/output/res/drawable-tvdpi-v4/ic_plusone_standard_off_client.png"
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c310b4c596aca5208ee8c2a766b6c13826ab3482\\output\\res\\drawable-tvdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4/ic_plusone_medium_off_client.png",
-        "source": "/home/jorge/.android/build-cache/f8cb7bc5dce8730221007d55bf8f3472f06e8895/output/res/drawable-tvdpi-v4/ic_plusone_medium_off_client.png"
+        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png",
+        "source": "C:\\Users\\Jorge Monzón Manzano\\.android\\build-cache\\c310b4c596aca5208ee8c2a766b6c13826ab3482\\output\\res\\drawable-tvdpi-v4\\ic_plusone_medium_off_client.png"
     }
 ]

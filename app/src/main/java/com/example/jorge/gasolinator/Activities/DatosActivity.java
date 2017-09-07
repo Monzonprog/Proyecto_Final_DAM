@@ -15,6 +15,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.jorge.gasolinator.Adapters.ListaImpuestosAdapter;
 import com.example.jorge.gasolinator.Adapters.ListaMantenimientoAdapter;
 import com.example.jorge.gasolinator.Adapters.ListaRepostajeAdapter;
 import com.example.jorge.gasolinator.Adapters.ListaVehiculosAdapter;
@@ -22,6 +23,8 @@ import com.example.jorge.gasolinator.BBDD.db.DaoMaster;
 import com.example.jorge.gasolinator.BBDD.db.DaoSession;
 import com.example.jorge.gasolinator.BBDD.db.Gastos;
 import com.example.jorge.gasolinator.BBDD.db.GastosDao;
+import com.example.jorge.gasolinator.BBDD.db.Impuestos;
+import com.example.jorge.gasolinator.BBDD.db.ImpuestosDao;
 import com.example.jorge.gasolinator.BBDD.db.Repostaje;
 import com.example.jorge.gasolinator.BBDD.db.RepostajeDao;
 import com.example.jorge.gasolinator.BBDD.db.Vehiculos;
@@ -35,6 +38,8 @@ import org.greenrobot.greendao.query.QueryBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.jorge.gasolinator.R.id.impuestos;
+import static com.example.jorge.gasolinator.R.id.recicladorImpuestosTarjetaDatos;
 import static com.example.jorge.gasolinator.R.id.recicladorMantenimientiTarjetaDatos;
 import static com.example.jorge.gasolinator.R.id.recicladorRepostajeTarjetaDatos;
 import static com.example.jorge.gasolinator.R.id.vehiculoSpinnerDatos;
@@ -43,22 +48,25 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
 
     private List<Vehiculos> vehiculos;
     private List<Repostaje> repostajes;
+    private List<Impuestos> impuestos;
     private List<Gastos> gastos;
-    private SQLiteDatabase db, db1;
-    private DaoMaster daoMaster, daoMaster1;
-    private DaoSession daoSession, daoSession1;
+    private SQLiteDatabase db;
+    private DaoMaster daoMaster;
+    private DaoSession daoSession;
     private VehiculosDao vehiculosDao;
     private RepostajeDao repostajeDao;
+    private ImpuestosDao impuestoDao;
     private GastosDao gastoDao;
     private Spinner vehiculoSpinnerDatos, fechaSpinnerDatos;
     private ImageView IVExpandirRepostajeTarjetaDatos, IVRecogerRepostajeTarjetaDatos,
-    buscarDatosActivity, IVExpandirMantenimientoTarjetaDatos, IVRecogerMantenimientoTarjetaDatos;
-    private RecyclerView recycler, recycler1;
-    private RecyclerView.LayoutManager lManager, lManager1;
+    buscarDatosActivity, IVExpandirMantenimientoTarjetaDatos, IVRecogerMantenimientoTarjetaDatos,
+            IVExpandirImpuestosTarjetaDatos, IVRecogerImpuestosTarjetaDatos;
+    private RecyclerView recycler, recycler1, recycler2;
+    private RecyclerView.LayoutManager lManager, lManager1, lManager2;
     private ListaRepostajeAdapter adapterRepostaje;
     private ListaMantenimientoAdapter adapterGastos;
+    private ListaImpuestosAdapter adapterImpuesto;
     private String id, aux;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,20 +82,21 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
         IVRecogerRepostajeTarjetaDatos = (ImageView)findViewById(R.id.IVRecogerRepostajeTarjetaDatos);
         IVExpandirMantenimientoTarjetaDatos = (ImageView)findViewById(R.id.IVExpandirMantenimientoTarjetaDatos);
         IVRecogerMantenimientoTarjetaDatos = (ImageView)findViewById(R.id.IVRecogerMantenimientoTarjetaDatos);
+        IVExpandirImpuestosTarjetaDatos = (ImageView)findViewById(R.id.IVExpandirImpuestosTarjetaDatos);
+        IVRecogerImpuestosTarjetaDatos = (ImageView)findViewById(R.id.IVRecogerImpuestosTarjetaDatos);
+
         buscarDatosActivity = (ImageView)findViewById(R.id.buscarDatosActivity);
 
 
-        //Recuperamos datos de los vehiculos creados
+        //Recuperamos datos que mostraremos
         DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(DatosActivity.this, "Vehiculos-db");
         db = helper.getWritableDatabase();
         daoMaster = new DaoMaster(db);
         daoSession = daoMaster.newSession();
-        daoSession.getVehiculosDao();
 
-        db1 = helper.getWritableDatabase();
-        daoMaster1 = new DaoMaster(db1);
-        daoSession1 = daoMaster1.newSession();
-        daoSession1.getGastosDao();
+
+        daoSession.getVehiculosDao();
+        daoSession.getGastosDao();
 
         vehiculosDao = daoSession.getVehiculosDao();
         vehiculos = vehiculosDao.loadAll();
@@ -141,22 +150,38 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
                     recycler.setAdapter(adapterRepostaje);
 
                     //Recuperamos datos de gastos
-                    daoSession1.getGastosDao();
+                    daoSession.getGastosDao();
 
-                    gastoDao = daoSession1.getGastosDao();
+                    gastoDao = daoSession.getGastosDao();
 
                     gastos =  gastoDao.queryBuilder()
-                            .where(GastosDao.Properties.IdVehiculo.eq(idBuscar),
-                                    GastosDao.Properties.MesGastos.eq(mes)).build().list();
+                            .where(GastosDao.Properties.IdVehiculo.eq(idBuscar),GastosDao.Properties.MesGastos.eq(mes)).build().list();
 
                     recycler1 = (RecyclerView) findViewById(recicladorMantenimientiTarjetaDatos);
 
 
                     lManager1 = new LinearLayoutManager(DatosActivity.this);
-                  recycler1.setLayoutManager(lManager1);
+                    recycler1.setLayoutManager(lManager1);
                     adapterGastos = new ListaMantenimientoAdapter(gastos);
                     adapterGastos.setListener(DatosActivity.this); //Listener para el botón de factura
                     recycler1.setAdapter(adapterGastos);
+
+                    //Recuperamos datos de impuestos
+                    daoSession.getImpuestosDao();
+
+                    impuestoDao = daoSession.getImpuestosDao();
+
+                    impuestos =  impuestoDao.queryBuilder()
+                            .where(ImpuestosDao.Properties.IdVehiculo.eq(idBuscar),ImpuestosDao.Properties.MesImpuestos.eq(mes)).build().list();
+
+                    recycler2 = (RecyclerView) findViewById(recicladorImpuestosTarjetaDatos);
+
+
+                    lManager2 = new LinearLayoutManager(DatosActivity.this);
+                    recycler2.setLayoutManager(lManager2);
+                    adapterImpuesto = new ListaImpuestosAdapter(impuestos);
+                    adapterImpuesto.setListener(DatosActivity.this); //Listener para el botón de factura
+                    recycler2.setAdapter(adapterImpuesto);
 
                 }else{
 
@@ -168,6 +193,7 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
 
 
 
+        //Funcionalidad desplegar y contraer de los botones
         IVExpandirMantenimientoTarjetaDatos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -193,7 +219,6 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
         });
 
 
-
         IVExpandirRepostajeTarjetaDatos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -215,6 +240,31 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
 
                 recycler.setVisibility(View.GONE);//Ocultamos RecyclerView y botón
                 IVRecogerRepostajeTarjetaDatos.setVisibility(View.GONE);
+            }
+        });
+
+
+        IVExpandirImpuestosTarjetaDatos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(recycler2 != null){ //Evitamos que si no hay datos la aplicación falle
+
+                    recycler2.setVisibility(View.VISIBLE); //Mostramos RecyclerView y botón
+                    IVRecogerImpuestosTarjetaDatos.setVisibility(View.VISIBLE);}
+                else{
+
+                    Toast.makeText(DatosActivity.this, R.string.sinBuscar, Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+        IVRecogerImpuestosTarjetaDatos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                recycler2.setVisibility(View.GONE);//Ocultamos RecyclerView y botón
+                IVRecogerImpuestosTarjetaDatos.setVisibility(View.GONE);
             }
         });
     }

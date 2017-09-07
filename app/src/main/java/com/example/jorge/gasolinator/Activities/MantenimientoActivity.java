@@ -151,7 +151,7 @@ public class MantenimientoActivity extends AppCompatActivity {
                                                   int monthOfYear, int dayOfMonth) {
 
                                 dayUsuario = String.valueOf(dayOfMonth);
-                                monthUsuario = String.valueOf(monthOfYear);
+                                monthUsuario = String.valueOf(monthOfYear+1);
                                 yearUsuario = String.valueOf(year);
 
                                 fechaTVMantenimiento.setText(dayOfMonth + " - " + (monthOfYear + 1) +
@@ -174,8 +174,8 @@ public class MantenimientoActivity extends AppCompatActivity {
 
                     String idVehiculoUsuario = idVehiculoGuardar.get(vehiculoSpinnerMantenimiento.getSelectedItemPosition());
                     String tipoOperacion = operacionSpinnerMantenimiento.getSelectedItem().toString();
-                    String coste = costeETMantenimiento.toString();
-                    String descripcion = descripcionMantenimiento.toString();
+                    String coste = costeETMantenimiento.getText().toString();
+                    String descripcion = descripcionMantenimiento.getText().toString();
                     String uriUsuario = verficarUri();
 
                     //Abrimos bbdd y creamos registro de mantenimiento

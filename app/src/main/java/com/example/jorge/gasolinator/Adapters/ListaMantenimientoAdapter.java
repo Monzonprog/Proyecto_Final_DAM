@@ -74,7 +74,7 @@ public class ListaMantenimientoAdapter  extends RecyclerView.Adapter<ListaManten
     @Override
     public void onBindViewHolder(GastosViewHolder viewholder, final int i) {
 
-        String coste = items.get(i).getCoste() + "€";
+        String coste = "Importe: " + items.get(i).getCoste() + "€";
 
         String fecha = items.get(i).getDiaGastos() + " - " + items.get(i).getMesGastos()
                 + " - " + items.get(i).getAñoGastos();
