@@ -136,15 +136,6 @@
                         android:scrollbars="vertical"
                         android:visibility="gone"/>
 
-                    <ImageView
-                        android:id="@+id/IVRecogerRepostajeTarjetaDatos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/recoger"
-                        android:layout_gravity="end"
-                        android:layout_marginEnd="10dp"
-                        android:visibility="gone"/>
-
                 </LinearLayout>
 
             </LinearLayout>
@@ -197,15 +188,6 @@
                         android:layout_height="wrap_content"
                         android:padding="3dp"
                         android:scrollbars="vertical"
-                        android:visibility="gone"/>
-
-                    <ImageView
-                        android:id="@+id/IVRecogerMantenimientoTarjetaDatos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/recoger"
-                        android:layout_gravity="end"
-                        android:layout_marginEnd="10dp"
                         android:visibility="gone"/>
 
                 </LinearLayout>
@@ -261,15 +243,6 @@
                         android:layout_height="wrap_content"
                         android:padding="3dp"
                         android:scrollbars="vertical"
-                        android:visibility="gone"/>
-
-                    <ImageView
-                        android:id="@+id/IVRecogerImpuestosTarjetaDatos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/recoger"
-                        android:layout_gravity="end"
-                        android:layout_marginEnd="10dp"
                         android:visibility="gone"/>
 
                 </LinearLayout>

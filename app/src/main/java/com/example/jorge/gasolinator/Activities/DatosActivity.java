@@ -58,9 +58,8 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
     private ImpuestosDao impuestoDao;
     private GastosDao gastoDao;
     private Spinner vehiculoSpinnerDatos, fechaSpinnerDatos;
-    private ImageView IVExpandirRepostajeTarjetaDatos, IVRecogerRepostajeTarjetaDatos,
-    buscarDatosActivity, IVExpandirMantenimientoTarjetaDatos, IVRecogerMantenimientoTarjetaDatos,
-            IVExpandirImpuestosTarjetaDatos, IVRecogerImpuestosTarjetaDatos;
+    private ImageView IVExpandirRepostajeTarjetaDatos,buscarDatosActivity, IVExpandirMantenimientoTarjetaDatos,
+            IVExpandirImpuestosTarjetaDatos ;
     private RecyclerView recycler, recycler1, recycler2;
     private RecyclerView.LayoutManager lManager, lManager1, lManager2;
     private ListaRepostajeAdapter adapterRepostaje;
@@ -76,16 +75,13 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
         //Mostramos botón "Atrás" en la activity
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        vehiculoSpinnerDatos = (Spinner)findViewById(R.id.vehiculoSpinnerDatos);
-        fechaSpinnerDatos = (Spinner)findViewById(R.id.fechaSpinnerDatos);
-        IVExpandirRepostajeTarjetaDatos = (ImageView)findViewById(R.id.IVExpandirRepostajeTarjetaDatos);
-        IVRecogerRepostajeTarjetaDatos = (ImageView)findViewById(R.id.IVRecogerRepostajeTarjetaDatos);
-        IVExpandirMantenimientoTarjetaDatos = (ImageView)findViewById(R.id.IVExpandirMantenimientoTarjetaDatos);
-        IVRecogerMantenimientoTarjetaDatos = (ImageView)findViewById(R.id.IVRecogerMantenimientoTarjetaDatos);
-        IVExpandirImpuestosTarjetaDatos = (ImageView)findViewById(R.id.IVExpandirImpuestosTarjetaDatos);
-        IVRecogerImpuestosTarjetaDatos = (ImageView)findViewById(R.id.IVRecogerImpuestosTarjetaDatos);
+        vehiculoSpinnerDatos = (Spinner) findViewById(R.id.vehiculoSpinnerDatos);
+        fechaSpinnerDatos = (Spinner) findViewById(R.id.fechaSpinnerDatos);
+        IVExpandirRepostajeTarjetaDatos = (ImageView) findViewById(R.id.IVExpandirRepostajeTarjetaDatos);
+        IVExpandirMantenimientoTarjetaDatos = (ImageView) findViewById(R.id.IVExpandirMantenimientoTarjetaDatos);
+        IVExpandirImpuestosTarjetaDatos = (ImageView) findViewById(R.id.IVExpandirImpuestosTarjetaDatos);
 
-        buscarDatosActivity = (ImageView)findViewById(R.id.buscarDatosActivity);
+        buscarDatosActivity = (ImageView) findViewById(R.id.buscarDatosActivity);
 
 
         //Recuperamos datos que mostraremos
@@ -126,19 +122,19 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
             @Override
             public void onClick(View v) {
 
-                if ( id != null) {
+                if (id != null) {
 
-                    String idBuscar = vehiculos.get( vehiculoSpinnerDatos.getSelectedItemPosition()).getId().toString();
-                    String mes =  String.valueOf(fechaSpinnerDatos.getSelectedItemPosition() +1);
+                    String idBuscar = vehiculos.get(vehiculoSpinnerDatos.getSelectedItemPosition()).getId().toString();
+                    String mes = String.valueOf(fechaSpinnerDatos.getSelectedItemPosition() + 1);
 
-                  //Recuperamos datos de repostajes
+                    //Recuperamos datos de repostajes
                     daoSession.getRepostajeDao();
 
                     repostajeDao = daoSession.getRepostajeDao();
 
-                    repostajes =  repostajeDao.queryBuilder()
+                    repostajes = repostajeDao.queryBuilder()
                             .where(RepostajeDao.Properties.IdVehiculo.eq(idBuscar),
-                            RepostajeDao.Properties.MesRepostaje.eq(mes)).build().list();
+                                    RepostajeDao.Properties.MesRepostaje.eq(mes)).build().list();
 
                     recycler = (RecyclerView) findViewById(recicladorRepostajeTarjetaDatos);
 
@@ -154,8 +150,8 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
 
                     gastoDao = daoSession.getGastosDao();
 
-                    gastos =  gastoDao.queryBuilder()
-                            .where(GastosDao.Properties.IdVehiculo.eq(idBuscar),GastosDao.Properties.MesGastos.eq(mes)).build().list();
+                    gastos = gastoDao.queryBuilder()
+                            .where(GastosDao.Properties.IdVehiculo.eq(idBuscar), GastosDao.Properties.MesGastos.eq(mes)).build().list();
 
                     recycler1 = (RecyclerView) findViewById(recicladorMantenimientiTarjetaDatos);
 
@@ -171,8 +167,8 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
 
                     impuestoDao = daoSession.getImpuestosDao();
 
-                    impuestos =  impuestoDao.queryBuilder()
-                            .where(ImpuestosDao.Properties.IdVehiculo.eq(idBuscar),ImpuestosDao.Properties.MesImpuestos.eq(mes)).build().list();
+                    impuestos = impuestoDao.queryBuilder()
+                            .where(ImpuestosDao.Properties.IdVehiculo.eq(idBuscar), ImpuestosDao.Properties.MesImpuestos.eq(mes)).build().list();
 
                     recycler2 = (RecyclerView) findViewById(recicladorImpuestosTarjetaDatos);
 
@@ -183,7 +179,7 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
                     adapterImpuesto.setListener(DatosActivity.this); //Listener para el botón de factura
                     recycler2.setAdapter(adapterImpuesto);
 
-                }else{
+                } else {
 
                     Toast.makeText(DatosActivity.this, R.string.sinVehiculos, Toast.LENGTH_LONG).show();
                 }
@@ -192,29 +188,25 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
         });
 
 
-
         //Funcionalidad desplegar y contraer de los botones
         IVExpandirMantenimientoTarjetaDatos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if(recycler1 != null){ //Evitamos que si no hay datos la aplicación falle
+                if (recycler1 != null) { //Evitamos que si no hay datos la aplicación falle
 
-                recycler1.setVisibility(View.VISIBLE); //Mostramos RecyclerView y botón
-                    IVRecogerMantenimientoTarjetaDatos.setVisibility(View.VISIBLE);}
-                else{
+                    if (recycler1.getVisibility() == View.GONE) {
+                        recycler1.setVisibility(View.VISIBLE);
+                        IVExpandirMantenimientoTarjetaDatos.setImageResource(R.drawable.recoger);
+                    } else {
+                        recycler1.setVisibility(View.GONE);
+                        IVExpandirMantenimientoTarjetaDatos.setImageResource(R.drawable.desplegar);
+
+                    }
+                } else {
 
                     Toast.makeText(DatosActivity.this, R.string.sinBuscar, Toast.LENGTH_LONG).show();
                 }
-            }
-        });
-
-        IVRecogerMantenimientoTarjetaDatos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                recycler1.setVisibility(View.GONE);//Ocultamos RecyclerView y botón
-                IVRecogerMantenimientoTarjetaDatos.setVisibility(View.GONE);
             }
         });
 
@@ -223,48 +215,40 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
             @Override
             public void onClick(View v) {
 
-                if(recycler != null){ //Evitamos que si no hay datos la aplicación falle
+                if (recycler != null) { //Evitamos que si no hay datos la aplicación falle
 
-                    recycler.setVisibility(View.VISIBLE); //Mostramos RecyclerView y botón
-                    IVRecogerRepostajeTarjetaDatos.setVisibility(View.VISIBLE);}
-                else{
+                    if (recycler.getVisibility() == View.GONE) {
+                        recycler.setVisibility(View.VISIBLE);
+                        IVExpandirRepostajeTarjetaDatos.setImageResource(R.drawable.recoger);
+                    } else {
+                        recycler.setVisibility(View.GONE);
+                        IVExpandirRepostajeTarjetaDatos.setImageResource(R.drawable.desplegar);
+                    }
+                } else {
 
                     Toast.makeText(DatosActivity.this, R.string.sinBuscar, Toast.LENGTH_LONG).show();
                 }
             }
         });
-
-        IVRecogerRepostajeTarjetaDatos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                recycler.setVisibility(View.GONE);//Ocultamos RecyclerView y botón
-                IVRecogerRepostajeTarjetaDatos.setVisibility(View.GONE);
-            }
-        });
-
 
         IVExpandirImpuestosTarjetaDatos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if(recycler2 != null){ //Evitamos que si no hay datos la aplicación falle
+                if (recycler2 != null) { //Evitamos que si no hay datos la aplicación falle
 
-                    recycler2.setVisibility(View.VISIBLE); //Mostramos RecyclerView y botón
-                    IVRecogerImpuestosTarjetaDatos.setVisibility(View.VISIBLE);}
-                else{
+                    if (recycler2.getVisibility() == View.GONE) {
+                        recycler2.setVisibility(View.VISIBLE);
+                        IVExpandirImpuestosTarjetaDatos.setImageResource(R.drawable.recoger);
+                    } else {
+                        recycler2.setVisibility(View.GONE);
+                        IVExpandirImpuestosTarjetaDatos.setImageResource(R.drawable.desplegar);
+
+                    }
+                } else {
 
                     Toast.makeText(DatosActivity.this, R.string.sinBuscar, Toast.LENGTH_LONG).show();
                 }
-            }
-        });
-
-        IVRecogerImpuestosTarjetaDatos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                recycler2.setVisibility(View.GONE);//Ocultamos RecyclerView y botón
-                IVRecogerImpuestosTarjetaDatos.setVisibility(View.GONE);
             }
         });
     }
@@ -289,11 +273,11 @@ public class DatosActivity extends AppCompatActivity implements VerFactura {
     @Override
     public void examinarFactura(String uri) {
 
-        if(uri.equals("")){
+        if (uri.equals("")) {
 
             Toast.makeText(this, R.string.sinFactura, Toast.LENGTH_LONG).show();
 
-        }else {
+        } else {
             Intent i = new Intent(this, FacturaActivity.class);
             i.putExtra("StringURI", uri); //Pasamos valor Uri
             startActivity(i);
