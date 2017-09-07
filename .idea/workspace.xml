@@ -15,11 +15,26 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/jorge/gasolinator/Activities/RepostajeActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/jorge/gasolinator/Activities/RepostajeActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/jorge/gasolinator/Activities/RepostajeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/jorge/gasolinator/Activities/RepostajeActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/jorge/gasolinator/Activities/RepostajeActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/jorge/gasolinator/Activities/RepostajeActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/jorge/gasolinator/Activities/RepostajeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/jorge/gasolinator/Activities/RepostajeActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_6.apk" afterPath="$PROJECT_DIR$/app/build/intermediates/split-apk/debug/slices/slice_6.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/jorge/gasolinator/Activities/RepostajeActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/jorge/gasolinator/Activities/RepostajeActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/jorge/gasolinator/Activities/RepostajeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/jorge/gasolinator/Activities/RepostajeActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/example/jorge/gasolinator/Activities/RepostajeActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/example/jorge/gasolinator/Activities/RepostajeActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/example/jorge/gasolinator/Activities/RepostajeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/example/jorge/gasolinator/Activities/RepostajeActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/buildId.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/buildId.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/ImpuestosActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/ImpuestosActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/MantenimientoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/MantenimientoActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/RepostajeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/RepostajeActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="Proyecto_Final_DAM.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,61 +65,42 @@
     <favorites_list name="Proyecto_Final_DAM" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatosActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/DatosActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="241" column="93" selection-start-line="241" selection-start-column="93" selection-end-line="241" selection-end-column="93" />
-              <folding>
-                <element signature="e#9148#9166#0" expanded="true" />
-                <element signature="e#9994#10012#0" expanded="true" />
-                <element signature="e#10844#10862#0" expanded="true" />
-                <marker date="1504775785390" expanded="false" signature="9300:9392" ph="(v) → {" />
-                <marker date="1504775785390" expanded="false" signature="10067:10082" ph="}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListaVehiculosAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaVehiculosAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="VehiculosFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-629">
-              <caret line="223" column="9" selection-start-line="223" selection-start-column="9" selection-end-line="223" selection-end-column="9" />
+            <state relative-caret-position="83">
+              <caret line="219" column="79" selection-start-line="219" selection-start-column="79" selection-end-line="219" selection-end-column="79" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_datos.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_datos.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="ImpuestosActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/ImpuestosActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="245" column="51" selection-start-line="245" selection-start-column="51" selection-end-line="245" selection-end-column="51" />
+            <state relative-caret-position="219">
+              <caret line="443" column="4" selection-start-line="443" selection-start-column="4" selection-end-line="443" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MantenimientoActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/MantenimientoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1974">
+              <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepostajeActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/RepostajeActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="490" column="63" selection-start-line="490" selection-start-column="63" selection-end-line="490" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -3141,7 +3137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/activity_mantenimiento.xml" />
         <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/activity_impuestos.xml" />
         <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build.gradle" />
         <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Interfaces/GasolinerasCercanasObject.java" />
@@ -3183,15 +3178,16 @@
         <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Activities/DatosActivity.java" />
         <option value="$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/tarjeta_gastos.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/MantenimientoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaMantenimientoAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tarjeta_gastos.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/tarjeta_impuestos.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaImpuestosAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/ImpuestosActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_datos.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/DatosActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/ImpuestosActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/MantenimientoActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/RepostajeActivity.java" />
       </list>
     </option>
   </component>
@@ -3226,9 +3222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3245,28 +3238,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Proyecto_Final_DAM" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -3341,45 +3312,16 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Adapters" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Proyecto_Final_DAM" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gasolinator" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Activities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Proyecto_Final_DAM" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3390,6 +3332,7 @@
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="show.do.not.ask.upgrade.gradle.plugin" value="2.3.0" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -3781,7 +3724,6 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718122" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7114094" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36535552" sideWeight="0.49608064" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2581081" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31879196" sideWeight="0.49546143" order="7" side_tool="false" content_ui="tabs" />
@@ -3801,6 +3743,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36535552" sideWeight="0.49608064" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3907,7 +3850,7 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="40" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3948,14 +3891,6 @@
     <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/layout/tarjeta_gastos.xml" />
     <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaMantenimientoAdapter.java" />
     <entry file="file://$USER_HOME$/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/java/com/example/jorge/gasolinator/Activities/DatosActivity.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/BBDD/db/Repostaje.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -3972,33 +3907,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/MantenimientoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="416" column="20" selection-start-line="416" selection-start-column="20" selection-end-line="416" selection-end-column="20" />
-          <folding>
-            <element signature="e#7051#7072#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/RepostajeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4369">
-          <caret line="185" column="17" selection-start-line="185" selection-start-column="17" selection-end-line="185" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tarjeta_gastos.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="49" column="29" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="37" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/jorge/gasolinator/R.java">
@@ -4010,14 +3926,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/tarjeta_impuestos.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="73" column="51" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="51" />
-          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaImpuestosAdapter.java">
@@ -4032,14 +3947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/ImpuestosActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-758">
-          <caret line="176" column="58" selection-start-line="176" selection-start-column="58" selection-end-line="176" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaMantenimientoAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-697">
@@ -4049,42 +3956,68 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_datos.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4165">
+          <caret line="245" column="51" selection-start-line="245" selection-start-column="51" selection-end-line="245" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaVehiculosAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="245" column="51" selection-start-line="245" selection-start-column="51" selection-end-line="245" selection-end-column="51" />
+        <state relative-caret-position="1139">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/DatosActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="17">
           <caret line="241" column="93" selection-start-line="241" selection-start-column="93" selection-end-line="241" selection-end-column="93" />
-          <folding>
-            <element signature="e#9148#9166#0" expanded="true" />
-            <element signature="e#9994#10012#0" expanded="true" />
-            <element signature="e#10844#10862#0" expanded="true" />
-            <marker date="1504775785390" expanded="false" signature="9300:9392" ph="(v) → {" />
-            <marker date="1504775785390" expanded="false" signature="10067:10082" ph="}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Adapters/ListaVehiculosAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/RepostajeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state relative-caret-position="355">
+          <caret line="490" column="63" selection-start-line="490" selection-start-column="63" selection-end-line="490" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/MantenimientoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1974">
+          <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Activities/ImpuestosActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="443" column="4" selection-start-line="443" selection-start-column="4" selection-end-line="443" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/jorge/gasolinator/Fragments/VehiculosFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="223" column="9" selection-start-line="223" selection-start-column="9" selection-end-line="223" selection-end-column="9" />
+        <state relative-caret-position="83">
+          <caret line="219" column="79" selection-start-line="219" selection-start-column="79" selection-end-line="219" selection-end-column="79" />
           <folding />
         </state>
       </provider>

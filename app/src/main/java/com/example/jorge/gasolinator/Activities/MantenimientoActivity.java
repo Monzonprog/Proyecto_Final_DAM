@@ -301,19 +301,29 @@ public class MantenimientoActivity extends AppCompatActivity {
     //Abrimos y elegimos imagen de la galería
     public void choosePhotoFromGallary() {
 
-        if (checkPermission()) {
+        int storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        List<String> listPermissionsNeeded = new ArrayList<>();
+
+        if (storagePermission != PackageManager.PERMISSION_GRANTED) {
+            listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        }
 
             Intent galleryIntent = new Intent(Intent.ACTION_PICK,
                     android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             startActivityForResult(galleryIntent, GALLERY);
 
-        }
+
     }
 
     //Tomamos la foto de la cámara
     private void takePhotoFromCamera() {
 
-        if (checkPermission()) {
+        int storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        List<String> listPermissionsNeeded = new ArrayList<>();
+
+        if (storagePermission != PackageManager.PERMISSION_GRANTED) {
+            listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        }
 
             values = new ContentValues();
             values.put(MediaStore.Images.Media.TITLE, Calendar.getInstance()
@@ -324,8 +334,6 @@ public class MantenimientoActivity extends AppCompatActivity {
             intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
             startActivityForResult(intent, CAMERA);
 
-
-        }
     }
 
     //Resultado de la acción

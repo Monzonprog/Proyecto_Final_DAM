@@ -311,10 +311,10 @@ public class RepostajeActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         switch (which) {
                             case 0:
-                                choosePhotoFromGallary();
+                                    choosePhotoFromGallary();
                                 break;
                             case 1:
-                                takePhotoFromCamera();
+                                    takePhotoFromCamera();
                                 break;
                         }
                     }
@@ -325,18 +325,24 @@ public class RepostajeActivity extends AppCompatActivity {
     //Abrimos y elegimos imagen de la galería
     public void choosePhotoFromGallary() {
 
-        if (checkPermission()) {
+        int storagePermission = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        List<String> listPermissionsNeeded = new ArrayList<>();
 
-            Intent galleryIntent = new Intent(Intent.ACTION_PICK,
-                    android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            startActivityForResult(galleryIntent, GALLERY);
+        if (storagePermission != PackageManager.PERMISSION_GRANTED) {
+            listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
         }
+
+        Intent galleryIntent = new Intent(Intent.ACTION_PICK,
+                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(galleryIntent, GALLERY);
+
+
     }
 
     //Tomamos la foto de la cámara
     private void takePhotoFromCamera() {
 
-        if (checkPermission()) {
+
 
             values = new ContentValues();
             values.put(MediaStore.Images.Media.TITLE, Calendar.getInstance()
@@ -348,7 +354,7 @@ public class RepostajeActivity extends AppCompatActivity {
             startActivityForResult(intent, CAMERA);
 
 
-        }
+
 
 
     }
@@ -474,6 +480,7 @@ public class RepostajeActivity extends AppCompatActivity {
                     }
 
                     if (storageAccepted && cameraAccepted) {
+
                         values = new ContentValues();
                         values.put(MediaStore.Images.Media.TITLE, Calendar.getInstance()
                                 .getTimeInMillis());
@@ -482,6 +489,7 @@ public class RepostajeActivity extends AppCompatActivity {
                         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                         intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
                         startActivityForResult(intent, CAMERA);
+
                     } else {
                         Toast.makeText(this, getString(R.string.no_camera), Toast.LENGTH_LONG).show();
                     }
