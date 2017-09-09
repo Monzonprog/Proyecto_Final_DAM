@@ -1,34 +1,34 @@
 [
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\sin_detalle.png",
-        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xhdpi\\sin_detalle.png"
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-xhdpi/recoger.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-xhdpi/recoger.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\recoger.png",
-        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xhdpi\\recoger.png"
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-xhdpi/detalle.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-xhdpi/detalle.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\editar.png",
-        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xhdpi\\editar.png"
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-xhdpi/sin_detalle.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-xhdpi/sin_detalle.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icono_gasolinera.png",
-        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xhdpi\\icono_gasolinera.png"
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-xhdpi/icono_gasolinera.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-xhdpi/icono_gasolinera.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\borrar.png",
-        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xhdpi\\borrar.png"
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-xhdpi/buscar.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-xhdpi/buscar.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\desplegar.png",
-        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xhdpi\\desplegar.png"
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-xhdpi/editar.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-xhdpi/editar.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\buscar.png",
-        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xhdpi\\buscar.png"
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-xhdpi/borrar.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-xhdpi/borrar.png"
     },
     {
-        "merged": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\detalle.png",
-        "source": "C:\\Android\\Proyectos\\Proyecto_Final_DAM\\app\\src\\main\\res\\drawable-xhdpi\\detalle.png"
+        "merged": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/build/intermediates/res/merged/debug/drawable-xhdpi/desplegar.png",
+        "source": "/home/jorge/Curso/Asignaturas/Proyecto DAM/App/Proyecto_Final_DAM/app/src/main/res/drawable-xhdpi/desplegar.png"
     }
 ]

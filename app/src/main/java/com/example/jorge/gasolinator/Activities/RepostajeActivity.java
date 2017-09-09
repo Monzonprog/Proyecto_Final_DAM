@@ -46,6 +46,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -66,8 +67,7 @@ public class RepostajeActivity extends AppCompatActivity {
     private Uri yourUri = Uri.parse("");
     private Spinner vehiculosSpinnerRepostaje;
     private RadioButton totalRBRepostaje;
-    private TextInputEditText kmActualesETRepostaje, costeETRepostaje, litrosETRespostaje,
-            precioLETRepostaje;
+    private TextInputEditText kmActualesETRepostaje, costeETRepostaje, litrosETRespostaje;
     private Button fechaRepostaje;
     private TextView fechaTVRepostaje;
     private String yearUsuario = "";
@@ -100,7 +100,6 @@ public class RepostajeActivity extends AppCompatActivity {
         kmActualesETRepostaje = (TextInputEditText)this.findViewById(R.id.kmActualesETRepostaje);
         costeETRepostaje = (TextInputEditText)this.findViewById(R.id.costeETRepostaje);
         litrosETRespostaje = (TextInputEditText)this.findViewById(R.id.litrosETRespostaje);
-        precioLETRepostaje = (TextInputEditText)this.findViewById(R.id.precioLETRepostaje);
         fechaRepostaje = (Button)this.findViewById(R.id.fechaButtonRepostaje);
         fechaTVRepostaje = (TextView)this.findViewById(R.id.fechaTVRepostaje);
 
@@ -180,7 +179,12 @@ public class RepostajeActivity extends AppCompatActivity {
                     String kmActuales = kmActualesETRepostaje.getText().toString();
                     String costeRespostaje = costeETRepostaje.getText().toString();
                     String litrosRespostaje = litrosETRespostaje.getText().toString();
-                    String precioLitrosRespostaje = precioLETRepostaje.getText().toString();
+
+                    //Tomamos los valores de litros y coste para sacar la media, pintamos solo 3 decimales
+                    DecimalFormat decimales = new DecimalFormat("0.000");
+                    double aux = Double.parseDouble(costeRespostaje)/Double.parseDouble(litrosRespostaje);
+                    String precioLitrosRespostaje =String.valueOf(decimales.format(aux));
+
                     String uriUsuario = verficarUri();
 
                     //Abrimos bbdd y creamos registro de repostaje
@@ -257,8 +261,7 @@ public class RepostajeActivity extends AppCompatActivity {
         boolean verificacion;
 
         if (kmActualesETRepostaje.getText().toString().isEmpty() || (costeETRepostaje.getText().toString().isEmpty()) ||
-                (litrosETRespostaje.getText().toString().isEmpty()) ||
-                (precioLETRepostaje.getText().toString().isEmpty())) {
+                (litrosETRespostaje.getText().toString().isEmpty())) {
             verificacion = false;
 
         } else {

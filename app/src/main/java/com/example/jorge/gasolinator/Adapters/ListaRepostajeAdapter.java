@@ -36,10 +36,10 @@ public class ListaRepostajeAdapter extends RecyclerView.Adapter<ListaRepostajeAd
         public RepostajeViewHolder(View v) {
             super(v);
 
-            costeTarjetaRepostaje = (TextView)v.findViewById(R.id.costeTarjetaRepostaje);
-            tipoLlenadoTarjetaRepostaje = (TextView)v.findViewById(R.id.tipoLlenadoTarjetaRepostaje);
-            fechaTarjetaRepostaje = (TextView)v.findViewById(R.id.fechaTarjetaRepostaje);
-            detalleTarjetaRepostaje = (ImageView)v.findViewById(R.id.detalleTarjetaRepostaje);
+            costeTarjetaRepostaje = (TextView) v.findViewById(R.id.costeTarjetaRepostaje);
+            tipoLlenadoTarjetaRepostaje = (TextView) v.findViewById(R.id.tipoLlenadoTarjetaRepostaje);
+            fechaTarjetaRepostaje = (TextView) v.findViewById(R.id.fechaTarjetaRepostaje);
+            detalleTarjetaRepostaje = (ImageView) v.findViewById(R.id.detalleTarjetaRepostaje);
         }
     }
 
@@ -89,8 +89,9 @@ public class ListaRepostajeAdapter extends RecyclerView.Adapter<ListaRepostajeAd
         viewholder.tipoLlenadoTarjetaRepostaje.setText(llenado);
         viewholder.fechaTarjetaRepostaje.setText(fecha);
 
-        if(uri.equals("")){ //Si no hay imagen guardada mostramos el icono con un color grisaceo
-        viewholder.detalleTarjetaRepostaje.setImageResource(R.drawable.sin_detalle);}
+        if (uri.equals("")) { //Si no hay imagen guardada mostramos el icono con un color grisaceo
+            viewholder.detalleTarjetaRepostaje.setImageResource(R.drawable.sin_detalle);
+        }
 
         viewholder.detalleTarjetaRepostaje.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,7 +105,7 @@ public class ListaRepostajeAdapter extends RecyclerView.Adapter<ListaRepostajeAd
     }
 
     //Listener de la cardview
-    public void setListener (VerFactura listener){
+    public void setListener(VerFactura listener) {
 
         this.listener = listener;
     }

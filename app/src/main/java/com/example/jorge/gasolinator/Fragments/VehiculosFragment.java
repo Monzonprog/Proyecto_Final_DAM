@@ -217,16 +217,11 @@ public class VehiculosFragment extends Fragment {
     //Abrimos y elegimos imagen de la galería
     public void choosePhotoFromGallary() {
 
-        int storagePermission = ContextCompat.checkSelfPermission(getActivity(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        List<String> listPermissionsNeeded = new ArrayList<>();
-
-        if (storagePermission != PackageManager.PERMISSION_GRANTED) {
-            listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        }
+        if (checkPermission()) {
             Intent galleryIntent = new Intent(Intent.ACTION_PICK,
                     android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             startActivityForResult(galleryIntent, GALLERY);
-
+        }
     }
 
     //Tomamos la foto de la cámara
@@ -375,6 +370,7 @@ public class VehiculosFragment extends Fragment {
                 break;
         }
     }
+
     public Bitmap getResizedBitmap(Bitmap image, int maxSize) {
         int width = image.getWidth();
         int height = image.getHeight();
